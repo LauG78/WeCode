@@ -1,0 +1,17 @@
+/*----------RESETS----------*/
+* {
+    /*--Remove Margin From All Elements*/
+margin: 0%;
+    /*--Remove Padding From All Elements*/
+padding: 0%;
+    /*--Change Box sizing from content-box to Border-box on all elements-*/
+box-sizing: border-box;
+}
+a{
+    /*--Remove underlining from all links-*/
+    text-decoration: none;
+}
+ul,li{
+    /*--Remove list decorations -bullets---*/
+    list-style-type: none;
+}
