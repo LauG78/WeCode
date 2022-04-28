@@ -5,3 +5,8 @@
  - Sea Green Crayola : #02f2be;
  - Ivory : #fbfcee;
  - Pacific Blue: #03a0b5;
+
+ ## FONTS ##
+
+ ## icons ##
+ [Font Awesome iCons](https://fontawesome.com)
