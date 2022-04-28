@@ -1,0 +1,14 @@
+## Thursday 28 April 2022 ##
+- Lau
+  - 
+- Besart
+  - [ ] Logo
+  - [ ] Logo Different sizes to improve site speed
+  - [ ] Maybe CSV version ? Maybe SCSS Version ?
+- Mo 
+ - [ ] Footer
+ - [ ] Responsiveness of the footer
+- Yasser
+  - [ ] Create NavBar
+  - [ ] Add MediaQueries
+  - [ ] Make NavBar Responsive
