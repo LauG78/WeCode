@@ -1,8 +1,30 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,+BAA+B;AAC/B,kBAAkB;ACDlB,qBAAqB;AECjB,UAAU;AHEd,aAAa;AGFT,UAAU;AHId,YAAY;AACZ,SAAS;AQNT,qBAAqB;APArB,qBAAqB;AECjB,UAAU;AAAV,UAAU;AHOd,YAAY;AgBRZ,qBAAqB;AfArB,qBAAqB;AECjB,UAAU;AAAV,UAAU;AHSd,8BAA8B;AAC9B,AAAA,CAAC,CAAC;EACE,qCAAqC;EACzC,MAAM,EAAE,EAAE;EACN,sCAAsC;EAC1C,OAAO,EAAE,EAAE;EACP,uEAAuE;EAC3E,UAAU,EAAE,UAAU;CACrB;;AACD,AAAA,CAAC,CAAA;EACG,wCAAwC;EACxC,eAAe,EAAE,IAAI;CACxB;;AACD,AAAA,EAAE,EAAC,EAAE,CAAA;EACD,yCAAyC;EACzC,eAAe,EAAE,IAAI;CACxB",
     "sources": [
-        "main.sass"
+        "main.scss",
+        "_Cfunctions.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Vcontact.scss",
+        "_Vhome.scss",
+        "_Vthe-team.scss",
+        "_Cfunctions.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Vpackages.scss",
+        "_Vportfolio.scss",
+        "_Vnav.scss",
+        "_Cfunctions.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Mmixins.scss",
+        "_Mvariables.scss",
+        "_Vfooter.scss"
     ],
     "names": [],
     "file": "main.css"
