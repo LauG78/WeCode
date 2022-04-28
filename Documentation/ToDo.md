@@ -11,8 +11,10 @@
  - [ ] Footer
  - [ ] Responsiveness of the footer
 - Yasser
+  - [ ] Main Page
+  - [ ] Fix CSS Files and links
   - [ ] Portfolio
-  - [ ] Add awesome Font icons
+  - [X] Add awesome Font icons
   - [ ] Create NavBar
   - [ ] Add MediaQueries
   - [ ] Make NavBar Responsive
