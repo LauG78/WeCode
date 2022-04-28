@@ -3,6 +3,8 @@
   - [ ] Contact page
 - Besart
   - [ ] Team Page
+  - [ ] Write down all the HTML
+  - [ ] Semantics of the HTML
   - [ ] Logo
   - [ ] Logo Different sizes to improve site speed
   - [ ] Maybe CSV version ? Maybe SCSS Version ?
