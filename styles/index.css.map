@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AACA,iBAAiB;AAEjB,cAAc;AAGd,kBAAkB;AAGlB,cAAc",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "_variables.scss"
     ],
     "names": [],
     "file": "index.css"
