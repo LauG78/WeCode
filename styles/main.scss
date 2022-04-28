@@ -1,5 +1,15 @@
+/*----------IMPORTS----------*/
+/*--Controller--*/
+@import "Cfunctions";
+/*--Model--*/
+@import "Mmixins" , "Mvariables";
+/*--View--*/
+/*Pages*/
+@import "Vcontact" , "Vhome" , "Vthe-team" , "Vpackages" , "Vportfolio";
+
+
 /*----------RESETS----------*/
-*{
+* {
     /*--Remove Margin From All Elements*/
 margin: 0%;
     /*--Remove Padding From All Elements*/
