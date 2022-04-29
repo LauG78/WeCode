@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeCode</title>
+    <title>WeCode Contact page</title>
     <meta name="description" content="Contact WeCode">
     <!--Link Global Styles-->
     <link rel="stylesheet" href="../styles/footer.css">
@@ -17,10 +17,12 @@
 
 <body>
 
-
     <header>
 
-        Contact WeCode
+        <h1>
+
+            Join us for a cup of coffee or leave us message:
+        </h1>
 
     </header>
 
@@ -38,26 +40,43 @@
             </div>
             <div class="contact-phone">
                 <i class="fa-solid fa-phone" alt="phone icon" description="a telephone" ></i>
-                Call us at 
+                Call us at <br> +32 xxx xxx
 
             </div>
             <div class="contact-fax">
                 <i class="fa-solid fa-fax" alt="fax icon" description="a fax machine"></i>
-                Send us a fax 
+                Send us a fax at <br> +32.yyy.yyy
 
             </div>
             <div class="contact-location" alt="location icon" description="a pin to mark the location on map">
                 <i class="fa-solid fa-location-dot"></i>
-                You can find us at the following address
+                You can find us at the following address<br>
+                Sint-Pietersvliet 7, 2000 Antwerpen
 
             </div>
-            <div class="contact-website" alt="website icon" description="a screen with a webpage on it">
-                <i class="fa-solid fa-location-dot"></i>
+            <div class="contact-facebook" alt="facebook-icon" description="the f letter">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="contact-github" alt="github-icon" description="a cat with a high tail">
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/YasserB94/WeCode">Github</a>
 
             </div>
 
         </div>
         <div class="contact-us-container">
+            <form id="contact-form">
+                <label class="required" for="name">Your name</label><br>
+                <input id="name" class="input" name="name" placeholder="your name here" type="text"><br>
+                <label class="required" for="email">Your email</label><br>
+                <input id="email" class="input" name="email" placeholder="youremail@email.com" type="text"><br>
+                <div class="message-area">
+                    <label class="required" for="message">Your message
+                    </label>
+                    <textarea id="message"class="input" name="message" rows="15" cols="60"></textarea><br>
+                </div>
+                </label>
+            </form>
 
 
         </div>
