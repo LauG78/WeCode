@@ -255,4 +255,30 @@ li {
           transform: rotate(45deg) scale(0.6);
   background-color: #00a896;
 }
+
+@media only screen and (min-width: 576px) {
+  .global__nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .burger__container {
+    display: none;
+  }
+  .global__nav__list {
+    border: solid 3px red;
+    position: inherit;
+    max-height: 10vh;
+    min-height: 5vh;
+    height: 10vh;
+    top: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */
