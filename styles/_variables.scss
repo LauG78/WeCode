@@ -1,7 +1,42 @@
-//*Theme*//
-    /*Colors*/
+
+//Theme
+    //Colors
     $clr-black: #001412;
     $clr-white: #fbfcee;
     $clr-primary:#03a0b5;
     $clr-secondary:#00a896;
     $clr-highlight:#02f2be;
+    //Fonts
+        //GLOBAL FONT OF CHOICE
+    $ff-Nunito:'Nunito', "Georgia";
+        //OTHER FONTS
+    $ff-Nunito_italic:'NunitoItalic', 'Georgia Italic';
+    $ff-League_Spartan:'LeagueSpartan', 'Arial';
+    $ff-Roboto_Condensed:'RobotoCondensed', "Cursive";
+        //Georgia font is fallback for nunito because it has italic on both windows and mac
+
+
+
+
+
+    //Add Font Faces
+    /*----ADDING FONTS----*/
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'NunitoItalic';
+    src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'RobotoCondensed';
+    src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}

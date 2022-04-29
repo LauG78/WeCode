@@ -1,17 +1,28 @@
+//IMPORTS
+@import 'variables';
+
 /*----------RESETS----------*/
 * {
     /*--Remove Margin From All Elements*/
-margin: 0%;
+    margin: 0%;
     /*--Remove Padding From All Elements*/
-padding: 0%;
+    padding: 0%;
     /*--Change Box sizing from content-box to Border-box on all elements-*/
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-a{
+
+html,body {
+    font-family: $ff-Nunito;
+}
+
+a {
     /*--Remove underlining from all links-*/
     text-decoration: none;
 }
-ul,li{
+
+ul,
+li {
     /*--Remove list decorations -bullets---*/
     list-style-type: none;
 }
+
