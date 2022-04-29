@@ -155,11 +155,8 @@ li {
   border-radius: 10%;
 }
 
-.global__nav__list.active {
-  top: 0;
-}
-
 .burger__container {
+  z-index: 102;
   display: block;
   height: 8vh;
   width: 3rem;
@@ -181,15 +178,19 @@ li {
   min-width: 2rem;
   border-radius: .25rem;
   background-color: #03a0b5;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
-.burger__container .burger__slice:before, .burger__container .burger__slice::after {
+.burger__container .burger__slice::before, .burger__container .burger__slice::after {
   content: "";
   position: absolute;
   min-height: .2rem;
   min-width: 2rem;
   border-radius: .25rem;
   background-color: #03a0b5;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .burger__container .burger__slice::before {
@@ -200,5 +201,27 @@ li {
 .burger__container .burger__slice::after {
   -webkit-transform: translateY(0.6rem);
           transform: translateY(0.6rem);
+}
+
+.global__nav__list.active {
+  top: 0;
+}
+
+.burger__container.active .burger__slice {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background: transparent;
+}
+
+.burger__container.active .burger__slice::before {
+  -webkit-transform: rotate(135deg) scale(0.6);
+          transform: rotate(135deg) scale(0.6);
+  background-color: #02f2be;
+}
+
+.burger__container.active .burger__slice::after {
+  -webkit-transform: rotate(45deg) scale(0.6);
+          transform: rotate(45deg) scale(0.6);
+  background-color: #00a896;
 }
 /*# sourceMappingURL=navbar.css.map */
