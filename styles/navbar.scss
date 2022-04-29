@@ -2,6 +2,7 @@
 @import 'variables';
 @import "global";
 @import 'mixins';
+
 .global__nav {
     z-index: 101;
     max-height: 10vh;
@@ -15,6 +16,7 @@
     position: sticky;
     top: 0%;
 }
+
 .brand__logo {
     z-index: 102;
     max-height: 10vh;
@@ -22,10 +24,10 @@
     margin-left: 1rem;
     padding: .5rem;
 }
+
 .global__nav__list {
     z-index: 100;
     position: absolute;
-    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -39,21 +41,25 @@
     align-content: center;
     text-align: center;
     background-color: $clr-black;
-    opacity: .99;
+    opacity: .9;
     top: -100vh;
-    transition: all .8s ease-in-out;
+    transition: top .8s ease-in-out;
+
     & .global__nav__item {
         font-family: $ff-Nunito;
         font-size: 1.5rem;
         text-transform: uppercase;
+
         & .global__nav__link {
             display: block;
             padding: 1rem;
             color: $clr-white;
             position: relative;
             transition: color 1s ease-in-out;
+
             &.current__page {
-                color: $clr-secondary;
+                color: $clr-primary;
+
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -61,11 +67,12 @@
                     bottom: .75rem;
                     left: 25%;
                     width: 50%;
-                    height: .25rem;
+                    height: .125rem;
                     border-radius: 10%;
                     transform: scale(1);
                 }
             }
+
             &::after {
                 content: "";
                 background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -76,17 +83,21 @@
                 height: .1rem;
                 border-radius: 10%;
                 transform: scale(0);
-                transition: transform 0.25s ease-in-out; 
+                transition: transform 0.25s ease-in-out;
             }
+
             &:hover {
-                color: $clr-secondary;
-                &::after{
+                color: $clr-highlight;
+                cursor: pointer;
+
+                &::after {
                     transform: scale(1);
                 }
             }
         }
     }
 }
+
 .burger__container {
     z-index: 102;
     display: block;
@@ -128,9 +139,11 @@
         }
     }
 }
+
 .global__nav__list.active {
     top: 0;
 }
+
 .burger__container.active {
     & .burger__slice {
         transform: scale(2);
@@ -151,22 +164,63 @@
 
 
 }
+
 //RESPONSIVENESS - MEDIAQUERIES
-@include media-small{
-    .global__nav{
-        align-items: center;
-        justify-content: space-between;
-    }
-    .burger__container{
+@include media-medium {
+    .burger__container {
+        all: unset;
         display: none;
     }
-    .global__nav__list{
-        border: solid 3px red;
-        position: inherit;
-        max-height: 10vh;
+
+    .brand__logo {
         min-height: 5vh;
-        height: 10vh;
+        height: 5vh;
+        max-height: 8vh;
+        align-self: flex-end;
+    }
+
+    .global__nav__list {
+        //RESETS
+        position: unset;
+        height: unset;
+        min-height: unset;
+        width: unset;
+        min-width: unset;
         top: unset;
+        left: unset;
+        //STYLING
         flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-right: 1rem;
+
+        & .global__nav__item {
+            font-size: 1.2rem;
+
+            & .global__nav__link {
+                padding: 0 1rem;
+                position: relative;
+
+                &.current__page {
+                    color: $clr-highlight;
+
+                    &::after {
+                        bottom: -.1rem;
+                    }
+                }
+
+                &::after {
+                    bottom: -.1rem;
+                }
+            }
+        }
+    }
+}
+
+@include media-extra-large {
+    .global__nav__list {
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
