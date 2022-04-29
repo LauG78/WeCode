@@ -1,46 +1,82 @@
+/*----ADDING FONTS----*/
 @font-face {
-  font-family: font-a;
-  src: url(../assets/fonts/fontAwesome/webfonts/fa-regular-400.ttf);
-}
-
-.contact-phone {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-email {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-fax {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-location {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-website {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-facebook {
-  font-family: font-a;
-  font-size: 1rem;
-}
-
-.contact-github {
-  font-family: font-a;
-  font-size: 1rem;
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: font-b;
-  src: url(../assets/fonts/fontAwesome/webfonts/fa-solid-900.ttf);
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+body {
+  background-color: #fbfcee;
+}
+
+.secondary__color {
+  color: #00a896;
+}
+
+.contact__info {
+  font-size: 1rem;
+  color: #001412;
 }
 
 .header {
@@ -48,16 +84,9 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  font-family: font-b;
-}
-
-@font-face {
-  font-family: font-c;
-  src: url(../assets/fonts/fontAwesome/webfonts/fa-v4compatibility.ttf);
 }
 
 .contact-us {
-  font-family: font-c;
   font-size: 1.2rem;
 }
 
