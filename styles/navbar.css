@@ -136,11 +136,13 @@ li {
   display: block;
   padding: 1rem;
   color: #fbfcee;
+  position: relative;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
 }
 
 .global__nav__list .global__nav__item .global__nav__link.current__page {
   color: #00a896;
-  position: relative;
 }
 
 .global__nav__list .global__nav__item .global__nav__link.current__page::after {
@@ -153,6 +155,35 @@ li {
   width: 50%;
   height: .25rem;
   border-radius: 10%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.global__nav__list .global__nav__item .global__nav__link::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#001412), color-stop(#00a896), to(#001412));
+  background: linear-gradient(to right, #001412, #00a896, #001412);
+  position: absolute;
+  bottom: .75rem;
+  left: 25%;
+  width: 50%;
+  height: .1rem;
+  border-radius: 10%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.global__nav__list .global__nav__item .global__nav__link:hover {
+  color: #00a896;
+}
+
+.global__nav__list .global__nav__item .global__nav__link:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .burger__container {

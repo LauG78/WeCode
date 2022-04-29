@@ -1,7 +1,6 @@
 //Import Global Variables
 @import 'variables';
 @import "./global.scss";
-
 .global__nav {
     z-index: 101;
     max-height: 10vh;
@@ -15,7 +14,6 @@
     position: sticky;
     top: 0%;
 }
-
 .brand__logo {
     z-index: 102;
     max-height: 10vh;
@@ -23,7 +21,6 @@
     margin-left: 1rem;
     padding: .5rem;
 }
-
 .global__nav__list {
     z-index: 100;
     position: absolute;
@@ -43,23 +40,19 @@
     background-color: $clr-black;
     opacity: .99;
     top: -100vh;
-
     transition: all .8s ease-in-out;
-
     & .global__nav__item {
         font-family: $ff-Nunito;
         font-size: 1.5rem;
         text-transform: uppercase;
-
         & .global__nav__link {
             display: block;
             padding: 1rem;
             color: $clr-white;
-
+            position: relative;
+            transition: color 1s ease-in-out;
             &.current__page {
                 color: $clr-secondary;
-                position: relative;
-
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -69,12 +62,30 @@
                     width: 50%;
                     height: .25rem;
                     border-radius: 10%;
+                    transform: scale(1);
+                }
+            }
+            &::after {
+                content: "";
+                background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
+                position: absolute;
+                bottom: .75rem;
+                left: 25%;
+                width: 50%;
+                height: .1rem;
+                border-radius: 10%;
+                transform: scale(0);
+                transition: transform 0.25s ease-in-out; 
+            }
+            &:hover {
+                color: $clr-secondary;
+                &::after{
+                    transform: scale(1);
                 }
             }
         }
     }
 }
-
 .burger__container {
     z-index: 102;
     display: block;
@@ -104,7 +115,7 @@
             border-radius: .25rem;
             background-color: $clr-primary;
             transition: all .8s ease-in-out;
-            
+
         }
 
         &::before {
@@ -116,20 +127,20 @@
         }
     }
 }
-
 .global__nav__list.active {
     top: 0;
 }
-
 .burger__container.active {
     & .burger__slice {
         transform: scale(2);
         background: transparent;
-        &::before{
+
+        &::before {
             transform: rotate(135deg) scale(.6);
             background-color: $clr-highlight;
         }
-        &::after{
+
+        &::after {
             transform: rotate(45deg) scale(.6);
             background-color: $clr-secondary;
         }
