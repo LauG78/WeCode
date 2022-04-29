@@ -8,9 +8,11 @@ burger.addEventListener('click',triggerNav)
 function triggerNav() {
     if (menuOpen == false) {
         navList.classList.add('active')
+        burger.classList.add('active')
         menuOpen = true;
     }else if(menuOpen == true){
         navList.classList.remove('active')
+        burger.classList.remove('active')
         menuOpen = false;
     }
 }
