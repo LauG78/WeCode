@@ -1,0 +1,116 @@
+
+// variables
+@import "variables";
+@import 'global';
+// footer styling
+
+footer{
+    transition: all .2s linear;
+}
+
+#footer__section { 
+    height: auto;
+    width:100vw;
+    background-color: $clr-black;
+    color:$clr-white;
+    position:absolute;
+    bottom:0;
+
+    .footer__container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap:wrap;
+
+        i:hover {
+            color: $clr-highlight;
+            cursor: pointer;
+        }
+    }
+    .logo__container, .info__div, .letter__div {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 3rem;
+        flex-flow: column wrap;
+    }
+
+    .logo__container {
+        text-align: center;
+
+        .icons__div {
+
+            .i__footer {
+                font-size: 1.3rem;
+                margin:1rem;
+            }
+        }
+        .wecodeLogo {
+            width:4rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+    }
+    .info__div {
+        .a_info_footer {
+            color: $clr-white;
+        }
+        .i_info_footer {
+            margin: 1rem 0;
+            font-size: 1rem;
+        
+            &::after {
+                content: attr(data-text);
+                font-size: .8;
+                margin:0 1rem ;
+                font-family: nunito;
+            }
+        }
+    }
+    .letter__div {
+        margin-top:2rem;
+        .h3__footer {
+            margin: .1rem 0;
+            font-size:3rem;
+            font-family:$ff-League_Spartan;
+        }
+        .p__footer {
+            margin: .2rem 0;
+            font-size: 1rem;
+            font-family: $ff-Nunito;
+
+        }
+        input[type="email"]{
+            outline: none;
+            border: none;
+            padding: 0 1rem;
+            height: 2rem;
+            background: rgba(255,255,255,.2);
+            color:$clr-white;
+        }
+        input[type="submit"]{
+            outline: none;
+            border: none;
+            height:1.5rem;
+            width: 4rem;
+            background: $clr-highlight;
+            color: $clr-black;
+            margin: 1rem 0;
+            cursor: pointer;
+
+            &:hover{
+                background:$clr-primary;
+            }
+        }
+    }
+    .text__div {
+        width:100%;
+
+        .h6__footer {
+            font-size: .8rem;
+            padding: .5rem 0;
+            text-align: center;
+            color: grey;
+        }
+    }
+
+
+}
