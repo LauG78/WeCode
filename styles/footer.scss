@@ -55,10 +55,13 @@
         }
     }
     .info {
+        a {
+            color: $clr-white;
+        }
         i {
             margin: 1rem 0;
             font-size: 1rem;
-
+        
             &::after {
                 content: attr(data-text);
                 font-size: .8;
@@ -113,5 +116,6 @@
             color: grey;
         }
     }
+
 
 }
