@@ -121,8 +121,9 @@ li {
   text-align: center;
   background-color: #001412;
   opacity: .99;
-  -webkit-transform: translateY(-100vh);
-          transform: translateY(-100vh);
+  top: -100vh;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .global__nav__list .global__nav__item {
@@ -152,6 +153,10 @@ li {
   width: 50%;
   height: .25rem;
   border-radius: 10%;
+}
+
+.global__nav__list.active {
+  top: 0;
 }
 
 .burger__container {

@@ -39,7 +39,9 @@
     text-align: center;
     background-color: $clr-black;
     opacity: .99;
-    transform: translateY(-100vh);
+    top: -100vh;
+
+    transition: all .8s ease-in-out;
     & .global__nav__item {
         font-family: $ff-Nunito;
         font-size: 1.5rem;
@@ -64,6 +66,9 @@
             }
         }
     }
+}
+.global__nav__list.active {
+top: 0;
 }
 .burger__container {
 
