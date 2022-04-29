@@ -13,3 +13,17 @@ body{
 h6{
   font-style: italic;
 }
+.card{
+  border-color: $clr-black ;
+}
+.card-footer{
+  background-color: $clr-black;
+  align-content: center;
+}
+.fa-brands{
+  color: $clr-white;
+}
+q{
+  color: $clr-primary;
+  font-style: italic;
+}

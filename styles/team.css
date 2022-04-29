@@ -33,4 +33,22 @@ h6 {
   font-style: italic;
 }
 
+.card {
+  border-color: #001412;
+}
+
+.card-footer {
+  background-color: #001412;
+  align-content: center;
+}
+
+.fa-brands {
+  color: #fbfcee;
+}
+
+q {
+  color: #03a0b5;
+  font-style: italic;
+}
+
 /*# sourceMappingURL=team.css.map */
