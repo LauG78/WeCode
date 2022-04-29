@@ -1,47 +1,89 @@
 //Import Global Variables
 @import 'variables';
 @import "./global.scss";
-
 .global__nav {
-    z-index: 100;
+    z-index: 101;
+    max-height: 10vh;
     padding: 1rem;
     min-width: 100vw;
     max-width: 100vw;
     background-color: $clr-black;
     display: flex;
     justify-content: space-between;
-
-}
-
-.brand__container {
-
-    display: flex;
     align-items: center;
+    position: sticky;
+    top: 0%;
 }
 .brand__logo {
-    width: 80px;
-    max-height: 80px;
+    z-index: 102;
+    max-height: 10vh;
+    height: 10vh;
+    margin-left: 1rem;
+    padding: .5rem;
 }
-
 .global__nav__list {
-    display: none;
-
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $clr-black;
+    opacity: .99;
+    transform: translateY(-100vh);
+    & .global__nav__item {
+        font-family: $ff-Nunito;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        & .global__nav__link {
+            display: block;
+            padding: 1rem;
+            color: $clr-white;
+            &.current__page {
+                color: $clr-secondary;
+                position: relative;
+                &::after {
+                    content: "";
+                    background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
+                    position: absolute;
+                    bottom: .75rem;
+                    left: 25%;
+                    width: 50%;
+                    height: .25rem;
+                    border-radius: 10%;
+                }
+            }
+        }
+    }
 }
-
-.global__nav__link {}
-
 .burger__container {
+
     display: block;
+    height: 8vh;
+    width: 3rem;
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
     & .burger__slice {
         z-index: 101;
         min-height: .2rem;
+
         min-width: 2rem;
         border-radius: .25rem;
         background-color: $clr-primary;
-    
+
         &:before,
         &::after {
             content: "";
@@ -51,12 +93,13 @@
             border-radius: .25rem;
             background-color: $clr-primary;
         }
-        &::before{
-            transform: translateY(-.5rem);
+
+        &::before {
+            transform: translateY(-.6rem);
         }
-        &::after{
-            transform: translateY(.5rem);
+
+        &::after {
+            transform: translateY(.6rem);
         }
     }
 }
-
