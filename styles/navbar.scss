@@ -53,7 +53,7 @@
             position: relative;
             transition: color 1s ease-in-out;
             &.current__page {
-                color: $clr-primary;
+
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -177,7 +177,7 @@
                     animation: theme__hover 5s infinite;
                 }
                 &.current__page {
-                    color: $clr-highlight;
+                    transform: translateY(-.1rem);
                     &::after {
                         bottom: -.1rem;
                     }
