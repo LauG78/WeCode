@@ -8,7 +8,7 @@ footer{
     transition: all .2s linear;
 }
 
-#footer { 
+#footer__section { 
     height: auto;
     width:100vw;
     background-color: $clr-black;
@@ -16,7 +16,7 @@ footer{
     position:absolute;
     bottom:0;
 
-    .footer-container {
+    .footer__container {
         display: flex;
         justify-content: space-around;
         flex-wrap:wrap;
@@ -26,19 +26,19 @@ footer{
             cursor: pointer;
         }
     }
-    .logo-container, .info, .letter {
+    .logo__container, .info__div, .letter__div {
         display: flex;
         justify-content: center;
         margin: 1rem 3rem;
         flex-flow: column wrap;
     }
 
-    .logo-container {
+    .logo__container {
         text-align: center;
 
-        .icons {
+        .icons__div {
 
-            i {
+            .i__footer {
                 font-size: 1.3rem;
                 margin:1rem;
             }
@@ -49,11 +49,11 @@ footer{
             margin-top: 2rem;
         }
     }
-    .info {
-        a {
+    .info__div {
+        .a_info_footer {
             color: $clr-white;
         }
-        i {
+        .i_info_footer {
             margin: 1rem 0;
             font-size: 1rem;
         
@@ -65,14 +65,14 @@ footer{
             }
         }
     }
-    .letter {
+    .letter__div {
         margin-top:2rem;
-        h3 {
+        .h3__footer {
             margin: .1rem 0;
             font-size:3rem;
             font-family:$ff-League_Spartan;
         }
-        p {
+        .p__footer {
             margin: .2rem 0;
             font-size: 1rem;
             font-family: $ff-Nunito;
@@ -101,10 +101,10 @@ footer{
             }
         }
     }
-    .text {
+    .text__div {
         width:100%;
 
-        h6 {
+        .h6__footer {
             font-size: .8rem;
             padding: .5rem 0;
             text-align: center;
