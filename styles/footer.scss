@@ -1,15 +1,10 @@
 
 // variables
 @import "variables";
-
+@import 'global';
 // footer styling
 
-*,
-*::before,
-*::after {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+footer{
     transition: all .2s linear;
 }
 
