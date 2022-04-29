@@ -141,10 +141,6 @@ li {
   transition: color 1s ease-in-out;
 }
 
-.global__nav__list .global__nav__item .global__nav__link.current__page {
-  color: #03a0b5;
-}
-
 .global__nav__list .global__nav__item .global__nav__link.current__page::after {
   content: "";
   background: -webkit-gradient(linear, left top, right top, from(#001412), color-stop(#00a896), to(#001412));
@@ -303,7 +299,8 @@ li {
             animation: theme__hover 5s infinite;
   }
   .global__nav__list .global__nav__item .global__nav__link.current__page {
-    color: #02f2be;
+    -webkit-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
   }
   .global__nav__list .global__nav__item .global__nav__link.current__page::after {
     bottom: -.1rem;
