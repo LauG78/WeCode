@@ -43,11 +43,6 @@ ul, li {
           align-items: center;
 }
 
-.brand__name {
-  color: #03a0b5;
-  margin-left: .5rem;
-}
-
 .brand__logo {
   width: 80px;
   max-height: 80px;
