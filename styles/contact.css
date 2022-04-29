@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+@font-face {
+  font-family: font-a;
+  src: url(../assets/fonts/fontAwesome/webfonts/fa-regular-400.ttf);
+}
+
+.contact-phone {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-email {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-fax {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-location {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-website {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-facebook {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+.contact-github {
+  font-family: font-a;
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: font-b;
+  src: url(../assets/fonts/fontAwesome/webfonts/fa-solid-900.ttf);
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: font-b;
+}
+
+@font-face {
+  font-family: font-c;
+  src: url(../assets/fonts/fontAwesome/webfonts/fa-v4compatibility.ttf);
+}
+
+.contact-us {
+  font-family: font-c;
+  font-size: 1.2rem;
+}
+
+.message-area {
+  background-image: url(../assets/images/WeCode/logo.svg);
+}
+/*# sourceMappingURL=contact.css.map */
