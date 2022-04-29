@@ -1,11 +1,6 @@
 
 // variables
-
-    $clr-black: #001412;
-    $clr-white: #fbfcee;
-    $clr-primary:#03a0b5;
-    $clr-secondary:#00a896;
-    $clr-highlight:#02f2be;
+@import "variables";
 
 // footer styling
 
@@ -18,11 +13,13 @@
     transition: all .2s linear;
 }
 
-#footer {
+#footer { 
     height: auto;
     width:100vw;
     background-color: $clr-black;
     color:$clr-white;
+    position:absolute;
+    bottom:0;
 
     .footer-container {
         display: flex;
@@ -53,6 +50,8 @@
         }
         .wecodeLogo {
             width:4rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
         }
     }
     .info {
@@ -69,13 +68,17 @@
         }
     }
     .letter {
+        margin-top:2rem;
         h3 {
             margin: .1rem 0;
-            font-size:1rem;
+            font-size:3rem;
+            font-family:$ff-League_Spartan;
         }
         p {
             margin: .2rem 0;
             font-size: 1rem;
+            font-family: $ff-Nunito;
+
         }
         input[type="email"]{
             outline: none;
