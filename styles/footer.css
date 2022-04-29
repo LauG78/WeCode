@@ -1,45 +1,37 @@
 /*----ADDING FONTS----*/
 @font-face {
-  font-family: 'LeagueSpartan';
+  font-family: "LeagueSpartan";
   src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'NunitoItalic';
+  font-family: "NunitoItalic";
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'RobotoCondensed';
+  font-family: "RobotoCondensed";
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
-
 /*----ADDING FONTS----*/
 @font-face {
-  font-family: 'LeagueSpartan';
+  font-family: "LeagueSpartan";
   src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'NunitoItalic';
+  font-family: "NunitoItalic";
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
-
 @font-face {
-  font-family: 'RobotoCondensed';
+  font-family: "RobotoCondensed";
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
-
 /*----------RESETS----------*/
 * {
   /*--Remove Margin From All Elements*/
@@ -47,8 +39,7 @@
   /*--Remove Padding From All Elements*/
   padding: 0%;
   /*--Change Box sizing from content-box to Border-box on all elements-*/
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
@@ -67,8 +58,7 @@ li {
 }
 
 footer {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 #footer {
@@ -79,84 +69,60 @@ footer {
   position: absolute;
   bottom: 0;
 }
-
 #footer .footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 #footer .footer-container i:hover {
   color: #02f2be;
   cursor: pointer;
 }
-
 #footer .logo-container, #footer .info, #footer .letter {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 1rem 3rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
 }
-
 #footer .logo-container {
   text-align: center;
 }
-
 #footer .logo-container .icons i {
   font-size: 1.3rem;
   margin: 1rem;
 }
-
 #footer .logo-container .wecodeLogo {
   width: 4rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
-
 #footer .info a {
   color: #fbfcee;
 }
-
 #footer .info i {
   margin: 1rem 0;
   font-size: 1rem;
 }
-
 #footer .info i::after {
   content: attr(data-text);
-  font-size: .8;
+  font-size: 0.8;
   margin: 0 1rem;
   font-family: nunito;
 }
-
 #footer .letter {
   margin-top: 2rem;
 }
-
 #footer .letter h3 {
-  margin: .1rem 0;
+  margin: 0.1rem 0;
   font-size: 3rem;
   font-family: "LeagueSpartan", "Arial";
 }
-
 #footer .letter p {
-  margin: .2rem 0;
+  margin: 0.2rem 0;
   font-size: 1rem;
   font-family: "Nunito", "Georgia";
 }
-
-#footer .letter input[type="email"] {
+#footer .letter input[type=email] {
   outline: none;
   border: none;
   padding: 0 1rem;
@@ -164,8 +130,7 @@ footer {
   background: rgba(255, 255, 255, 0.2);
   color: #fbfcee;
 }
-
-#footer .letter input[type="submit"] {
+#footer .letter input[type=submit] {
   outline: none;
   border: none;
   height: 1.5rem;
@@ -175,19 +140,17 @@ footer {
   margin: 1rem 0;
   cursor: pointer;
 }
-
-#footer .letter input[type="submit"]:hover {
+#footer .letter input[type=submit]:hover {
   background: #03a0b5;
 }
-
 #footer .text {
   width: 100%;
 }
-
 #footer .text h6 {
-  font-size: .8rem;
-  padding: .5rem 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
   text-align: center;
   color: grey;
 }
+
 /*# sourceMappingURL=footer.css.map */
