@@ -32,6 +32,7 @@ body {
                     .home__carousel__button{
                         opacity: 1;
                         margin: .25rem;
+                        //CLR WHITE IN RGBA
                         color:rgba(251, 252, 238, .5);
                         background: none;
                         border: none;
@@ -39,15 +40,16 @@ body {
                         border-radius: 1rem;           
                         cursor: pointer;
                         &:hover,&:focus{
+                            //CLR HIGHLIGHT IN RGBA
                             color: rgba(2, 242, 190, .8);
                         }
                     }
                 }
                 .home__carousel__button__container__prev{
-                    left: 1rem;
+                    left: 2rem;
                 }
                 .home__carousel__button__container__next{
-                    right: 1rem;
+                    right: 2rem;
                 }
                 .home__carousel__slideshow{
                     .home__carousel__slide{

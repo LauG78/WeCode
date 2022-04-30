@@ -137,11 +137,11 @@ body header .home__intro__container .home__carousel .home__carousel__button__con
 }
 
 body header .home__intro__container .home__carousel .home__carousel__button__container__prev {
-  left: 1rem;
+  left: 2rem;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__button__container__next {
-  right: 1rem;
+  right: 2rem;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide {
