@@ -42,6 +42,7 @@ body {
                         &:hover,&:focus{
                             //CLR HIGHLIGHT IN RGBA
                             color: rgba(2, 242, 190, .8);
+                            
                         }
                     }
                 }
@@ -56,8 +57,12 @@ body {
                         position: absolute;
                         inset: 0;
                         opacity: 0;
-                        &.active__slide{
+                        transition: 1s opacity ease-in-out;
+                        transition-delay: 1s;
+                        &.home__carousel__active__slide{
+                            z-index: 51;
                             opacity: 1;
+                            transition-delay: 0;
                         }
                         img{
                             display: block;

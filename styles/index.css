@@ -148,10 +148,17 @@ body header .home__intro__container .home__carousel .home__carousel__slideshow .
   position: absolute;
   inset: 0;
   opacity: 0;
+  -webkit-transition: 1s opacity ease-in-out;
+  transition: 1s opacity ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide.active__slide {
+body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide.home__carousel__active__slide {
+  z-index: 51;
   opacity: 1;
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide img {
