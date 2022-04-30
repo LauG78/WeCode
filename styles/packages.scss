@@ -1,0 +1,106 @@
+// imports/variables
+@import 'variables';
+@import 'global';
+
+// media Quaries 
+
+@media screen and (max-width:1200px) {
+    .card__one {
+        width: 20%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .card__one {
+        width: 20%;
+    }
+}
+@media screen and (max-width:950px) {
+    .card__one {
+        width: 30%;
+    }               
+}
+@media screen and (max-width:868px) {
+    .card__one {
+        width: 50%;
+    }               
+}
+@media screen and (max-width:568px) {
+    .card__one {
+        width: 100%;
+    }               
+}
+
+// styling packages 
+
+body {
+    background-color: $clr-white;
+    height: 100vh;
+
+    h1{
+        font-family:$ff-League_Spartan;
+        text-align:center;
+        margin:2rem;
+        font-size: 3rem;
+    }
+
+    .box__cards {
+        display:flex;
+        justify-content: space-around;
+        flex-flow: wrap;
+        padding: 2rem;
+
+        .card__one {
+            width:100%;
+            // border:1px solid $clr-black;
+            background:$clr-white;
+            border-radius: 20px;
+            box-shadow: 0 0 5px $clr-highlight;
+            margin: .4rem;
+
+                .card__container {
+                    position: relative;
+                    i {
+                        padding:3rem;
+                        font-size:5rem;
+                        text-align:center;
+                        display:block;
+                        color: $clr-highlight;
+                    }
+                }
+                .card__info {
+                    padding: 1rem 2rem;
+                    h3 {
+                        text-shadow: 0 0 1px $clr-black;
+                        padding-top: 3rem;
+                        font-size:2rem;
+                        color: $clr-primary;
+                        font-family: $ff-League_Spartan;
+                        margin: 1rem 0 2rem 0;
+                    }
+                    p {
+                        color: $clr-black;
+                        font-family: $ff-Nunito;
+                        line-height: 2rem;
+                        font-size: .8rem;
+                        padding-bottom: 3rem;
+                    }
+                    .card__button {
+                        width: 15rem;
+                        padding: 1rem;
+                        border-radius: 20px;
+                        background:$clr-white;
+                        cursor: pointer;
+                        transition: 1s;
+                    }
+                    .card__button:hover{
+                        background:$clr-highlight;
+                        border:2px solid $clr-highlight;
+                    }
+                }
+                .number2 {
+                    border: 5px solid green;
+                }
+            }
+
+    }
+}
