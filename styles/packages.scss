@@ -96,3 +96,49 @@
                 }
             }
     }
+////////////////////// styling FAQ section ////////////////////////
+.the_faq_section{
+    margin:2rem;
+.faq__title{
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    text-decoration: underline 4px;
+}
+.question__container{
+    max-width: 800px;
+    margin: 0 auto;
+    .the__question{
+        border-bottom: 1px solid #fff;
+        button{
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 15px;
+            border:none;
+            border-bottom: 1px solid black;
+            outline: none;
+            font-size: 22px;
+            color: $clr-black;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        p{
+            font-size: 22px;
+            max-height: 0;
+            opacity: 0;
+            line-height: 1.5;
+            overflow: hidden;
+            transition: all 0.6s ease;
+        }
+        ////////// show after eventListener click ////////
+        p.show{
+            max-height: 200px; 
+            opacity: 1;
+            padding:0px 15px 30px 15px;
+        }
+    }
+}
+}
