@@ -14,6 +14,7 @@
 - GLOBAL CSS BIG CHANGES
   - Global is now a partial! - not having it as a partial resulted in import errors after compilation by SASS
     - import it in your sass file by using ```{@import 'global';}```
+    **^^^^^^^^^^Very important everyone does this in their SASS file I didnt do it for you to prevent merge conflicts^^^^^^^^^^**
     - Global turns the body of your page into a flexbox! (so some elements might inherit this)
       - Remember you can easely remove inherited properties with property:unset
        - for example: ```{justify-content: unset;}``` will remove whatever it was set to
@@ -35,3 +36,15 @@
   - This will ensure your content will not be overlapped by the footer
   - This will ensure that if your page hasn't got enough content to fill a full screen the footer will be nicely visible
   - This ensures that if your page has a lot of content, the footer will put itself nicely beneith it
+
+  ### HELP I HAVE MERGE CONFLICTS ? ###
+  - Please reach out, I'm happy to guide you trough them
+   - Man i didnt want this extra work !!!
+     - I made these changes so you'll have an easier time building your page
+  - I really can't have these merge conflicts in my brain right now
+   - As I am responsible for these changes feel free to reach out and i will merge them into your branch for you and save you the headache
+
+   - I want to do it myself I don't need help, but do you have some tips ?
+     - Open up the page you have merge conflicts with on github
+     - Take a look at the code over there and try to match it in your branch
+       - This has helped me a lot!
