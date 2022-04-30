@@ -38,7 +38,7 @@ a:hover{
 }
 .global__nav__list {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -106,10 +106,12 @@ a:hover{
     display: block;
     height: 8vh;
     width: 3rem;
-    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    right: 1rem;
+    top: .25vh;
     & .burger__slice {
         z-index: 101;
         min-height: .2rem;
