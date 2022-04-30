@@ -21,6 +21,11 @@ body{
     flex-direction: column;
     justify-content: flex-start;
 }
+nav{
+    .display__none{
+        display: none;
+    }
+}
 
 footer{
     /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/

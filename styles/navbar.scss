@@ -38,7 +38,7 @@ a:hover{
 }
 .global__nav__list {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -65,8 +65,11 @@ a:hover{
             color: $clr-white;
             position: relative;
             transition: color 1s ease-in-out;
+            //Webkit code to prevent screenflickerbug on webkit browsers
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateX(0);
             &.current__page {
-
+                color: $clr-primary;
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -106,10 +109,12 @@ a:hover{
     display: block;
     height: 8vh;
     width: 3rem;
-    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 1rem;
+    top: .25vh;
     & .burger__slice {
         z-index: 101;
         min-height: .2rem;
@@ -191,6 +196,7 @@ a:hover{
                 }
                 &.current__page {
                     transform: translateY(-.1rem);
+                    color: $clr-white;
                     &::after {
                         bottom: -.1rem;
                     }
