@@ -134,7 +134,7 @@ a:hover {
 
 .global__nav__list {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -224,7 +224,6 @@ a:hover {
   display: block;
   height: 8vh;
   width: 3rem;
-  margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,6 +233,9 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  right: 1rem;
+  top: .25vh;
 }
 
 .burger__container .burger__slice {
