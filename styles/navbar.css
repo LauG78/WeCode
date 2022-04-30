@@ -55,6 +55,26 @@ html, body {
   font-family: "Nunito", "Georgia";
 }
 
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
 a {
   /*--Remove underlining from all links-*/
   text-decoration: none;
@@ -66,8 +86,24 @@ li {
   list-style-type: none;
 }
 
+/*---GET RID OF BOOTSTRAP 5 properties interfering with custom navbar--*/
+nav {
+  line-height: 1.1;
+}
+
+nav ul {
+  margin-bottom: unset;
+}
+
+a:hover {
+  text-decoration: unset;
+}
+
+/*---END OF BOOTSTRAP RESET BLOCK--*/
 .global__nav {
   z-index: 101;
+  min-height: 5vh;
+  height: 8vh;
   max-height: 10vh;
   padding: 0 1rem;
   min-width: 100vw;
