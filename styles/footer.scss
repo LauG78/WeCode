@@ -1,26 +1,24 @@
 
 // variables
-@import "variables";
+@import 'variables';
 @import 'global';
 // footer styling
 
-footer{
-    transition: all .2s linear;
-}
-
-#footer__section { 
-    height: auto;
+footer {
+    position: relative;
+    bottom: 0px;
     width:100vw;
+    min-height: 5vh;
+    height: auto;
     background-color: $clr-black;
     color:$clr-white;
-    position:absolute;
-    bottom:0;
-
-    .footer__container {
+    .footer__content {
         display: flex;
         justify-content: space-around;
         flex-wrap:wrap;
-
+        background-color: $clr-black;
+        bottom: 0px;
+        transition: all .2s linear;
         i:hover {
             color: $clr-highlight;
             cursor: pointer;
@@ -32,10 +30,8 @@ footer{
         margin: 1rem 3rem;
         flex-flow: column wrap;
     }
-
     .logo__container {
         text-align: center;
-
         .icons__div {
 
             .i__footer {
@@ -50,6 +46,7 @@ footer{
         }
     }
     .info__div {
+        margin-top:2.5rem;
         .a_info_footer {
             color: $clr-white;
         }
@@ -71,6 +68,7 @@ footer{
             margin: .1rem 0;
             font-size:3rem;
             font-family:$ff-League_Spartan;
+            color: $clr-white;
         }
         .p__footer {
             margin: .2rem 0;
@@ -81,6 +79,7 @@ footer{
         input[type="email"]{
             outline: none;
             border: none;
+            border-radius: .5rem;
             padding: 0 1rem;
             height: 2rem;
             background: rgba(255,255,255,.2);
@@ -89,6 +88,7 @@ footer{
         input[type="submit"]{
             outline: none;
             border: none;
+            border-radius:.5rem;
             height:1.5rem;
             width: 4rem;
             background: $clr-highlight;
@@ -101,9 +101,9 @@ footer{
             }
         }
     }
-    .text__div {
+    .copyright__container {
         width:100%;
-
+        background-color: $clr-black;
         .h6__footer {
             font-size: .8rem;
             padding: .5rem 0;
@@ -111,6 +111,4 @@ footer{
             color: grey;
         }
     }
-
-
 }

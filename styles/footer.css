@@ -1,37 +1,45 @@
 /*----ADDING FONTS----*/
 @font-face {
-  font-family: "LeagueSpartan";
+  font-family: 'LeagueSpartan';
   src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "NunitoItalic";
+  font-family: 'NunitoItalic';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: 'RobotoCondensed';
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
+
 /*----ADDING FONTS----*/
 @font-face {
-  font-family: "LeagueSpartan";
+  font-family: 'LeagueSpartan';
   src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "NunitoItalic";
+  font-family: 'NunitoItalic';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: 'RobotoCondensed';
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
+
 /*----------RESETS----------*/
 * {
   /*--Remove Margin From All Elements*/
@@ -39,11 +47,32 @@
   /*--Remove Padding From All Elements*/
   padding: 0%;
   /*--Change Box sizing from content-box to Border-box on all elements-*/
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
   font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
 }
 
 a {
@@ -58,81 +87,114 @@ li {
 }
 
 footer {
-  transition: all 0.2s linear;
-}
-
-#footer__section {
-  height: auto;
+  position: relative;
+  bottom: 0px;
   width: 100vw;
+  min-height: 5vh;
+  height: auto;
   background-color: #001412;
   color: #fbfcee;
-  position: absolute;
-  bottom: 0;
 }
-#footer__section .footer__container {
+
+footer .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #001412;
+  bottom: 0px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
-#footer__section .footer__container i:hover {
+
+footer .footer__content i:hover {
   color: #02f2be;
   cursor: pointer;
 }
-#footer__section .logo__container, #footer__section .info__div, #footer__section .letter__div {
+
+footer .logo__container, footer .info__div, footer .letter__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1rem 3rem;
-  flex-flow: column wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
 }
-#footer__section .logo__container {
+
+footer .logo__container {
   text-align: center;
 }
-#footer__section .logo__container .icons__div .i__footer {
+
+footer .logo__container .icons__div .i__footer {
   font-size: 1.3rem;
   margin: 1rem;
 }
-#footer__section .logo__container .wecodeLogo {
+
+footer .logo__container .wecodeLogo {
   width: 4rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
-#footer__section .info__div .a_info_footer {
+
+footer .info__div {
+  margin-top: 2.5rem;
+}
+
+footer .info__div .a_info_footer {
   color: #fbfcee;
 }
-#footer__section .info__div .i_info_footer {
+
+footer .info__div .i_info_footer {
   margin: 1rem 0;
   font-size: 1rem;
 }
-#footer__section .info__div .i_info_footer::after {
+
+footer .info__div .i_info_footer::after {
   content: attr(data-text);
-  font-size: 0.8;
+  font-size: .8;
   margin: 0 1rem;
   font-family: nunito;
 }
-#footer__section .letter__div {
+
+footer .letter__div {
   margin-top: 2rem;
 }
-#footer__section .letter__div .h3__footer {
-  margin: 0.1rem 0;
+
+footer .letter__div .h3__footer {
+  margin: .1rem 0;
   font-size: 3rem;
   font-family: "LeagueSpartan", "Arial";
+  color: #fbfcee;
 }
-#footer__section .letter__div .p__footer {
-  margin: 0.2rem 0;
+
+footer .letter__div .p__footer {
+  margin: .2rem 0;
   font-size: 1rem;
   font-family: "Nunito", "Georgia";
 }
-#footer__section .letter__div input[type=email] {
+
+footer .letter__div input[type="email"] {
   outline: none;
   border: none;
+  border-radius: .5rem;
   padding: 0 1rem;
   height: 2rem;
   background: rgba(255, 255, 255, 0.2);
   color: #fbfcee;
 }
-#footer__section .letter__div input[type=submit] {
+
+footer .letter__div input[type="submit"] {
   outline: none;
   border: none;
+  border-radius: .5rem;
   height: 1.5rem;
   width: 4rem;
   background: #02f2be;
@@ -140,17 +202,20 @@ footer {
   margin: 1rem 0;
   cursor: pointer;
 }
-#footer__section .letter__div input[type=submit]:hover {
+
+footer .letter__div input[type="submit"]:hover {
   background: #03a0b5;
 }
-#footer__section .text__div {
+
+footer .copyright__container {
   width: 100%;
+  background-color: #001412;
 }
-#footer__section .text__div .h6__footer {
-  font-size: 0.8rem;
-  padding: 0.5rem 0;
+
+footer .copyright__container .h6__footer {
+  font-size: .8rem;
+  padding: .5rem 0;
   text-align: center;
   color: grey;
 }
-
 /*# sourceMappingURL=footer.css.map */

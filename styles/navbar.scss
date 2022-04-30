@@ -1,0 +1,228 @@
+//Import Global Variables
+@import 'variables';
+@import "global";
+@import 'mixins';
+/*---GET RID OF BOOTSTRAP 5 properties interfering with custom navbar--*/
+nav{
+    line-height: 1.1;
+}
+nav ul{
+    margin-bottom: unset;
+}
+a:hover{
+    text-decoration: unset;
+}
+/*---END OF BOOTSTRAP RESET BLOCK--*/
+.global__nav {
+    z-index: 101;
+    min-height: 5vh;
+    height: 8vh;
+    max-height: 10vh;
+    padding: 0 1rem;
+    min-width: 100vw;
+    max-width: 100vw;
+    background-color: $clr-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+}
+.brand__logo {
+    z-index: 102;
+    max-height: 10vh;
+    min-height: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    padding: .5rem;
+}
+.global__nav__list {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $clr-black;
+    opacity: .9;
+    top: -100vh;
+    transition: top .8s ease-in-out;
+    & .global__nav__item {
+        font-family: $ff-Roboto_Condensed;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        & .global__nav__link {
+            display: block;
+            padding: 1rem;
+            color: $clr-white;
+            position: relative;
+            transition: color 1s ease-in-out;
+            //Webkit code to prevent screenflickerbug on webkit browsers
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateX(0);
+            &.current__page {
+                color: $clr-primary;
+                &::after {
+                    content: "";
+                    background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
+                    position: absolute;
+                    bottom: .75rem;
+                    left: 25%;
+                    width: 50%;
+                    height: .125rem;
+                    border-radius: 10%;
+                    transform: scale(1);
+                }
+            }
+            &::after {
+                content: "";
+                background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
+                position: absolute;
+                bottom: .75rem;
+                left: 25%;
+                width: 50%;
+                height: .1rem;
+                border-radius: 10%;
+                transform: scale(0);
+                transition: transform 0.25s ease-in-out;
+            }
+            &:hover {
+                color: $clr-highlight;
+                cursor: pointer;
+                &::after {
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+.burger__container {
+    z-index: 102;
+    display: block;
+    height: 8vh;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 1rem;
+    top: .25vh;
+    & .burger__slice {
+        z-index: 101;
+        min-height: .2rem;
+        min-width: 2rem;
+        border-radius: .25rem;
+        background-color: $clr-primary;
+        transition: all 1s ease-in-out;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            min-height: .2rem;
+            min-width: 2rem;
+            border-radius: .25rem;
+            transition: all .8s ease-in-out;
+        }
+        &::before {
+            background-color: $clr-secondary;
+            transform: translateY(-.6rem);
+        }
+        &::after {
+            background-color: $clr-primary;
+            transform: translateY(.6rem);
+        }
+    }
+}
+.global__nav__list.active {
+    top: 0;
+}
+.burger__container.active {
+    & .burger__slice {
+        transform: scale(2);
+        background: transparent;
+        &::before {
+            transform: rotate(135deg) scale(.6);
+            background-color: $clr-highlight;
+        }
+        &::after {
+            transform: rotate(45deg) scale(.6);
+            background-color: $clr-secondary;
+        }
+    }
+}
+//RESPONSIVENESS - MEDIAQUERIES
+@include media-medium {
+    .burger__container {
+        all: unset;
+        display: none;
+    }
+    .brand__logo {
+        min-height: 5vh;
+        max-height: 8vh;
+        align-self: flex-end;
+    }
+.global__nav{
+    padding: .5rem 1rem;
+}
+    .global__nav__list {
+        //RESETS
+        position: unset;
+        height: unset;
+        min-height: unset;
+        width: unset;
+        min-width: unset;
+        top: unset;
+        left: unset;
+        //STYLING
+        flex-direction: row;
+        justify-content: flex-end;
+        align-self: flex-end;
+        margin-right: 1rem;
+        & .global__nav__item {
+            font-size: 1.2rem;
+            & .global__nav__link {
+                padding: 0 1rem;
+                position: relative;
+                &:hover{
+                    animation: theme__hover 5s infinite;
+                }
+                &.current__page {
+                    transform: translateY(-.1rem);
+                    color: $clr-white;
+                    &::after {
+                        bottom: -.1rem;
+                    }
+                }
+                &::after {
+                    bottom: -.1rem;
+                }
+            }
+        }
+    }
+}
+@include media-extra-large {
+    .global__nav__list {
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+//animations
+@keyframes theme__hover{
+    0%{color: $clr-highlight;}
+    15%{transform: translateY(-.2rem);}
+    30%{color: $clr-primary;}
+    45%{color: $clr-highlight;}
+    60%{transform: translateY(.1rem);}
+    75%{color: $clr-secondary;}
+    90%{color: $clr-highlight;}
+    100%{transform: translateY(.1rem);}
+}
