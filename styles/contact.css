@@ -66,31 +66,120 @@ li {
   list-style-type: none;
 }
 
-body {
-  background-color: #fbfcee;
-}
-
 .secondary__color {
   color: #00a896;
 }
 
-.contact__info {
-  font-size: 1rem;
+body {
+  text-align: center;
+  background-color: #fbfcee;
+}
+
+.head {
+  background-color: #001412;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #02f2be;
+}
+
+i:hover, strong:hover {
   color: #001412;
 }
 
-.header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+.cname, .cemail {
+  color: #001412;
+  font-size: 1.5rem;
+  font-family: "LeagueSpartan", "Arial";
+  padding: 0.05rem;
+  margin: 0rem;
 }
 
-.contact-us {
+input[type=text] {
+  background-color: #02f2be;
+  color: #001412;
+  font-family: "Nunito", "Georgia";
+  width: 30%;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 0.05rem;
+  margin: 0rem;
+  border: 0.02rem #001412;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "LeagueSpartan", "Arial";
+  color: #001412;
+}
+
+textarea {
+  background-color: #02f2be;
+  color: #001412;
+  height: 12rem;
+  width: 30rem;
   font-size: 1.2rem;
+  font-family: "NunitoItalic", "Georgia Italic";
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
-.message-area {
-  background-image: url(../assets/images/WeCode/logo.svg);
+.button {
+  color: #00a896;
+}
+
+img {
+  height: 8rem;
+  width: 8rem;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  75% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  50% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  75% {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.photo {
+  -webkit-animation: spin 5s linear infinite;
+          animation: spin 5s linear infinite;
 }
 /*# sourceMappingURL=contact.css.map */
