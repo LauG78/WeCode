@@ -1,44 +1,40 @@
 
 // variables
-@import "variables";
+@import 'variables';
 @import 'global';
 // footer styling
 
-footer{
-    transition: all .2s linear;
-}
-
-#footer { 
-    height: auto;
+footer {
+    position: relative;
+    bottom: 0px;
     width:100vw;
+    min-height: 5vh;
+    height: auto;
     background-color: $clr-black;
     color:$clr-white;
-    position:absolute;
-    bottom:0;
-
-    .footer-container {
+    .footer__content {
         display: flex;
         justify-content: space-around;
         flex-wrap:wrap;
-
+        background-color: $clr-black;
+        bottom: 0px;
+        transition: all .2s linear;
         i:hover {
             color: $clr-highlight;
             cursor: pointer;
         }
     }
-    .logo-container, .info, .letter {
+    .logo__container, .info__div, .letter__div {
         display: flex;
         justify-content: center;
         margin: 1rem 3rem;
         flex-flow: column wrap;
     }
-
-    .logo-container {
+    .logo__container {
         text-align: center;
+        .icons__div {
 
-        .icons {
-
-            i {
+            .i__footer {
                 font-size: 1.3rem;
                 margin:1rem;
             }
@@ -49,30 +45,31 @@ footer{
             margin-top: 2rem;
         }
     }
-    .info {
-        a {
+    .info__div {
+        margin-top:2.5rem;
+        .a_info_footer {
             color: $clr-white;
         }
-        i {
+        .i_info_footer {
             margin: 1rem 0;
             font-size: 1rem;
         
             &::after {
                 content: attr(data-text);
-                font-size: .8;
+                font-size: .8rem;
                 margin:0 1rem ;
                 font-family: nunito;
             }
         }
     }
-    .letter {
+    .letter__div {
         margin-top:2rem;
-        h3 {
+        .h3__footer {
             margin: .1rem 0;
             font-size:3rem;
             font-family:$ff-League_Spartan;
         }
-        p {
+        .p__footer {
             margin: .2rem 0;
             font-size: 1rem;
             font-family: $ff-Nunito;
@@ -81,6 +78,7 @@ footer{
         input[type="email"]{
             outline: none;
             border: none;
+            border-radius: .5rem;
             padding: 0 1rem;
             height: 2rem;
             background: rgba(255,255,255,.2);
@@ -89,6 +87,7 @@ footer{
         input[type="submit"]{
             outline: none;
             border: none;
+            border-radius:.5rem;
             height:1.5rem;
             width: 4rem;
             background: $clr-highlight;
@@ -101,16 +100,14 @@ footer{
             }
         }
     }
-    .text {
+    .copyright__container {
         width:100%;
-
-        h6 {
+        background-color: $clr-black;
+        .h6__footer {
             font-size: .8rem;
             padding: .5rem 0;
             text-align: center;
             color: grey;
         }
     }
-
-
 }

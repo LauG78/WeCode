@@ -23,46 +23,74 @@
 
     </header>
 
-    <nav>
-
+    <!----------NAV CODE STARTS HERE---------->
+    <nav class="global__nav" alt="This is the navigation menu"
+        description="Here you'll find links to different parts of our website">
+        <!--BRAND-->
+        <a href="../index.html" alt="Link to the home page"
+            description="This is the logo, clicking it will bring you to our homepage">
+            <img src="../assets/images/WeCode logo-seethrough.svg" alt="WeCode Logo" class="brand__logo">
+        </a>
+        <!--NAVIGATION LINKS TO OTHER PAGES-->
+        <ul class="global__nav__list">
+            <li class="global__nav__item"><a href="../pages/packages.html" class="global__nav__link"
+                    alt="Link to the page containing our packages"
+                    description="If you click here you'll be redirected to our product page">Our Packages</a>
+            </li>
+            <li class="global__nav__item"><a href="../pages/team.html" class="global__nav__link"
+                    alt="Link to the team page"
+                    description="if you click here you will be redirected to the page about our team">The Team</a></li>
+            <li class="global__nav__item"><a href="../pages/contact.html" class="global__nav__link current__page"
+                    alt="Link to the contact page"
+                    description="if you click here you will be redirected to our page with contact details">Contact
+                    Us</a></li>
+        </ul>
+        <!--Burger for mobile navigation trigger-->
+        <div class="burger__container" alt="Click here to toggle the navigation"
+            description="This is a button that toggles the navigation menu">
+            <span class="burger__slice" alt="burger slice"></span>
+        </div>
     </nav>
+    <!----------NAV CODEBLOCK ENDS HERE---------->
 
     <main>
 
     </main>
 
-    <footer>
-        <section id="footer">
-            <div class="footer-container">
-                <div class="logo-container">
-                    <div class="logo">
-                        <img class="wecodeLogo" src="../assets/images/WeCode logo-seethrough.svg" alt="Wecode logo">
-                    </div>
-                    <div class="icons">
-                        <i class="fa-brands fa-facebook-f" title="add us on facebook"></i>
-                        <i class="fa-brands fa-instagram" title="follow us on Instagram"></i>
-                        <i class="fa-brands fa-youtube" title="subscribe on our youtube chanel"></i>
-                        <i class="fa-brands fa-github" title="folow us on github"></i>
-                    </div>
+    <footer id="footer">
+        <div class="footer__content">
+            <div class="logo__container">
+                <div class="logo__div">
+                    <img class="wecodeLogo" src="../assets/images/WeCode logo-seethrough.svg" alt="Wecode logo">
                 </div>
-                <div class="info">
-                    <a href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571"><i class="fa-solid fa-location-dot" data-text=" Antwerp"></i></a>
-                    <a href="tel:0032485544332"> <i class="fa-solid fa-phone" data-text="+32 485 54 53 32"></i></a>
-                    <a href="mailto:example.wecode.com"><i class="fa-solid fa-envelope" data-text="example@Wecode.com"></i></a>
-                </div>
-                <div class="letter">
-                    <h3>newsletter</h3>
-                    <p>lorem discounts when you sign in ipsum</p>
-                    <input type="email" placeholder="email">
-                    <input type="submit" value="submit">
+                <div class="icons__div">
+                    <i class="fa-brands fa-facebook-f i__footer" title="add us on facebook"></i>
+                    <i class="fa-brands fa-instagram i__footer" title="follow us on Instagram"></i>
+                    <i class="fa-brands fa-youtube i__footer" title="subscribe on our youtube chanel"></i>
+                    <i class="fa-brands fa-github i__footer" title="folow us on github"></i>
                 </div>
             </div>
-            <div class="text">
-                <h6>&copy;WeCode all rights reserved</h6>
+            <div class="info__div">
+                <a class="a_info_footer"
+                    href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571"><i
+                        class="fa-solid fa-location-dot i_info_footer" data-text=" Antwerp"></i></a>
+                <a class="a_info_footer" href="tel:0032485544332"> <i class="fa-solid fa-phone i_info_footer"
+                        data-text="+32 485 54 53 32"></i></a>
+                <a class="a_info_footer" href="mailto:example.wecode.com"><i
+                        class="fa-solid fa-envelope i_info_footer" data-text="example@Wecode.com"></i></a>
             </div>
-        </section>
-    </footer>
-
+            <div class="letter__div">
+                <h3 class="h3__footer">newsletter</h3>
+                <p class="p__footer">lorem discounts when you sign in ipsum</p>
+                <input type="email" placeholder="email">
+                <input type="submit" value="submit">
+            </div>
+        </div>
+        <div class="copyright__container">
+            <h6 class="h6__footer">&copy;2022 WeCode all rights reserved</h6>
+        </div>
+</footer>
+    <script src="../scripts/navbar.js"></script>
 </body>
 
 </html>
