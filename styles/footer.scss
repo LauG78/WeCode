@@ -1,35 +1,28 @@
 
 // variables
-@import "variables";
+@import 'variables';
 @import 'global';
 // footer styling
 
-footer{
-    transition: all .2s linear;
+footer {
     position: relative;
     bottom: 0px;
-    min-height: 5vh;
-    height: 5vh;
-    max-height: 10vh;
-}
-#footer__section { 
-    height: auto;
     width:100vw;
+    min-height: 5vh;
+    height: auto;
     background-color: $clr-black;
     color:$clr-white;
-    position:absolute;
-    bottom:0;
-
-    .footer__container {
+    .footer__content {
         display: flex;
         justify-content: space-around;
         flex-wrap:wrap;
-
+        background-color: $clr-black;
+        bottom: 0px;
+        transition: all .2s linear;
         i:hover {
             color: $clr-highlight;
             cursor: pointer;
         }
-
     }
     .logo__container, .info__div, .letter__div {
         display: flex;
@@ -37,10 +30,8 @@ footer{
         margin: 1rem 3rem;
         flex-flow: column wrap;
     }
-
     .logo__container {
         text-align: center;
-
         .icons__div {
 
             .i__footer {
@@ -109,9 +100,9 @@ footer{
             }
         }
     }
-    .Text__div {
+    .copyright__container {
         width:100%;
-
+        background-color: $clr-black;
         .h6__footer {
             font-size: .8rem;
             padding: .5rem 0;
@@ -119,6 +110,4 @@ footer{
             color: grey;
         }
     }
-
-
 }

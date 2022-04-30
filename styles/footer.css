@@ -55,6 +55,26 @@ html, body {
   font-family: "Nunito", "Georgia";
 }
 
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
 a {
   /*--Remove underlining from all links-*/
   text-decoration: none;
@@ -67,25 +87,16 @@ li {
 }
 
 footer {
-  -webkit-transition: all .2s linear;
-  transition: all .2s linear;
   position: relative;
   bottom: 0px;
-  min-height: 5vh;
-  height: 5vh;
-  max-height: 10vh;
-}
-
-#footer__section {
-  height: auto;
   width: 100vw;
+  min-height: 5vh;
+  height: auto;
   background-color: #001412;
   color: #fbfcee;
-  position: absolute;
-  bottom: 0;
 }
 
-#footer__section .footer__container {
+footer .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,14 +104,18 @@ footer {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #001412;
+  bottom: 0px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
-#footer__section .footer__container i:hover {
+footer .footer__content i:hover {
   color: #02f2be;
   cursor: pointer;
 }
 
-#footer__section .logo__container, #footer__section .info__div, #footer__section .letter__div {
+footer .logo__container, footer .info__div, footer .letter__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,58 +129,58 @@ footer {
           flex-flow: column wrap;
 }
 
-#footer__section .logo__container {
+footer .logo__container {
   text-align: center;
 }
 
-#footer__section .logo__container .icons__div .i__footer {
+footer .logo__container .icons__div .i__footer {
   font-size: 1.3rem;
   margin: 1rem;
 }
 
-#footer__section .logo__container .wecodeLogo {
+footer .logo__container .wecodeLogo {
   width: 4rem;
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
 
-#footer__section .info__div {
+footer .info__div {
   margin-top: 2.5rem;
 }
 
-#footer__section .info__div .a_info_footer {
+footer .info__div .a_info_footer {
   color: #fbfcee;
 }
 
-#footer__section .info__div .i_info_footer {
+footer .info__div .i_info_footer {
   margin: 1rem 0;
   font-size: 1rem;
 }
 
-#footer__section .info__div .i_info_footer::after {
+footer .info__div .i_info_footer::after {
   content: attr(data-text);
   font-size: .8;
   margin: 0 1rem;
   font-family: nunito;
 }
 
-#footer__section .letter__div {
+footer .letter__div {
   margin-top: 2rem;
 }
 
-#footer__section .letter__div .h3__footer {
+footer .letter__div .h3__footer {
   margin: .1rem 0;
   font-size: 3rem;
   font-family: "LeagueSpartan", "Arial";
 }
 
-#footer__section .letter__div .p__footer {
+footer .letter__div .p__footer {
   margin: .2rem 0;
   font-size: 1rem;
   font-family: "Nunito", "Georgia";
 }
 
-#footer__section .letter__div input[type="email"] {
+footer .letter__div input[type="email"] {
   outline: none;
   border: none;
   border-radius: .5rem;
@@ -175,7 +190,7 @@ footer {
   color: #fbfcee;
 }
 
-#footer__section .letter__div input[type="submit"] {
+footer .letter__div input[type="submit"] {
   outline: none;
   border: none;
   border-radius: .5rem;
@@ -187,15 +202,16 @@ footer {
   cursor: pointer;
 }
 
-#footer__section .letter__div input[type="submit"]:hover {
+footer .letter__div input[type="submit"]:hover {
   background: #03a0b5;
 }
 
-#footer__section .Text__div {
+footer .copyright__container {
   width: 100%;
+  background-color: #001412;
 }
 
-#footer__section .Text__div .h6__footer {
+footer .copyright__container .h6__footer {
   font-size: .8rem;
   padding: .5rem 0;
   text-align: center;
