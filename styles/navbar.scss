@@ -2,8 +2,21 @@
 @import 'variables';
 @import "global";
 @import 'mixins';
+/*---GET RID OF BOOTSTRAP 5 properties interfering with custom navbar--*/
+nav{
+    line-height: 1.1;
+}
+nav ul{
+    margin-bottom: unset;
+}
+a:hover{
+    text-decoration: unset;
+}
+/*---END OF BOOTSTRAP RESET BLOCK--*/
 .global__nav {
     z-index: 101;
+    min-height: 5vh;
+    height: 8vh;
     max-height: 10vh;
     padding: 0 1rem;
     min-width: 100vw;
