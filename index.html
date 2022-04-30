@@ -17,15 +17,38 @@
 </head>
 
 <body>
-
+    <!--HEADER CODE STARTS HERE-->
     <header>
-        <h1>HEADER START</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatum qui, rerum suscipit laboriosam cum.
-            Natus voluptas architecto rerum debitis minus atque mollitia provident cumque veniam consequatur numquam hic
-            a quo saepe repudiandae ab odio temporibus vitae soluta, tempore magnam. Vel non, aut dicta saepe modi ipsum
-            animi incidunt ipsa?</p>
-            <h1>HEADER FINISHED</h1>
+        <div class="home__intro__container" aria-label="Picture slideshow">
+            <div class="home__carousel">
+                <div class="home__carousel__button__container__prev">
+                    <button class="home__carousel__button carousel__button__prev">&#8592;</button>
+                </div>
+                <div class="home__carousel__button__container__next">
+                    <button class="home__carousel__button carousel__button__next">&#8594;</button>
+                </div>
+                <ul class="home__carousel__slideshow">
+                    <li class="home__carousel__slide active__slide">
+                        <img src="./assets/images/home-page/headerCarousel/codeblock.jpg"
+                            alt="an image of a computer screen with some coloured code on it">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/night.jpg"
+                            alt="a dark nighttime image showing a laptop and some coloured lights with one bright desk light brightening the room">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/SEO.jpg"
+                            alt="an image showing three scrabble tiles that spell S E O">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/sketchbook.jpg"
+                            alt="a n image showing a smartphone with a textbook next to it, the textbook shows a sketch of a website">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+    <!--HEADER CODE ENDS HERE-->
     <!----------NAV CODE STARTS HERE---------->
     <nav class="global__nav" alt="This is the navigation menu"
         description="Here you'll find links to different parts of our website">
@@ -61,7 +84,7 @@
             Natus voluptas architecto rerum debitis minus atque mollitia provident cumque veniam consequatur numquam hic
             a quo saepe repudiandae ab odio temporibus vitae soluta, tempore magnam. Vel non, aut dicta saepe modi ipsum
             animi incidunt ipsa?</p>
-            <h1>MAIN FINISHED</h1>
+        <h1>MAIN FINISHED</h1>
     </main>
 
     <footer id="footer">
@@ -98,6 +121,7 @@
         </div>
     </footer>
     <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/homePageCarousel.js"></script>
 </body>
 
 </html>
