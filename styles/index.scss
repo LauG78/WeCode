@@ -1,13 +1,75 @@
 @import "variables";
-/*--MYCODE--*/
-//Class to make navbar dissapear as header is on top of it
-.display__none {
-    display: none;
-}
+@import 'global';
+/*--RESETS--*/
+//clr-black rgba(0, 20, 18, 1)
+//clr-white rgba(251, 252, 238, 1)
+//clr-primary rgba(3, 160, 181, 1)
+//clr-secondary rgba(0, 168, 150, 1)
+//clr-highlight rgba(2, 242, 190, 1)
+body {
+    header {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+        z-index: 50;
+        .home__intro__container{
+            .home__carousel{
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                .home__carousel__button__container__prev,
+                .home__carousel__button__container__next{
+                    z-index: 60;
+                    position: absolute;
+                    top: 50vh;
+                    transform: translateY(-50%);
+                    //CLR BLACK IN RBGA
+                    background-color: rgba(3, 160, 181, .1);
+                    border-radius: .25rem;
+                    overflow: hidden;
+                    border: none;
+                    padding: 0rem .5rem;
+                    .home__carousel__button{
+                        opacity: 1;
+                        margin: .25rem;
+                        color:rgba(251, 252, 238, .5);
+                        background: none;
+                        border: none;
+                        font-size: 4rem;
+                        border-radius: 1rem;           
+                        cursor: pointer;
+                        &:hover,&:focus{
+                            color: rgba(2, 242, 190, .8);
+                        }
+                    }
+                }
+                .home__carousel__button__container__prev{
+                    left: 1rem;
+                }
+                .home__carousel__button__container__next{
+                    right: 1rem;
+                }
+                .home__carousel__slideshow{
+                    .home__carousel__slide{
+                        position: absolute;
+                        inset: 0;
+                        opacity: 0;
+                        &.active__slide{
+                            opacity: 1;
+                        }
+                        img{
+                            display: block;
+                            width: 100vw;
+                            height: 100vh;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
 
-header{
-    height: 100vh;
-}
-main{
-    height: 100vh;
+                }
+
+            }
+
+        }
+    }
 }

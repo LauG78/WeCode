@@ -19,16 +19,148 @@
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
 
-/*--MYCODE--*/
-.display__none {
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .display__none {
   display: none;
 }
 
-header {
-  height: 100vh;
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
 }
 
-main {
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+/*--RESETS--*/
+body header {
+  background-color: black;
+  width: 100vw;
   height: 100vh;
+  z-index: 50;
+}
+
+body header .home__intro__container .home__carousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__prev,
+body header .home__intro__container .home__carousel .home__carousel__button__container__next {
+  z-index: 60;
+  position: absolute;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(3, 160, 181, 0.1);
+  border-radius: .25rem;
+  overflow: hidden;
+  border: none;
+  padding: 0rem .5rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button,
+body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button {
+  opacity: 1;
+  margin: .25rem;
+  color: rgba(251, 252, 238, 0.5);
+  background: none;
+  border: none;
+  font-size: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:hover, body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:focus,
+body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:hover,
+body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:focus {
+  color: rgba(2, 242, 190, 0.8);
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__prev {
+  left: 1rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__next {
+  right: 1rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide.active__slide {
+  opacity: 1;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 /*# sourceMappingURL=index.css.map */
