@@ -14,76 +14,62 @@
     <!--Link AwesomeFonts CSS for icons-->
     <link rel="stylesheet" href="../assets/fonts/fontAwesome/css/all.css">
 </head>
-
 <body>
-
-    <header>
-
-        <h1>
-
-            Join us for a cup of coffee or leave us message:
-        </h1>
-
-    </header>
-
     <nav>
 
     </nav>
 
     <main>
-
-        <div class="contact-info-container">
-            <div class="contact__info" alt="e-mail icon" description="an envelope">
-                <i class="fa-solid fa-envelope"></i>
-                e-mail us at contact@wecode.org 
-
-            </div>
-            <div class="contact__info">
-                <i class="fa-solid fa-phone" alt="phone icon" description="a telephone" ></i>
-                Call us at <br> +32 xxx xxx
-
-            </div>
-            <div class="contact__info">
-                <p class="secondary__color"><i class="fa-solid fa-fax" alt="fax icon" description="a fax machine"></i>
-                Send us a fax at</p>
-                <p>+32 32567895</p>
-            
-
-            </div>
-            <div class="contact__info" alt="location icon" description="a pin to mark the location on map">
-                <i class="fa-solid fa-location-dot"></i>
-                You can find us at the following address<br>
-                Sint-Pietersvliet 7, 2000 Antwerpen
-
-            </div>
-            <div class="contact__info" alt="facebook-icon" description="the f letter">
-                <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="contact__info" alt="github-icon" description="a cat with a high tail">
-                <i class="fa-brands fa-github"></i>
-                <a href="https://github.com/YasserB94/WeCode">Github</a>
-
-            </div>
-
+        <div class="head">
+            <header>
+                <h1>
+                contact us
+                </h1>
+            </header>
         </div>
-        <div class="contact-us-container">
-            <form id="contact-form">
-                <label class="required" for="name">Your name</label><br>
-                <input id="name" class="input" name="name" placeholder="your name here" type="text"><br>
-                <label class="required" for="email">Your email</label><br>
-                <input id="email" class="input" name="email" placeholder="youremail@email.com" type="text"><br>
-                <div class="message-area">
-                    <label class="required" for="message">Your message
-                    </label>
-                    <textarea id="message"class="input" name="message" rows="15" cols="60"></textarea><br>
+    <div class="pone">
+        <a href="mailto:example@Wecode.com" method="get" enctype="text/plain">
+            <div class="contact__info">
+                <div class="secondary__color">
+                    <i class="fa-solid fa-envelope" alt="e-mail icon" description="an envelope"></i>
+                    <strong>e-mail us at example@Wecode.com </strong>
                 </div>
-                </label>
-            </form>
+            </div>    
+        </a>
+        <a href="0032485545332">
+            <div class="contact__info">
+                <div class="secondary__color">
+                    <i class="fa-solid fa-phone" alt="phone icon" description="a telephone" ></i>
+                    <strong>call us at +32 485 54 53 32 </strong>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="ptwo">
+        <form id="cform">
+            <div class="cname">
+                <label class="name" for="name">your name</label>
+            </div>
+            <div class="iname">    
+                <input id="name" class="input" name="name" placeholder="your name here" type="text" rows="2" cols="15" required>
+            </div>
+            <div class="cemail">
+                <label class="email" for="email">your email</label>
+            </div>
+            <div class="iemail">    
+                <input id="email" class="input" name="email" placeholder="email@email.com" type="text" rows="2" cols="25" required>
+            </div>
+            <p>message</p>
+            <img src="../assets/images/WeCode logo.svg" alt="wecode logo" class="photo">
+            <textarea placeholder="your message goes here"></textarea>
+            <img src="../assets/images/WeCode logo.svg" alt="wecode logo" class="photo">
+            <div class="button">
+                <input type="submit" value="submit"> 
+            </div>    
+        </form>
+    </div>    
 
-
-        </div>
-    </main>
-
+    </main>  
     <footer>
         <section id="footer__section">
             <div class="footer__container">
@@ -95,7 +81,7 @@
                         <i class="fa-brands fa-facebook-f i__footer" title="add us on facebook"></i>
                         <i class="fa-brands fa-instagram i__footer" title="follow us on Instagram"></i>
                         <i class="fa-brands fa-youtube i__footer" title="subscribe on our youtube chanel"></i>
-                        <i class="fa-brands fa-github i__footer" title="folow us on github"></i>
+                        <i class="fa-brands fa-github i__footer" title="follow us on github"></i>
                     </div>
                 </div>
                 <div class="info__div">
@@ -115,7 +101,6 @@
             </div>
         </section>
     </footer>
-
 </body>
 
 </html>
