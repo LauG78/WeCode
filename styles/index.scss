@@ -1,10 +1,13 @@
 @import "variables";
-/*--Fucntions--*/
-
-/*--Mixins--*/
-
-
-/*---Variables--*/
-
-
 /*--MYCODE--*/
+//Class to make navbar dissapear as header is on top of it
+.display__none {
+    display: none;
+}
+
+header{
+    height: 100vh;
+}
+main{
+    height: 100vh;
+}

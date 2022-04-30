@@ -19,8 +19,16 @@
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
 
-/*--Fucntions--*/
-/*--Mixins--*/
-/*---Variables--*/
 /*--MYCODE--*/
+.display__none {
+  display: none;
+}
+
+header {
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+}
 /*# sourceMappingURL=index.css.map */
