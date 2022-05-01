@@ -24,3 +24,29 @@
         @content;
     }
 }
+//MEDIA QUERIES OTHER WAY AROUND, These will only apply style up to certain width
+@mixin max-media-small {
+    @media only screen and (max-width:576px) {
+        @content;
+    }
+}
+@mixin max-media-medium {
+    @media only screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin max-media-large {
+    @media only screen and (max-width:992px) {
+        @content;
+    }
+}
+@mixin max-media-extra-large {
+    @media only screen and (max-width:1200px) {
+        @content;
+    }
+}
+@mixin max-media-extra-extra-large {
+    @media only screen and (max-width:1400px) {
+        @content;
+    }
+}

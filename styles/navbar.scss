@@ -65,8 +65,11 @@ a:hover{
             color: $clr-white;
             position: relative;
             transition: color 1s ease-in-out;
+            //Webkit code to prevent screenflickerbug on webkit browsers
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateX(0);
             &.current__page {
-
+                color: $clr-primary;
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -109,7 +112,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 1rem;
     top: .25vh;
     & .burger__slice {
@@ -193,6 +196,7 @@ a:hover{
                 }
                 &.current__page {
                     transform: translateY(-.1rem);
+                    color: $clr-white;
                     &::after {
                         bottom: -.1rem;
                     }

@@ -70,6 +70,10 @@ body {
           justify-content: flex-start;
 }
 
+nav .display__none {
+  display: none;
+}
+
 footer {
   /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
   margin-top: auto;
@@ -175,6 +179,12 @@ a:hover {
   position: relative;
   -webkit-transition: color 1s ease-in-out;
   transition: color 1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+}
+
+.global__nav__list .global__nav__item .global__nav__link.current__page {
+  color: #03a0b5;
 }
 
 .global__nav__list .global__nav__item .global__nav__link.current__page::after {
@@ -233,7 +243,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  position: absolute;
   right: 1rem;
   top: .25vh;
 }
@@ -339,6 +349,7 @@ a:hover {
   .global__nav__list .global__nav__item .global__nav__link.current__page {
     -webkit-transform: translateY(-0.1rem);
             transform: translateY(-0.1rem);
+    color: #fbfcee;
   }
   .global__nav__list .global__nav__item .global__nav__link.current__page::after {
     bottom: -.1rem;
