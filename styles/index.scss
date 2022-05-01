@@ -12,21 +12,19 @@
 .opacity__zero {
     opacity: 0;
 }
-.display__none{
+
+.display__none {
     display: none;
 }
-.remove__z-index{
+
+.remove__z-index {
     z-index: 0;
 }
+
 //END OF JS STYLES
 body {
-    scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: hidden;
-    main{
-        margin-top: auto;
-        height: 200vh;
-    }
+
     header {
         width: 100vw;
         height: 100vh;
@@ -36,9 +34,11 @@ body {
         transition: opacity 500ms ease-in-out;
         position: fixed;
         z-index: 200;
+        overflow-y: hidden;
+        display: none;
 
         .home__intro__container {
-            
+
 
             .home__carousel {
                 width: 100vw;
@@ -103,7 +103,7 @@ body {
                     }
 
                     .welcome__button {
-                        
+
                         margin: 1rem;
                         border: solid $clr-highlight;
                         font-family: $ff-Roboto_Condensed;
@@ -119,11 +119,12 @@ body {
                         cursor: pointer;
                         transition: background-color .3s ease-in-out;
                         transition: border 3s ease-in-out;
-                        span{
+
+                        span {
                             transition: color .8s ease-in-out;
                             animation: welcomeBtn 10s infinite ease-in-out;
                         }
-                        
+
 
 
                         background-color: rgba(0, 20, 18, .7);
@@ -133,7 +134,8 @@ body {
                             color: $clr-black;
                             background-color: rgba(2, 242, 190, .7);
                             border: none;
-                            span{
+
+                            span {
                                 animation: unset;
                             }
                         }
@@ -215,7 +217,7 @@ body {
     }
 }
 
-
+/*---MEDIA QUERIES--*/
 @include max-media-large {
     body {
         header {
@@ -247,10 +249,11 @@ body {
     body {
         header {
             .home__intro__container {
-                
+
                 .home__carousel {
                     .home__carousel__content {
                         top: 25%;
+
                         .brand__name {
                             font-size: 5rem;
                         }
@@ -280,22 +283,27 @@ body {
         }
     }
 }
-@keyframes welcomeBtn{
-    15%{
+
+@keyframes welcomeBtn {
+    15% {
         color: $clr-primary;
     }
-    30%{
-        color:$clr-white;
+
+    30% {
+        color: $clr-white;
     }
-    50%{
-        
+
+    50% {
+
         opacity: .8;
-        
+
     }
-    65%{
+
+    65% {
         color: $clr-primary;
     }
-    80%{
+
+    80% {
         color: $clr-highlight;
     }
 }

@@ -104,14 +104,7 @@ li {
 }
 
 body {
-  scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-body main {
-  margin-top: auto;
-  height: 200vh;
 }
 
 body header {
@@ -124,6 +117,8 @@ body header {
   transition: opacity 500ms ease-in-out;
   position: fixed;
   z-index: 200;
+  overflow-y: hidden;
+  display: none;
 }
 
 body header .home__intro__container .home__carousel {
@@ -314,6 +309,7 @@ body header .home__intro__container .home__carousel__slideshow .home__carousel__
      object-position: center;
 }
 
+/*---MEDIA QUERIES--*/
 @media only screen and (max-width: 992px) {
   body header {
     width: 100vw;
