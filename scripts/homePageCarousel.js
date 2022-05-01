@@ -5,21 +5,25 @@ const headerContainer = document.getElementById('introCarousel')
 let navHeight = globalNav.offsetHeight;
 carBtnNext.addEventListener('click', nextSlide);
 carBtnPrev.addEventListener('click', prevSlide);
-carBtnWelcome.addEventListener('click',hideIntro)
+carBtnWelcome.addEventListener('click', hideIntro)
 const carSlideshow = document.querySelector('.home__carousel__slideshow')
 var carSlides = carSlideshow.children;
 var carSlideIndex = 0;
-var carAutoPlay = setInterval(autoplayCarSlides, 8000)
-function hideIntro(){
+var carAutoPlay = setInterval(autoplayCarSlides, 5000)
+function hideIntro() {
     fadeIntro()
-    setTimeout(removeIntro,500)
+    setTimeout(removeIntro, 5000)
 }
-function fadeIntro(){
+function fadeIntro() {
     headerContainer.classList.add('opacity__zero')
 }
-function removeIntro(){
+function removeIntro() {
     headerContainer.classList.add('display__none')
     headerContainer.classList.add('remove__z-index')
+}
+function resetAutoplay(){
+    clearInterval(carAutoPlay)
+    carAutoPlay = setInterval(autoplayCarSlides, 5000)
 }
 
 function nextSlide() {
@@ -27,12 +31,12 @@ function nextSlide() {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = carSlideIndex + 1;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-        clearInterval(carAutoPlay)
+        resetAutoplay()
     } else {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = 0;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-        clearInterval(carAutoPlay)
+        resetAutoplay()
     }
 }
 function prevSlide() {
@@ -40,12 +44,12 @@ function prevSlide() {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = carSlideIndex - 1;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-        clearInterval(carAutoPlay)
+        resetAutoplay()
     } else {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = carSlides.length - 1;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-        clearInterval(carAutoPlay)
+        resetAutoplay()
     }
 }
 function autoplayCarSlides() {
