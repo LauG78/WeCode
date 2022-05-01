@@ -8,8 +8,21 @@
 //clr-primary rgba(3, 160, 181, 1)
 //clr-secondary rgba(0, 168, 150, 1)
 //clr-highlight rgba(2, 242, 190, 1)
+//Styles for use with JS
+.opacity__zero {
+    opacity: 0;
+}
+.display__none{
+    display: none;
+}
+.remove__z-index{
+    z-index: 0;
+}
+//END OF JS STYLES
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
     main{
         margin-top: auto;
         height: 200vh;
@@ -19,8 +32,14 @@ body {
         height: 100vh;
         z-index: 50;
         overflow-x: hidden;
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+        position: fixed;
+        z-index: 200;
 
         .home__intro__container {
+            
+
             .home__carousel {
                 width: 100vw;
                 height: 100vh;

@@ -91,8 +91,22 @@ li {
 }
 
 /*--RESETS--*/
+.opacity__zero {
+  opacity: 0;
+}
+
+.display__none {
+  display: none;
+}
+
+.remove__z-index {
+  z-index: 0;
+}
+
 body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body main {
@@ -105,6 +119,11 @@ body header {
   height: 100vh;
   z-index: 50;
   overflow-x: hidden;
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  position: fixed;
+  z-index: 200;
 }
 
 body header .home__intro__container .home__carousel {
