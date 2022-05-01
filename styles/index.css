@@ -96,12 +96,104 @@ body header {
   width: 100vw;
   height: 100vh;
   z-index: 50;
+  overflow-x: hidden;
 }
 
 body header .home__intro__container .home__carousel {
   width: 100vw;
   height: 100vh;
   position: relative;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content {
+  z-index: 55;
+  position: absolute;
+  top: 50vh;
+  height: 30vh;
+  width: 60vw;
+  left: 50vw;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 20, 18, 0.25);
+  color: #fbfcee;
+  font-family: "Nunito", "Georgia";
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .before__brand,
+body header .home__intro__container .home__carousel .home__carousel__content .after__brand,
+body header .home__intro__container .home__carousel .home__carousel__content .credit__text {
+  font-family: "LeagueSpartan", "Arial";
+  color: #001412;
+  background-color: #fbfcee;
+  padding: .25rem;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .brand__name {
+  margin: .5rem;
+  font-family: "RobotoCondensed", "Cursive";
+  letter-spacing: -2px;
+  word-spacing: -5px;
+  background-color: #02f2be;
+  padding: 1rem;
+  color: #03a0b5;
+  border-radius: 25px;
+  font-size: 8rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .brand__name .brand__name__span {
+  color: #001412;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .credit__text {
+  margin-top: .2rem;
+  font-size: .8rem;
+  background-color: #001412;
+  color: #03a0b5;
+  line-height: .5;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .credit__text .highlight {
+  color: #02f2be;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button {
+  margin: 1rem;
+  border: solid #02f2be;
+  font-family: "Nunito", "Georgia";
+  padding: 1rem 3rem;
+  background: none;
+  text-transform: uppercase;
+  color: #02f2be;
+  font-size: 2rem;
+  font-weight: 100;
+  border-radius: 50px;
+  position: absolute;
+  top: 85%;
+  cursor: pointer;
+  background-color: rgba(0, 20, 18, 0.7);
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button:hover, body header .home__intro__container .home__carousel .home__carousel__content .welcome__button :focus {
+  color: #001412;
+  background-color: rgba(2, 242, 190, 0.7);
+  border: none;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__button__container__prev,
@@ -112,10 +204,16 @@ body header .home__intro__container .home__carousel .home__carousel__button__con
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-color: rgba(3, 160, 181, 0.1);
-  border-radius: .25rem;
-  overflow: hidden;
+  border-radius: 1rem;
   border: none;
   padding: 0rem .5rem;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel .home__carousel__button__container__prevfocus,
+body header .home__intro__container .home__carousel .home__carousel__button__container__next:hover,
+body header .home__intro__container .home__carousel .home__carousel__button__container__nextfocus {
+  background-color: rgba(3, 160, 181, 0.3);
+  border-radius: 1rem;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button,
@@ -133,7 +231,7 @@ body header .home__intro__container .home__carousel .home__carousel__button__con
 body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:hover, body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:focus,
 body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:hover,
 body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:focus {
-  color: rgba(2, 242, 190, 0.8);
+  color: #fbfcee;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__button__container__prev {
@@ -148,17 +246,17 @@ body header .home__intro__container .home__carousel .home__carousel__slideshow .
   position: absolute;
   inset: 0;
   opacity: 0;
-  -webkit-transition: 1s opacity ease-in-out;
-  transition: 1s opacity ease-in-out;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition: 500ms opacity ease-in-out;
+  transition: 500ms opacity ease-in-out;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide.home__carousel__active__slide {
   z-index: 51;
   opacity: 1;
-  -webkit-transition-delay: 0;
-          transition-delay: 0;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide img {
