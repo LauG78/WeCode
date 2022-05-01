@@ -92,7 +92,6 @@ li {
 
 /*--RESETS--*/
 body header {
-  background-color: black;
   width: 100vw;
   height: 100vh;
   z-index: 50;
@@ -176,7 +175,7 @@ body header .home__intro__container .home__carousel .home__carousel__content .cr
 body header .home__intro__container .home__carousel .home__carousel__content .welcome__button {
   margin: 1rem;
   border: solid #02f2be;
-  font-family: "Nunito", "Georgia";
+  font-family: "RobotoCondensed", "Cursive";
   padding: 1rem 3rem;
   background: none;
   text-transform: uppercase;
@@ -185,19 +184,37 @@ body header .home__intro__container .home__carousel .home__carousel__content .we
   font-weight: 100;
   border-radius: 50px;
   position: absolute;
-  top: 85%;
+  top: 90%;
   cursor: pointer;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+  -webkit-transition: border 3s ease-in-out;
+  transition: border 3s ease-in-out;
   background-color: rgba(0, 20, 18, 0.7);
 }
 
-body header .home__intro__container .home__carousel .home__carousel__content .welcome__button:hover, body header .home__intro__container .home__carousel .home__carousel__content .welcome__button :focus {
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button span {
+  -webkit-transition: color .8s ease-in-out;
+  transition: color .8s ease-in-out;
+  -webkit-animation: welcomeBtn 10s infinite ease-in-out;
+          animation: welcomeBtn 10s infinite ease-in-out;
+}
+
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button:hover,
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button :focus {
   color: #001412;
   background-color: rgba(2, 242, 190, 0.7);
   border: none;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__prev,
-body header .home__intro__container .home__carousel .home__carousel__button__container__next {
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button:hover span,
+body header .home__intro__container .home__carousel .home__carousel__content .welcome__button :focus span {
+  -webkit-animation: unset;
+          animation: unset;
+}
+
+body header .home__intro__container .home__carousel__button__container__prev,
+body header .home__intro__container .home__carousel__button__container__next {
   z-index: 60;
   position: absolute;
   top: 50vh;
@@ -209,15 +226,15 @@ body header .home__intro__container .home__carousel .home__carousel__button__con
   padding: 0rem .5rem;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel .home__carousel__button__container__prevfocus,
-body header .home__intro__container .home__carousel .home__carousel__button__container__next:hover,
-body header .home__intro__container .home__carousel .home__carousel__button__container__nextfocus {
+body header .home__intro__container .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel__button__container__prevfocus,
+body header .home__intro__container .home__carousel__button__container__next:hover,
+body header .home__intro__container .home__carousel__button__container__nextfocus {
   background-color: rgba(3, 160, 181, 0.3);
   border-radius: 1rem;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button,
-body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button {
+body header .home__intro__container .home__carousel__button__container__prev .home__carousel__button,
+body header .home__intro__container .home__carousel__button__container__next .home__carousel__button {
   opacity: 1;
   margin: .25rem;
   color: rgba(251, 252, 238, 0.5);
@@ -228,21 +245,21 @@ body header .home__intro__container .home__carousel .home__carousel__button__con
   cursor: pointer;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:hover, body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button:focus,
-body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:hover,
-body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button:focus {
+body header .home__intro__container .home__carousel__button__container__prev .home__carousel__button:hover, body header .home__intro__container .home__carousel__button__container__prev .home__carousel__button:focus,
+body header .home__intro__container .home__carousel__button__container__next .home__carousel__button:hover,
+body header .home__intro__container .home__carousel__button__container__next .home__carousel__button:focus {
   color: #fbfcee;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__prev {
+body header .home__intro__container .home__carousel__button__container__prev {
   left: 2rem;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__button__container__next {
+body header .home__intro__container .home__carousel__button__container__next {
   right: 2rem;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide {
+body header .home__intro__container .home__carousel__slideshow .home__carousel__slide {
   position: absolute;
   inset: 0;
   opacity: 0;
@@ -252,14 +269,14 @@ body header .home__intro__container .home__carousel .home__carousel__slideshow .
           transition-delay: 500ms;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide.home__carousel__active__slide {
+body header .home__intro__container .home__carousel__slideshow .home__carousel__slide.home__carousel__active__slide {
   z-index: 51;
   opacity: 1;
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
 }
 
-body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide img {
+body header .home__intro__container .home__carousel__slideshow .home__carousel__slide img {
   display: block;
   width: 100vw;
   height: 100vh;
@@ -267,5 +284,90 @@ body header .home__intro__container .home__carousel .home__carousel__slideshow .
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+  body header {
+    width: 100vw;
+    overflow: hidden;
+  }
+  body header .home__intro__container {
+    width: 100vw;
+  }
+  body header .home__intro__container .home__carousel__content {
+    width: 80%;
+    height: 60vh;
+  }
+  body header .home__intro__container .home__carousel__content .brand__name {
+    padding: .25rem .5rem;
+    white-space: nowrap;
+  }
+  body header .home__intro__container .home__carousel__content .welcome__button {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body header .home__intro__container .home__carousel .home__carousel__content {
+    top: 25%;
+  }
+  body header .home__intro__container .home__carousel .home__carousel__content .brand__name {
+    font-size: 5rem;
+  }
+  body header .home__intro__container .home__carousel .home__carousel__button__container__prev,
+  body header .home__intro__container .home__carousel .home__carousel__button__container__next {
+    margin-top: auto;
+    margin-bottom: 5%;
+    top: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    bottom: 0%;
+    background-color: rgba(3, 160, 181, 0.3);
+    border: solid rgba(0, 20, 18, 0.25);
+  }
+  body header .home__intro__container .home__carousel .home__carousel__button__container__prev .home__carousel__button,
+  body header .home__intro__container .home__carousel .home__carousel__button__container__next .home__carousel__button {
+    color: rgba(251, 252, 238, 0.7);
+    width: 100%;
+    white-space: nowrap;
+    margin: 0%;
+  }
+}
+
+@-webkit-keyframes welcomeBtn {
+  15% {
+    color: #03a0b5;
+  }
+  30% {
+    color: #fbfcee;
+  }
+  50% {
+    opacity: .8;
+  }
+  65% {
+    color: #03a0b5;
+  }
+  80% {
+    color: #02f2be;
+  }
+}
+
+@keyframes welcomeBtn {
+  15% {
+    color: #03a0b5;
+  }
+  30% {
+    color: #fbfcee;
+  }
+  50% {
+    opacity: .8;
+  }
+  65% {
+    color: #03a0b5;
+  }
+  80% {
+    color: #02f2be;
+  }
 }
 /*# sourceMappingURL=index.css.map */

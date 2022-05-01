@@ -1,5 +1,6 @@
 @import "variables";
 @import 'global';
+@import 'mixins';
 
 /*--RESETS--*/
 //clr-black rgba(0, 20, 18, 1)
@@ -9,7 +10,6 @@
 //clr-highlight rgba(2, 242, 190, 1)
 body {
     header {
-        background-color: black;
         width: 100vw;
         height: 100vh;
         z-index: 50;
@@ -20,6 +20,7 @@ body {
                 width: 100vw;
                 height: 100vh;
                 position: relative;
+
                 .home__carousel__content {
                     z-index: 55;
                     position: absolute;
@@ -37,6 +38,7 @@ body {
                     font-family: $ff-Nunito;
                     border-radius: 2rem;
                     padding: 1rem;
+
                     .before__brand,
                     .after__brand,
                     .credit__text {
@@ -47,6 +49,7 @@ body {
                         border-radius: 3px;
                         font-size: 1rem;
                     }
+
                     .brand__name {
                         margin: .5rem;
                         font-family: $ff-Roboto_Condensed;
@@ -57,10 +60,12 @@ body {
                         color: $clr-primary;
                         border-radius: 25px;
                         font-size: 8rem;
+
                         .brand__name__span {
                             color: $clr-black;
                         }
                     }
+
                     .credit__text {
                         margin-top: .2rem;
                         font-size: .8rem;
@@ -72,10 +77,12 @@ body {
                             color: $clr-highlight;
                         }
                     }
+
                     .welcome__button {
+                        
                         margin: 1rem;
                         border: solid $clr-highlight;
-                        font-family: $ff-Nunito;
+                        font-family: $ff-Roboto_Condensed;
                         padding: 1rem 3rem;
                         background: none;
                         text-transform: uppercase;
@@ -84,83 +91,187 @@ body {
                         font-weight: 100;
                         border-radius: 50px;
                         position: absolute;
-                        top: 85%;
+                        top: 90%;
                         cursor: pointer;
+                        transition: background-color .3s ease-in-out;
+                        transition: border 3s ease-in-out;
+                        span{
+                            transition: color .8s ease-in-out;
+                            animation: welcomeBtn 10s infinite ease-in-out;
+                        }
+                        
+
+
                         background-color: rgba(0, 20, 18, .7);
-                        &:hover,:focus{
+
+                        &:hover,
+                        :focus {
                             color: $clr-black;
                             background-color: rgba(2, 242, 190, .7);
                             border: none;
+                            span{
+                                animation: unset;
+                            }
                         }
                     }
                 }
-                .home__carousel__button__container__prev,
-                .home__carousel__button__container__next {
-                    z-index: 60;
-                    position: absolute;
-                    top: 50vh;
-                    transform: translateY(-50%);
-                    //CLR BLACK IN RBGA
-                    background-color: rgba(3, 160, 181, .1);
+            }
+
+            .home__carousel__button__container__prev,
+            .home__carousel__button__container__next {
+                z-index: 60;
+                position: absolute;
+                top: 50vh;
+                transform: translateY(-50%);
+                //CLR BLACK IN RBGA
+                background-color: rgba(3, 160, 181, .1);
+                border-radius: 1rem;
+                border: none;
+                padding: 0rem .5rem;
+
+                &:hover,
+                &focus {
+                    background-color: rgba(3, 160, 181, .3);
                     border-radius: 1rem;
+                }
+
+                .home__carousel__button {
+                    opacity: 1;
+                    margin: .25rem;
+                    //CLR WHITE IN RGBA
+                    color: rgba(251, 252, 238, .5);
+                    background: none;
                     border: none;
-                    padding: 0rem .5rem;
+                    font-size: 4rem;
+                    border-radius: 1rem;
+                    cursor: pointer;
+
                     &:hover,
-                    &focus {
-                        background-color: rgba(3, 160, 181, .3);
-                        border-radius: 1rem;
+                    &:focus {
+                        //CLR HIGHLIGHT IN RGBA
+                        color: rgba(251, 252, 238, 1);
+
                     }
-                    .home__carousel__button {
+                }
+            }
+
+            .home__carousel__button__container__prev {
+                left: 2rem;
+            }
+
+            .home__carousel__button__container__next {
+                right: 2rem;
+            }
+
+            .home__carousel__slideshow {
+                .home__carousel__slide {
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0;
+                    transition: 500ms opacity ease-in-out;
+                    transition-delay: 500ms;
+
+                    &.home__carousel__active__slide {
+                        z-index: 51;
                         opacity: 1;
-                        margin: .25rem;
-                        //CLR WHITE IN RGBA
-                        color: rgba(251, 252, 238, .5);
-                        background: none;
-                        border: none;
-                        font-size: 4rem;
-                        border-radius: 1rem;
-                        cursor: pointer;
-
-                        &:hover,
-                        &:focus {
-                            //CLR HIGHLIGHT IN RGBA
-                            color: rgba(251, 252, 238, 1);
-
-                        }
-                    }
-                }
-                .home__carousel__button__container__prev {
-                    left: 2rem;
-                }
-
-                .home__carousel__button__container__next {
-                    right: 2rem;
-                }
-                .home__carousel__slideshow {
-                    .home__carousel__slide {
-                        position: absolute;
-                        inset: 0;
-                        opacity: 0;
-                        transition: 500ms opacity ease-in-out;
-                        transition-delay: 500ms;
-
-                        &.home__carousel__active__slide {
-                            z-index: 51;
-                            opacity: 1;
-                            transition-delay: 0ms;
-                        }
-
-                        img {
-                            display: block;
-                            width: 100vw;
-                            height: 100vh;
-                            object-fit: cover;
-                            object-position: center;
-                        }
+                        transition-delay: 0ms;
                     }
 
+                    img {
+                        display: block;
+                        width: 100vw;
+                        height: 100vh;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@include max-media-large {
+    body {
+        header {
+            width: 100vw;
+            overflow: hidden;
+
+            .home__intro__container {
+                width: 100vw;
+
+                .home__carousel__content {
+                    width: 80%;
+                    height: 60vh;
+
+                    .brand__name {
+                        padding: .25rem .5rem;
+                        white-space: nowrap;
+                    }
+
+                    .welcome__button {
+                        transform: translateY(50%);
+                    }
                 }
             }
         }
+    }
+}
+
+@include max-media-medium {
+    body {
+        header {
+            .home__intro__container {
+                
+                .home__carousel {
+                    .home__carousel__content {
+                        top: 25%;
+                        .brand__name {
+                            font-size: 5rem;
+                        }
+                    }
+
+                    .home__carousel__button__container__prev,
+                    .home__carousel__button__container__next {
+                        margin-top: auto;
+                        margin-bottom: 5%;
+                        top: unset;
+                        transform: unset;
+                        bottom: 0%;
+                        background-color: rgba(3, 160, 181, .3);
+                        border: solid rgba(0, 20, 18, .25);
+                        ;
+
+                        .home__carousel__button {
+                            color: rgba(251, 252, 238, .7);
+                            width: 100%;
+                            white-space: nowrap;
+                            margin: 0%;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes welcomeBtn{
+    15%{
+        color: $clr-primary;
+    }
+    30%{
+        color:$clr-white;
+    }
+    50%{
+        
+        opacity: .8;
+        
+    }
+    65%{
+        color: $clr-primary;
+    }
+    80%{
+        color: $clr-highlight;
     }
 }
