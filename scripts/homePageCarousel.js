@@ -8,11 +8,11 @@ var carSlideIndex = 0;
 var carAutoPlay = setInterval(autoplayCarSlides, 8000)
 function nextSlide() {
     if (carSlideIndex < carSlides.length - 1) {
+
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = carSlideIndex + 1;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-
-
+        clearInterval(carAutoPlay)
     } else {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = 0;
@@ -38,7 +38,6 @@ function autoplayCarSlides() {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = carSlideIndex + 1;
         carSlides[carSlideIndex].classList.add('home__carousel__active__slide')
-
     } else {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
         carSlideIndex = 0;
