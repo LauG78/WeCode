@@ -17,13 +17,19 @@
             .yearlysub__div {
                 width:100%;
             }
+            .h4__yearlysub, .p__yearlysub {
+                margin-left: .2rem;
+            }
 }
 @include media-medium {
     .card__one {
         width: 50%;
         } 
         .yearlysub__div {
-            width:600%;
+            width:60%;
+        }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
         }
 }
 @include media-large {
@@ -33,6 +39,9 @@
         .yearlysub__div {
             width:40%;
         }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
+        }
 }
 @include media-extra-large {
     .card__one {
@@ -40,6 +49,9 @@
         } 
         .yearlysub__div {
             width:25%;
+        }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
         }
 }
 // styling packages 
@@ -55,14 +67,17 @@
     }
     .box__cards {
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-flow: wrap;
         padding: 2rem;
+        .card__links {
+            margin: 1rem;
+            color: $clr-black;
+        }
         .card__one {
             width:100%;
             border-radius: 20px;
             border:1px solid $clr-primary;
-            margin: .4rem;
                 .card__container {
                     position: relative;
                     i {
@@ -124,7 +139,7 @@
     ////////////////////package deals styling/////////////////
 
     .h4__yearlysub, .p__yearlysub {
-       margin-left: 5rem; 
+        padding-left: 4rem;
        margin-bottom: 1rem;
     }
     .h4__yearlysub {
