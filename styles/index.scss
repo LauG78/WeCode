@@ -9,6 +9,11 @@
 //clr-secondary rgba(0, 168, 150, 1)
 //clr-highlight rgba(2, 242, 190, 1)
 body {
+    scroll-behavior: smooth;
+    main{
+        margin-top: auto;
+        height: 200vh;
+    }
     header {
         width: 100vw;
         height: 100vh;

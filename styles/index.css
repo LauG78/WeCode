@@ -91,6 +91,15 @@ li {
 }
 
 /*--RESETS--*/
+body {
+  scroll-behavior: smooth;
+}
+
+body main {
+  margin-top: auto;
+  height: 200vh;
+}
+
 body header {
   width: 100vw;
   height: 100vh;
