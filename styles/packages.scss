@@ -10,32 +10,52 @@
         .card__one {
         width: 100%;
         } 
+        .the_faq_section{
+            clip-path: polygon(0 5%,100% 0,100% 100%, 0 100%);
+            } 
+
+            .yearlysub__div {
+                width:100%;
+            }
 }
 @include media-medium {
     .card__one {
         width: 50%;
         } 
+        .yearlysub__div {
+            width:600%;
+        }
 }
 @include media-large {
     .card__one {
         width: 30%;
         } 
+        .yearlysub__div {
+            width:40%;
+        }
 }
 @include media-extra-large {
     .card__one {
         width: 20%;
         } 
+        .yearlysub__div {
+            width:25%;
+        }
 }
 // styling packages 
     h1{
         font-family:$ff-League_Spartan;
         text-align:center;
-        margin:2rem;
+        margin:7rem;
         font-size: 3rem;
+        .package__span {
+            text-decoration: underline $clr-highlight;
+            
+        }
     }
     .box__cards {
         display:flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-flow: wrap;
         padding: 2rem;
         .card__one {
@@ -46,7 +66,7 @@
                 .card__container {
                     position: relative;
                     i {
-                        padding:3rem;
+                        padding:2rem;
                         font-size:5rem;
                         text-align:center;
                         display:block;
@@ -57,9 +77,9 @@
                     }
                 }
                 .card__info {
-                    padding: 1rem 2rem;
+                    padding: 3rem 1rem;
                     h3 {
-                        padding-top: 3rem;
+                        padding-top: 1rem;
                         font-size:3rem;
                         color: $clr-primary;
                         font-family: $ff-League_Spartan;
@@ -70,11 +90,15 @@
                         color: rgb(44, 207, 44);
                     }
                     p {
-                        color: $clr-black;
+                        color: $clr-primary;
                         font-family: $ff-Nunito;
                         line-height: 2rem;
                         font-size: .8rem;
-                        padding-bottom: 3rem;
+                        text-align: center;
+                        margin:1rem;
+                    }
+                    ul {
+                        padding: 1rem 0;
                         text-align: center;
                     }
                     .card__button {
@@ -84,7 +108,7 @@
                         border-radius: 20px;
                         background: white;
                         cursor: pointer;
-                        transition: 1s;
+                        transition: .5s;
                     }
                     .card__button:hover{
                         background:$clr-highlight;
@@ -96,32 +120,67 @@
                 }
             }
     }
+
+    ////////////////////package deals styling/////////////////
+
+    .h4__yearlysub, .p__yearlysub {
+       margin-left: 5rem; 
+       margin-bottom: 1rem;
+    }
+    .h4__yearlysub {
+        text-decoration:bold;
+        font-size:1.5rem;
+    }
+
+
+.yearlysub__container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 4rem;
+    .yearlysub__div {
+        margin:2rem;
+        li {
+            display: flex;
+            span {
+                font-size: .8rem;
+                i { margin-right: 1rem;
+                    font-size: 2.5rem;
+                    color:$clr-highlight;
+                }
+            }
+        }
+    }
+}
+
 ////////////////////// styling FAQ section ////////////////////////
 .the_faq_section{
-    margin:2rem;
+    padding: 2rem;
+    background:$clr-black;
+    clip-path: polygon(0 25%,100% 0,100% 100%, 0 100%);
 .faq__title{
     font-size: 3rem;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
-    text-decoration: underline 4px;
+    text-decoration: underline 4px $clr-highlight;
+    color:white;
 }
 .question__container{
     max-width: 800px;
     margin: 0 auto;
     .the__question{
-        border-bottom: 1px solid #fff;
         button{
             width: 100%;
-            background-color: white;
+            background: $clr-black;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 15px;
             border:none;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid $clr-highlight;
             outline: none;
             font-size: 22px;
-            color: $clr-black;
+            color: white;
             font-weight: 700;
             cursor: pointer;
         }
@@ -138,6 +197,7 @@
             max-height: 200px; 
             opacity: 1;
             padding:0px 15px 30px 15px;
+            color:white;
         }
     }
 }
