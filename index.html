@@ -17,10 +17,46 @@
 </head>
 
 <body>
-
-    <header>
-
+    <!--HEADER CODE STARTS HERE-->
+    <header id="introCarousel">
+        <div class="home__intro__container" aria-label="Picture slideshow">
+            <div class="home__carousel">
+                <div class="home__carousel__content">
+                    <p class="before__brand">Not sure how we got here, but we're excited about where we're going</p>
+                    <h1 class="brand__name">We <span class="brand__name__span">Code</span></h1>
+                    <p class="after__brand">The web development company that cares!</p>
+                    <button class="welcome__button"><span>Explore now</span></button>
+                    <code class="credit__text">A <span class="highlight"> Be&lt;/Code&gt;</span> company</code>
+                    
+                </div>
+                <div class="home__carousel__button__container__prev" alt="if you click here you will go back to the previous slide">
+                    <button class="home__carousel__button carousel__button__prev">&#8592;</button>
+                </div>
+                <div class="home__carousel__button__container__next" alt="if you click here you will go to the next slide">
+                    <button class="home__carousel__button carousel__button__next">&#8594;</button>
+                </div>
+                <ul class="home__carousel__slideshow">
+                    <li class="home__carousel__slide home__carousel__active__slide">
+                        <img src="./assets/images/home-page/headerCarousel/codeblock.jpg"
+                            alt="an image of a computer screen with some coloured code on it">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/night.jpg"
+                            alt="a dark nighttime image showing a laptop and some coloured lights with one bright desk light brightening the room">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/SEO.jpg"
+                            alt="an image showing three scrabble tiles that spell S E O">
+                    </li>
+                    <li class="home__carousel__slide">
+                        <img src="./assets/images/home-page/headerCarousel/sketchbook.jpg"
+                            alt="a n image showing a smartphone with a textbook next to it, the textbook shows a sketch of a website">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
+    <!--HEADER CODE ENDS HERE-->
     <!----------NAV CODE STARTS HERE---------->
     <nav class="global__nav" alt="This is the navigation menu"
         description="Here you'll find links to different parts of our website">
@@ -51,43 +87,49 @@
     </nav>
     <!----------NAV CODEBLOCK ENDS HERE---------->
     <main>
-
+        <h1>MAIN START</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At voluptatum qui, rerum suscipit laboriosam cum.
+            Natus voluptas architecto rerum debitis minus atque mollitia provident cumque veniam consequatur numquam hic
+            a quo saepe repudiandae ab odio temporibus vitae soluta, tempore magnam. Vel non, aut dicta saepe modi ipsum
+            animi incidunt ipsa?</p>
+        <h1>MAIN FINISHED</h1>
     </main>
 
     <footer id="footer">
-            <div class="footer__content">
-                <div class="logo__container">
-                    <div class="logo__div">
-                        <img class="wecodeLogo" src="./assets/images/WeCode logo-seethrough.svg" alt="Wecode logo">
-                    </div>
-                    <div class="icons__div">
-                        <i class="fa-brands fa-facebook-f i__footer" title="add us on facebook"></i>
-                        <i class="fa-brands fa-instagram i__footer" title="follow us on Instagram"></i>
-                        <i class="fa-brands fa-youtube i__footer" title="subscribe on our youtube chanel"></i>
-                        <i class="fa-brands fa-github i__footer" title="folow us on github"></i>
-                    </div>
+        <div class="footer__content">
+            <div class="logo__container">
+                <div class="logo__div">
+                    <img class="wecodeLogo" src="./assets/images/WeCode logo-seethrough.svg" alt="Wecode logo">
                 </div>
-                <div class="info__div">
-                    <a class="a_info_footer"
-                        href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571"><i
-                            class="fa-solid fa-location-dot i_info_footer" data-text=" Antwerp"></i></a>
-                    <a class="a_info_footer" href="tel:0032485544332"> <i class="fa-solid fa-phone i_info_footer"
-                            data-text="+32 485 54 53 32"></i></a>
-                    <a class="a_info_footer" href="mailto:example.wecode.com"><i
-                            class="fa-solid fa-envelope i_info_footer" data-text="example@Wecode.com"></i></a>
-                </div>
-                <div class="letter__div">
-                    <h3 class="h3__footer">newsletter</h3>
-                    <p class="p__footer">lorem discounts when you sign in ipsum</p>
-                    <input type="email" placeholder="email">
-                    <input type="submit" value="submit">
+                <div class="icons__div">
+                    <i class="fa-brands fa-facebook-f i__footer" title="add us on facebook"></i>
+                    <i class="fa-brands fa-instagram i__footer" title="follow us on Instagram"></i>
+                    <i class="fa-brands fa-youtube i__footer" title="subscribe on our youtube chanel"></i>
+                    <i class="fa-brands fa-github i__footer" title="folow us on github"></i>
                 </div>
             </div>
-            <div class="copyright__container">
-                <h6 class="h6__footer">&copy;2022 WeCode all rights reserved</h6>
+            <div class="info__div">
+                <a class="a_info_footer"
+                    href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571"><i
+                        class="fa-solid fa-location-dot i_info_footer" data-text=" Antwerp"></i></a>
+                <a class="a_info_footer" href="tel:0032485544332"> <i class="fa-solid fa-phone i_info_footer"
+                        data-text="+32 485 54 53 32"></i></a>
+                <a class="a_info_footer" href="mailto:example.wecode.com"><i class="fa-solid fa-envelope i_info_footer"
+                        data-text="example@Wecode.com"></i></a>
             </div>
+            <div class="letter__div">
+                <h3 class="h3__footer">newsletter</h3>
+                <p class="p__footer">lorem discounts when you sign in ipsum</p>
+                <input type="email" placeholder="email">
+                <input type="submit" value="submit">
+            </div>
+        </div>
+        <div class="copyright__container">
+            <h6 class="h6__footer">&copy;2022 WeCode all rights reserved</h6>
+        </div>
     </footer>
     <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/homePageCarousel.js"></script>
 </body>
 
 </html>

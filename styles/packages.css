@@ -1,1 +1,291 @@
-/* No CSS *//*# sourceMappingURL=packages.css.map */
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "NunitoItalic";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "NunitoItalic";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+nav .display__none {
+  display: none;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .card__one {
+    width: 100%;
+  }
+
+  .the_faq_section {
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .yearlysub__div {
+    width: 100%;
+  }
+
+  .h4__yearlysub, .p__yearlysub {
+    margin-left: 0.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card__one {
+    width: 50%;
+  }
+
+  .yearlysub__div {
+    width: 60%;
+  }
+
+  .h4__yearlysub, .p__yearlysub {
+    margin-left: 0.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card__one {
+    width: 30%;
+  }
+
+  .yearlysub__div {
+    width: 40%;
+  }
+
+  .h4__yearlysub, .p__yearlysub {
+    margin-left: 0.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .card__one {
+    width: 20%;
+  }
+
+  .yearlysub__div {
+    width: 25%;
+  }
+
+  .h4__yearlysub, .p__yearlysub {
+    margin-left: 0.5rem;
+  }
+}
+h1 {
+  font-family: "LeagueSpartan", "Arial";
+  text-align: center;
+  margin: 7rem;
+  font-size: 3rem;
+}
+h1 .package__span {
+  text-decoration: underline #02f2be;
+}
+
+.box__cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  padding: 2rem;
+}
+.box__cards .card__links {
+  margin: 1rem;
+  color: #001412;
+}
+.box__cards .card__one {
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #03a0b5;
+}
+.box__cards .card__one .card__container {
+  position: relative;
+}
+.box__cards .card__one .card__container i {
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+  display: block;
+  color: #02f2be;
+}
+.box__cards .card__one .card__container .grow__icon {
+  color: rgb(44, 207, 44);
+}
+.box__cards .card__one .card__info {
+  padding: 3rem 1rem;
+}
+.box__cards .card__one .card__info h3 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #03a0b5;
+  font-family: "LeagueSpartan", "Arial";
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+}
+.box__cards .card__one .card__info .h3__grow {
+  color: rgb(44, 207, 44);
+}
+.box__cards .card__one .card__info p {
+  color: #03a0b5;
+  font-family: "Nunito", "Georgia";
+  line-height: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 1rem;
+}
+.box__cards .card__one .card__info ul {
+  padding: 1rem 0;
+  text-align: center;
+}
+.box__cards .card__one .card__info .card__button {
+  width: 15rem;
+  padding: 1rem;
+  border: 1px solid #03a0b5;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.box__cards .card__one .card__info .card__button:hover {
+  background: #02f2be;
+}
+.box__cards .card__one .card__info .card__button2 {
+  background: rgb(44, 207, 44);
+  border: none;
+}
+
+.h4__yearlysub, .p__yearlysub {
+  padding-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+.h4__yearlysub {
+  text-decoration: bold;
+  font-size: 1.5rem;
+}
+
+.yearlysub__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.yearlysub__container .yearlysub__div {
+  margin: 2rem;
+}
+.yearlysub__container .yearlysub__div li {
+  display: flex;
+}
+.yearlysub__container .yearlysub__div li span {
+  font-size: 0.8rem;
+}
+.yearlysub__container .yearlysub__div li span i {
+  margin-right: 1rem;
+  font-size: 2.5rem;
+  color: #02f2be;
+}
+
+.the_faq_section {
+  padding: 2rem;
+  background: #001412;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+.the_faq_section .faq__title {
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  text-decoration: underline 4px #02f2be;
+  color: white;
+}
+.the_faq_section .question__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.the_faq_section .question__container .the__question button {
+  width: 100%;
+  background: #001412;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  border: none;
+  border-bottom: 1px solid #02f2be;
+  outline: none;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+.the_faq_section .question__container .the__question p {
+  font-size: 22px;
+  max-height: 0;
+  opacity: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.6s ease;
+}
+.the_faq_section .question__container .the__question p.show {
+  max-height: 200px;
+  opacity: 1;
+  padding: 0px 15px 30px 15px;
+  color: white;
+}
+
+/*# sourceMappingURL=packages.css.map */

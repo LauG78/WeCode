@@ -1,0 +1,220 @@
+// imports/variables
+@import 'variables';
+@import 'global';
+
+// media Quaries 
+@import "mixins";
+
+// including to mediaquaries
+@include media-small {
+        .card__one {
+        width: 100%;
+        } 
+        .the_faq_section{
+            clip-path: polygon(0 5%,100% 0,100% 100%, 0 100%);
+            } 
+
+            .yearlysub__div {
+                width:100%;
+            }
+            .h4__yearlysub, .p__yearlysub {
+                margin-left: .2rem;
+            }
+}
+@include media-medium {
+    .card__one {
+        width: 50%;
+        } 
+        .yearlysub__div {
+            width:60%;
+        }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
+        }
+}
+@include media-large {
+    .card__one {
+        width: 30%;
+        } 
+        .yearlysub__div {
+            width:40%;
+        }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
+        }
+}
+@include media-extra-large {
+    .card__one {
+        width: 20%;
+        } 
+        .yearlysub__div {
+            width:25%;
+        }
+        .h4__yearlysub, .p__yearlysub {
+            margin-left: .5rem;
+        }
+}
+// styling packages 
+    h1{
+        font-family:$ff-League_Spartan;
+        text-align:center;
+        margin:7rem;
+        font-size: 3rem;
+        .package__span {
+            text-decoration: underline $clr-highlight;
+            
+        }
+    }
+    .box__cards {
+        display:flex;
+        justify-content: center;
+        flex-flow: wrap;
+        padding: 2rem;
+        .card__links {
+            margin: 1rem;
+            color: $clr-black;
+        }
+        .card__one {
+            width:100%;
+            border-radius: 20px;
+            border:1px solid $clr-primary;
+                .card__container {
+                    position: relative;
+                    i {
+                        padding:2rem;
+                        font-size:5rem;
+                        text-align:center;
+                        display:block;
+                        color: $clr-highlight;
+                    }
+                    .grow__icon {
+                        color: rgb(44, 207, 44);
+                    }
+                }
+                .card__info {
+                    padding: 3rem 1rem;
+                    h3 {
+                        padding-top: 1rem;
+                        font-size:3rem;
+                        color: $clr-primary;
+                        font-family: $ff-League_Spartan;
+                        margin: 1rem 0 2rem 0;
+                        text-align: center;
+                    }
+                    .h3__grow {
+                        color: rgb(44, 207, 44);
+                    }
+                    p {
+                        color: $clr-primary;
+                        font-family: $ff-Nunito;
+                        line-height: 2rem;
+                        font-size: .8rem;
+                        text-align: center;
+                        margin:1rem;
+                    }
+                    ul {
+                        padding: 1rem 0;
+                        text-align: center;
+                    }
+                    .card__button {
+                        width: 15rem;
+                        padding: 1rem;
+                        border: 1px solid $clr-primary;
+                        border-radius: 20px;
+                        background: white;
+                        cursor: pointer;
+                        transition: .5s;
+                        color: $clr-black;
+                    }
+                    .card__button:hover{
+                        background:$clr-highlight;
+                    }
+                    .card__button2{
+                        background: rgb(44, 207, 44);
+                        border:none;
+                    }
+                }
+            }
+    }
+
+    ////////////////////package deals styling/////////////////
+
+    .h4__yearlysub, .p__yearlysub {
+        padding-left: 4rem;
+       margin-bottom: 1rem;
+    }
+    .h4__yearlysub {
+        text-decoration:bold;
+        font-size:1.5rem;
+    }
+
+
+.yearlysub__container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-bottom: 4rem;
+    .yearlysub__div {
+        margin:2rem;
+        li {
+            display: flex;
+            span {
+                font-size: .8rem;
+                i { margin-right: 1rem;
+                    font-size: 2.5rem;
+                    color:$clr-highlight;
+                }
+            }
+        }
+    }
+}
+
+////////////////////// styling FAQ section ////////////////////////
+.the_faq_section{
+    padding: 2rem;
+    background:$clr-black;
+    clip-path: polygon(0 25%,100% 0,100% 100%, 0 100%);
+.faq__title{
+    font-size: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    text-decoration: underline 4px $clr-highlight;
+    color:white;
+}
+.question__container{
+    max-width: 800px;
+    margin: 0 auto;
+    .the__question{
+        button{
+            width: 100%;
+            background: $clr-black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 15px;
+            border:none;
+            border-bottom: 1px solid $clr-highlight;
+            outline: none;
+            font-size: 22px;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        p{
+            font-size: 22px;
+            max-height: 0;
+            opacity: 0;
+            line-height: 1.5;
+            overflow: hidden;
+            transition: all 0.6s ease;
+        }
+        ////////// show after eventListener click ////////
+        p.show{
+            max-height: 200px; 
+            opacity: 1;
+            padding:0px 15px 30px 15px;
+            color:white;
+        }
+    }
+}
+}
