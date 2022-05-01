@@ -164,12 +164,12 @@ main {
 }
 
 .ptwo .tarea textarea {
-  background-color: #001412;
-  color: #fbfcee;
-  border: 0.1rem solid #03a0b5;
+  background-color: #00a896;
+  color: #001412;
+  border: 0.1rem solid #001412;
   border-radius: 0.7rem;
-  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #00a896;
-          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #00a896;
+  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
   height: 11rem;
   width: 20rem;
   font-size: 1.2rem;
@@ -179,16 +179,16 @@ main {
 }
 
 .ptwo .button input[type=submit] {
-  color: #fbfcee;
-  background-color: #001412;
+  color: #001412;
+  background-color: #00a896;
   font-family: "NunitoItalic", "Georgia Italic";
   font-size: 1rem;
   width: 6rem;
   height: 2rem;
   border-radius: 0.5rem;
   border: 0.1rem solid #03a0b5;
-  -webkit-box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #00a896;
-          box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #00a896;
+  -webkit-box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
+          box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
   white-space: pre-line;
   cursor: pointer;
 }

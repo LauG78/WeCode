@@ -71,11 +71,11 @@ main {
             padding-top: 1rem;
             padding-bottom: 1rem;
             textarea {
-                background-color: $clr-black;
-                color: $clr-white;
-                border:0.1rem solid $clr-primary;
+                background-color: $clr-secondary;
+                color: $clr-black;
+                border:0.1rem solid $clr-black;
                 border-radius: 0.7rem;
-                box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem $clr-secondary; 
+                box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem $clr-black; 
                 height: 11rem;
                 width: 20rem;
                 font-size: 1.2rem;
@@ -86,15 +86,15 @@ main {
         }
         .button {
             input[type=submit]{
-            color: $clr-white;
-            background-color: $clr-black;
+            color: $clr-black;
+            background-color: $clr-secondary;
             font-family: $ff-Nunito_italic;
             font-size: 1rem;
             width: 6rem;
             height: 2rem;
             border-radius: 0.5rem;
             border: 0.1rem solid $clr-primary;
-            box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem $clr-secondary; 
+            box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem $clr-black; 
             white-space: pre-line;
             cursor: pointer;
             &:hover {
