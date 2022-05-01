@@ -1,20 +1,27 @@
 const carBtnPrev = document.querySelector('.home__carousel__button__container__prev');
 const carBtnNext = document.querySelector('.home__carousel__button__container__next');
 const carBtnWelcome = document.querySelector('.welcome__button')
-const vh = document.documentElement.clientHeight;
+const headerContainer = document.getElementById('introCarousel')
 let navHeight = globalNav.offsetHeight;
 carBtnNext.addEventListener('click', nextSlide);
 carBtnPrev.addEventListener('click', prevSlide);
-carBtnWelcome.addEventListener('click',scrollToMain)
+carBtnWelcome.addEventListener('click',hideIntro)
 const carSlideshow = document.querySelector('.home__carousel__slideshow')
 var carSlides = carSlideshow.children;
 var carSlideIndex = 0;
 var carAutoPlay = setInterval(autoplayCarSlides, 8000)
-function scrollToMain(){
-    scrollTo({
-        top:vh-navHeight,behavior:'smooth'
-    })
+function hideIntro(){
+    fadeIntro()
+    setTimeout(removeIntro,500)
 }
+function fadeIntro(){
+    headerContainer.classList.add('opacity__zero')
+}
+function removeIntro(){
+    headerContainer.classList.add('display__none')
+    headerContainer.classList.add('remove__z-index')
+}
+
 function nextSlide() {
     if (carSlideIndex < carSlides.length - 1) {
         carSlides[carSlideIndex].classList.remove('home__carousel__active__slide')
