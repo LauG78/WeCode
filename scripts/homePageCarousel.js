@@ -12,7 +12,7 @@ var carSlideIndex = 0;
 var carAutoPlay = setInterval(autoplayCarSlides, 5000)
 function hideIntro() {
     fadeIntro()
-    setTimeout(removeIntro, 5000)
+    setTimeout(removeIntro, 8000)
 }
 function fadeIntro() {
     headerContainer.classList.add('opacity__zero')
@@ -23,7 +23,7 @@ function removeIntro() {
 }
 function resetAutoplay(){
     clearInterval(carAutoPlay)
-    carAutoPlay = setInterval(autoplayCarSlides, 5000)
+    carAutoPlay = setInterval(autoplayCarSlides, 8000)
 }
 
 function nextSlide() {
