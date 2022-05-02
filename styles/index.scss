@@ -24,6 +24,8 @@
 //END OF JS STYLES
 body {
     overflow-x: hidden;
+    background-color: $clr-white;
+    
 
     header {
         width: 100vw;
@@ -35,6 +37,7 @@ body {
         position: fixed;
         z-index: 200;
         overflow-y: hidden;
+        text-align: center;
         display: none;
 
         .home__intro__container {
@@ -212,6 +215,49 @@ body {
                     }
                 }
 
+            }
+        }
+    }
+
+    main {
+
+
+        .parallax__wrapper {
+            margin-top: auto;
+            width: 100vw;
+            .section__content{
+                padding: 0 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .section__title{
+                 text-transform: uppercase;
+                 font-family: $ff-League_Spartan;
+                 padding-top: 1rem;
+                 padding-bottom: .5rem;
+                 text-align: center;
+                }
+                .section__list__item__content{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 0 1rem;
+                    img {
+                        max-height:10rem;
+                    }
+                }
+            }
+            .light__section {6546
+                color: $clr-black;
+
+                
+            }
+
+            .dark__section {
+                background-color: $clr-black;
+                color: $clr-white;
+
+                
             }
         }
     }

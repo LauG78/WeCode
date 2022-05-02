@@ -105,6 +105,7 @@ li {
 
 body {
   overflow-x: hidden;
+  background-color: #fbfcee;
 }
 
 body header {
@@ -118,6 +119,7 @@ body header {
   position: fixed;
   z-index: 200;
   overflow-y: hidden;
+  text-align: center;
   display: none;
 }
 
@@ -307,6 +309,59 @@ body header .home__intro__container .home__carousel__slideshow .home__carousel__
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+body main .parallax__wrapper {
+  margin-top: auto;
+  width: 100vw;
+}
+
+body main .parallax__wrapper .section__content {
+  padding: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .parallax__wrapper .section__content .section__title {
+  text-transform: uppercase;
+  font-family: "LeagueSpartan", "Arial";
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+
+body main .parallax__wrapper .section__content .section__list__item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+body main .parallax__wrapper .section__content .section__list__item__content img {
+  max-height: 10rem;
+}
+
+body main .parallax__wrapper .light__section {
+  background-color: #fbfcee;
+  color: #001412;
+}
+
+body main .parallax__wrapper .dark__section {
+  background-color: #001412;
+  color: #fbfcee;
 }
 
 /*---MEDIA QUERIES--*/
