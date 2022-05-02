@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeCode</title>
+    <title>WeCode Contact page</title>
     <meta name="description" content="Contact WeCode">
     <!--Link Global Styles-->
     <link rel="stylesheet" href="../styles/footer.css">
@@ -15,12 +14,10 @@
     <!--Link AwesomeFonts CSS for icons-->
     <link rel="stylesheet" href="../assets/fonts/fontAwesome/css/all.css">
 </head>
-
 <body>
 
-
     <header>
-
+        <h1>contact us</h1>
     </header>
 
     <!----------NAV CODE STARTS HERE---------->
@@ -50,11 +47,74 @@
             description="This is a button that toggles the navigation menu">
             <span class="burger__slice" alt="burger slice"></span>
         </div>
+
     </nav>
     <!----------NAV CODEBLOCK ENDS HERE---------->
 
-    <main>
+    <main>       
+           
+        <div class="pone">
+            <div class="secondary__color">   
+                <a class="contact__info" href="mailto:example@Wecode.com">          
+                    <i class="fa-solid fa-envelope" alt="e-mail icon" description="this is an envelope"></i>
+                    <strong>e-mail us at example@Wecode.com </strong>
+                </a>
+            </div>    
+        
+            <div class="secondary__color">
+                <a class="contact__info" href="tel:0032485544332">
+                    <i class="fa-solid fa-phone" alt="phone icon" description="this is a phone"></i>
+                    <strong>call us at +32 485 54 43 32</strong>
+                </a>
+            </div>
 
+            <div class="secondary__color">   
+                <a class="contact__info" href="https://www.google.be/maps/place/The+Beacon/@51.2256329,4.3987571,17z/data=!3m1!4b1!4m5!3m4!1s0x47c3f6591c88f09d:0x31d6c38718baba03!8m2!3d51.2256329!4d4.4009511">
+                    <i class="fa-solid fa-location-dot" alt="location" description="a pin that represents location"></i>
+                    <strong>WeCode</strong>
+                </a> 
+
+            </div>
+    
+        </div>
+    <div class="smlogo">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+        <img src="../assets/images/WeCode logo.svg" alt="wecode seethrough-logo" class="pict">
+    </div>
+    <div class="ptwo">
+        <form id="cform">
+            <div class="cname">
+                  <label class="name" for="name" item-align="center">your name</label>
+            </div>
+            <div class="iname">    
+                <input id="name" class="input" name="name" placeholder="your name here" type="text" item-align="center" required>
+            </div>
+            <div class="cemail">
+                <label class="email" for="email">your email</label>
+            </div>
+            <div class="iemail">    
+                <input id="email" class="input" name="email" placeholder="email@email.com" type="text" required>
+            </div>
+            <p class="mes">message</p>
+            <div class="tarea">
+                <img src="../assets/images/WeCode logo.svg" alt="wecode logo" class="photo">
+                <textarea class="tarea" item-align="center" placeholder="your message goes here"></textarea>
+                <img src="../assets/images/WeCode logo.svg" alt="wecode logo" class="photo">
+            </div>
+            <div class="button">
+                <input type="submit" value="submit"> 
+            </div>    
+        </form>
+    </div>
+    
+
+
+    
     </main>
 
     <footer id="footer">
@@ -72,25 +132,26 @@
             </div>
             <div class="info__div">
                 <a class="a_info_footer"
-                href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571" alt="A link that opens google maps to show you the way"><i
+                href="https://www.google.be/maps/place/Kessel-Lo,+3010+Leuven/@50.8851381,4.7182004,14z/data=!3m1!4b1!4m5!3m4!1s0x47c16730abb865d9:0xd5833ad8db0443c1!8m2!3d50.88514!4d4.73571" title="A link that opens google maps to show you the way"><i
                 class="fa-solid fa-location-dot i_info_footer" data-text=" Antwerp"></i></a>
-        <a class="a_info_footer" href="tel:0032485544332" alt="click to call WeCode"> <i class="fa-solid fa-phone i_info_footer"
+                <a class="a_info_footer" href="tel:0032485544332" title="click to call WeCode"> <i class="fa-solid fa-phone i_info_footer"
                 data-text="+32 485 54 53 32"></i></a>
-        <a class="a_info_footer" href="mailto:example.wecode.com" alt="click to send an email to WeCode"><i
+                <a class="a_info_footer" href="mailto:example.wecode.com" title="click to send an email to WeCode"><i
                 class="fa-solid fa-envelope i_info_footer" data-text="example@Wecode.com"></i></a>
             </div>
             <div class="letter__div">
-                <h3 class="h3__footer">newsletter</h3>
+                <h6 class="h3__footer">newsletter</h6>
                 <p class="p__footer">lorem discounts when you sign in ipsum</p>
                 <input type="email" placeholder="email">
                 <input type="submit" value="submit">
             </div>
         </div>
         <div class="copyright__container">
-            <h6 class="h6__footer">&copy;2022 WeCode all rights reserved</h6>
+            <p class="h6__footer">&copy;2022 WeCode all rights reserved</p>
         </div>
 </footer>
     <script src="../scripts/navbar.js"></script>
+
 </body>
 
 </html>

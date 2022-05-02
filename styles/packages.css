@@ -130,6 +130,18 @@ li {
     margin-left: 0.5rem;
   }
 }
+main {
+  background: #fbfcee;
+}
+main .Header__Img {
+  height: 25rem;
+  background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 15.26.46.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80rem;
+}
+
 h1 {
   font-family: "LeagueSpartan", "Arial";
   text-align: center;
@@ -154,6 +166,7 @@ h1 .package__span {
   width: 100%;
   border-radius: 20px;
   border: 1px solid #03a0b5;
+  box-shadow: 2.5px 5px 10px #001412;
 }
 .box__cards .card__one .card__container {
   position: relative;
@@ -166,12 +179,12 @@ h1 .package__span {
   color: #02f2be;
 }
 .box__cards .card__one .card__container .grow__icon {
-  color: rgb(44, 207, 44);
+  color: rgb(20, 185, 20);
 }
 .box__cards .card__one .card__info {
   padding: 3rem 1rem;
 }
-.box__cards .card__one .card__info h3 {
+.box__cards .card__one .card__info h2 {
   padding-top: 1rem;
   font-size: 3rem;
   color: #03a0b5;
@@ -180,13 +193,13 @@ h1 .package__span {
   text-align: center;
 }
 .box__cards .card__one .card__info .h3__grow {
-  color: rgb(44, 207, 44);
+  color: rgb(21, 166, 21);
 }
 .box__cards .card__one .card__info p {
-  color: #03a0b5;
+  color: #001412;
   font-family: "Nunito", "Georgia";
   line-height: 2rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   margin: 1rem;
 }
@@ -199,7 +212,7 @@ h1 .package__span {
   padding: 1rem;
   border: 1px solid #03a0b5;
   border-radius: 20px;
-  background: white;
+  background: #fbfcee;
   cursor: pointer;
   transition: 0.5s;
   color: #001412;
@@ -208,13 +221,23 @@ h1 .package__span {
   background: #02f2be;
 }
 .box__cards .card__one .card__info .card__button2 {
-  background: rgb(44, 207, 44);
+  background: rgb(20, 185, 20);
   border: none;
 }
 
 .h4__yearlysub, .p__yearlysub {
   padding-left: 4rem;
   margin-bottom: 1rem;
+}
+
+.h3__yearlysub {
+  text-align: center;
+  font-size: 3rem;
+  margin: 3rem;
+  font-family: "LeagueSpartan", "Arial";
+}
+.h3__yearlysub .package__span {
+  text-decoration: underline #02f2be;
 }
 
 .h4__yearlysub {
@@ -249,11 +272,12 @@ h1 .package__span {
   clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
 }
 .the_faq_section .faq__title {
+  text-align: center;
   font-size: 3rem;
   margin-top: 5rem;
   margin-bottom: 2.5rem;
   text-decoration: underline 4px #02f2be;
-  color: white;
+  color: #fbfcee;
 }
 .the_faq_section .question__container {
   max-width: 800px;
@@ -270,7 +294,7 @@ h1 .package__span {
   border-bottom: 1px solid #02f2be;
   outline: none;
   font-size: 22px;
-  color: white;
+  color: #fbfcee;
   font-weight: 700;
   cursor: pointer;
 }

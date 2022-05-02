@@ -90,7 +90,6 @@ li {
   list-style-type: none;
 }
 
-/*--RESETS--*/
 .opacity__zero {
   opacity: 0;
 }
@@ -100,7 +99,7 @@ li {
 }
 
 .remove__z-index {
-  z-index: 0;
+  z-index: unset;
 }
 
 body {
@@ -116,7 +115,6 @@ body header {
   opacity: 1;
   -webkit-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out;
-  position: fixed;
   z-index: 200;
   overflow-y: hidden;
   text-align: center;
@@ -250,9 +248,9 @@ body header .home__intro__container .home__carousel__button__container__next {
   padding: 0rem .5rem;
 }
 
-body header .home__intro__container .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel__button__container__prevfocus,
+body header .home__intro__container .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel__button__container__prev:focus,
 body header .home__intro__container .home__carousel__button__container__next:hover,
-body header .home__intro__container .home__carousel__button__container__nextfocus {
+body header .home__intro__container .home__carousel__button__container__next:focus {
   background-color: rgba(3, 160, 181, 0.3);
   border-radius: 1rem;
 }
@@ -337,7 +335,17 @@ body main .parallax__wrapper .section__content .section__title {
   text-align: center;
 }
 
-body main .parallax__wrapper .section__content .section__list__item__content {
+body main .parallax__wrapper .section__content .section__list {
+  border: solid 0.1rem #03a0b5;
+  border-radius: .5rem;
+  margin: 1rem 0rem;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item {
+  padding: 1rem;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,8 +357,19 @@ body main .parallax__wrapper .section__content .section__list__item__content {
   padding: 0 1rem;
 }
 
-body main .parallax__wrapper .section__content .section__list__item__content img {
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content img {
   max-height: 10rem;
+  height: 8rem;
+  margin: .5rem 0;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content a {
+  color: #001412;
+  cursor: pointer;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content a:hover {
+  color: #03a0b5;
 }
 
 body main .parallax__wrapper .light__section {
@@ -362,7 +381,6 @@ body main .parallax__wrapper .dark__section {
   color: #fbfcee;
 }
 
-/*---MEDIA QUERIES--*/
 @media only screen and (max-width: 992px) {
   body header {
     width: 100vw;
@@ -409,6 +427,33 @@ body main .parallax__wrapper .dark__section {
     width: 100%;
     white-space: nowrap;
     margin: 0%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main .parallax__wrapper .section__content .section__list {
+    text-align: center;
+  }
+  main .parallax__wrapper .section__content .section__list .section__list__item {
+    position: relative;
+    max-width: 40%;
+    margin: 1rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main .parallax__wrapper .section__content .section__list {
+    text-align: center;
+  }
+  main .parallax__wrapper .section__content .section__list .section__list__item {
+    position: relative;
+    max-width: 20%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
   }
 }
 

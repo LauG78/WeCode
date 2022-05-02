@@ -55,6 +55,7 @@ a:hover{
     opacity: .9;
     top: -100vh;
     transition: top .8s ease-in-out;
+    -webkit-backface-visibility: hidden;
     & .global__nav__item {
         font-family: $ff-Roboto_Condensed;
         font-size: 1.5rem;

@@ -1,1 +1,322 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .display__none {
+  display: none;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+h1 {
+  color: #03a0b5;
+  font-family: "Nunito", "Georgia";
+  background-color: #fbfcee;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.secondary__color {
+  color: #00a896;
+}
+
+.photo {
+  height: 6rem;
+  width: 6rem;
+}
+
+.pict {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+main {
+  text-align: center;
+}
+
+.pone {
+  padding-bottom: 1rem;
+}
+
+.pone .contact__info {
+  color: #00a896;
+  font-size: 1.2rem;
+  font-family: "Nunito", "Georgia";
+}
+
+.pone .contact__info:hover {
+  color: #001412;
+}
+
+.ptwo .cname, .ptwo .cemail {
+  color: #001412;
+  font-size: 1.5rem;
+  font-family: "LeagueSpartan", "Arial";
+  padding: 1rem;
+  margin: 0rem;
+}
+
+.ptwo input[type=text] {
+  background-color: #00a896;
+  color: #fbfcee;
+  border: 0.1rem solid #03a0b5;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+  font-family: "Nunito", "Georgia";
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  padding: 0.05rem;
+  margin: 0rem;
+}
+
+.ptwo .mes {
+  color: #001412;
+  font-family: "LeagueSpartan", "Arial";
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.ptwo .tarea {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.ptwo .tarea textarea {
+  background-color: #00a896;
+  color: #001412;
+  border: 0.1rem solid #001412;
+  border-radius: 0.7rem;
+  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+  height: 11rem;
+  width: 20rem;
+  font-size: 1.2rem;
+  font-family: "NunitoItalic", "Georgia Italic";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ptwo .button {
+  padding-bottom: 1rem;
+}
+
+.ptwo .button input[type=submit] {
+  color: #001412;
+  background-color: #00a896;
+  font-family: "NunitoItalic", "Georgia Italic";
+  font-size: 1rem;
+  width: 6rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #03a0b5;
+  -webkit-box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
+          box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
+  white-space: pre-line;
+  cursor: pointer;
+}
+
+.ptwo .button input[type=submit]:hover {
+  background-color: #03a0b5;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  75% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.photo {
+  -webkit-animation: spin 7s linear infinite;
+          animation: spin 7s linear infinite;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  75% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  60% {
+    -webkit-box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+            box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+  }
+}
+
+@keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  75% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  60% {
+    -webkit-box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+            box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+  }
+}
+
+.pict {
+  -webkit-animation: turn 7s linear infinite;
+          animation: turn 7s linear infinite;
+}
+
+@media only screen and (max-width: 700px) {
+  .tarea {
+    display: none;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
