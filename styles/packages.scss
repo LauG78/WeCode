@@ -55,7 +55,10 @@
         }
 }
 // styling packages 
-    h1{
+main {
+    background: $clr-white;
+}    
+h1{
         font-family:$ff-League_Spartan;
         text-align:center;
         margin:7rem;
@@ -88,12 +91,13 @@
                         color: $clr-highlight;
                     }
                     .grow__icon {
-                        color: rgb(44, 207, 44);
+                        color: rgb(20, 185, 20);
                     }
                 }
                 .card__info {
                     padding: 3rem 1rem;
-                    h3 {
+                    h2 {
+                        
                         padding-top: 1rem;
                         font-size:3rem;
                         color: $clr-primary;
@@ -102,13 +106,14 @@
                         text-align: center;
                     }
                     .h3__grow {
-                        color: rgb(44, 207, 44);
+                        color: rgb(21, 166, 21);
+                        
                     }
                     p {
-                        color: $clr-primary;
+                        color: $clr-black;
                         font-family: $ff-Nunito;
                         line-height: 2rem;
-                        font-size: .8rem;
+                        font-size: 1rem;
                         text-align: center;
                         margin:1rem;
                     }
@@ -121,7 +126,7 @@
                         padding: 1rem;
                         border: 1px solid $clr-primary;
                         border-radius: 20px;
-                        background: white;
+                        background: $clr-white;
                         cursor: pointer;
                         transition: .5s;
                         color: $clr-black;
@@ -130,7 +135,7 @@
                         background:$clr-highlight;
                     }
                     .card__button2{
-                        background: rgb(44, 207, 44);
+                        background: rgb(20, 185, 20);
                         border:none;
                     }
                 }
@@ -143,6 +148,17 @@
         padding-left: 4rem;
        margin-bottom: 1rem;
     }
+    .h3__yearlysub {
+        text-align: center;
+        font-size: 3rem;
+        margin: 3rem;
+        font-family: $ff-League_Spartan;
+
+        .package__span{
+            text-decoration: underline $clr-highlight;
+
+        }
+        }
     .h4__yearlysub {
         text-decoration:bold;
         font-size:1.5rem;
@@ -175,6 +191,7 @@
     background:$clr-black;
     clip-path: polygon(0 25%,100% 0,100% 100%, 0 100%);
 .faq__title{
+    text-align: center;
     font-size: 3rem;
     margin-top: 5rem;
     margin-bottom: 2.5rem;
