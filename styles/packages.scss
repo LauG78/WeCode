@@ -13,13 +13,16 @@
         .the_faq_section{
             clip-path: polygon(0 5%,100% 0,100% 100%, 0 100%);
             } 
-
             .yearlysub__div {
                 width:100%;
             }
             .h4__yearlysub, .p__yearlysub {
                 margin-left: .2rem;
             }
+            .Header__Img {
+                background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 22.01.30.png);
+               }
+
 }
 @include media-medium {
     .card__one {
@@ -31,7 +34,7 @@
         .h4__yearlysub, .p__yearlysub {
             margin-left: .5rem;
         }
-}
+    }
 @include media-large {
     .card__one {
         width: 30%;
@@ -57,13 +60,18 @@
 // styling packages 
 main {
     background: $clr-white;
+    .Header__Img__Container{
+        display:flex;
+        justify-content:center;
     .Header__Img {
-        height: 25rem;
-        background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 15.26.46.png);
+        background-size: 25rem;
+        height: 20rem;
+        width: 80rem;
+        background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 16.06.58.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: 80rem;        
+        background-position: Center 15rem;
+       }
     }
 }  
 h1{
@@ -124,7 +132,7 @@ h1{
                         line-height: 2rem;
                         font-size: 1rem;
                         text-align: center;
-                        margin:1rem;
+                        margin:1rem 0;
                     }
                     ul {
                         padding: 1rem 0;
@@ -177,12 +185,13 @@ h1{
 .yearlysub__container {
     display: flex;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:center;
     margin-bottom: 4rem;
     .yearlysub__div {
         margin:2rem;
         li {
             display: flex;
+            justify-content:flex-start;
             span {
                 font-size: .8rem;
                 i { margin-right: 1rem;

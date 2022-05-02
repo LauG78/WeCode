@@ -90,6 +90,10 @@ li {
   .h4__yearlysub, .p__yearlysub {
     margin-left: 0.2rem;
   }
+
+  .Header__Img {
+    background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 22.01.30.png);
+  }
 }
 @media only screen and (min-width: 768px) {
   .card__one {
@@ -133,13 +137,18 @@ li {
 main {
   background: #fbfcee;
 }
-main .Header__Img {
-  height: 25rem;
-  background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 15.26.46.png);
+main .Header__Img__Container {
+  display: flex;
+  justify-content: center;
+}
+main .Header__Img__Container .Header__Img {
+  background-size: 25rem;
+  height: 20rem;
+  width: 80rem;
+  background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 16.06.58.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80rem;
+  background-position: Center 15rem;
 }
 
 h1 {
@@ -201,7 +210,7 @@ h1 .package__span {
   line-height: 2rem;
   font-size: 1rem;
   text-align: center;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 .box__cards .card__one .card__info ul {
   padding: 1rem 0;
@@ -248,7 +257,7 @@ h1 .package__span {
 .yearlysub__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 4rem;
 }
 .yearlysub__container .yearlysub__div {
@@ -256,6 +265,7 @@ h1 .package__span {
 }
 .yearlysub__container .yearlysub__div li {
   display: flex;
+  justify-content: flex-start;
 }
 .yearlysub__container .yearlysub__div li span {
   font-size: 0.8rem;
