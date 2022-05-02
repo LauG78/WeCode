@@ -5,11 +5,19 @@ const headerContainer = document.getElementById('introCarousel')
 let navHeight = globalNav.offsetHeight;
 carBtnNext.addEventListener('click', nextSlide);
 carBtnPrev.addEventListener('click', prevSlide);
-carBtnWelcome.addEventListener('click', hideIntro)
+carBtnWelcome.addEventListener('click', scrollTillNavOnTop)
 const carSlideshow = document.querySelector('.home__carousel__slideshow')
 var carSlides = carSlideshow.children;
 var carSlideIndex = 0;
 var carAutoPlay = setInterval(autoplayCarSlides, 5000)
+const navPosition = globalNav.getBoundingClientRect().top;
+function scrollTillNavOnTop() {
+    console.log(navPosition)
+    window.scroll({
+        top: navPosition,
+        behavior: 'smooth'
+    })
+}/* replaced by scrollTillNavOnTop
 function hideIntro() {
     fadeIntro()
     setTimeout(removeIntro, 500)
@@ -22,7 +30,8 @@ function removeIntro() {
     headerContainer.classList.add('display__none')
 
 }
-function resetAutoplay(){
+*/
+function resetAutoplay() {
     clearInterval(carAutoPlay)
     carAutoPlay = setInterval(autoplayCarSlides, 8000)
 }
