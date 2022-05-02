@@ -1,1 +1,96 @@
-/* No CSS *//*# sourceMappingURL=team.css.map */
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "NunitoItalic";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+body {
+  background-color: #fbfcee;
+}
+
+h1, h2, h4, h5, h6 {
+  font-family: "League Spartan SemiBold", sans-serif;
+  color: #03a0b5;
+}
+
+main {
+  margin: 2rem;
+}
+
+h6 {
+  font-style: italic;
+}
+
+.card-footer {
+  background-color: #001412;
+  text-align: center;
+  border-color: #001412;
+}
+
+q {
+  color: #03a0b5;
+  font-style: italic;
+}
+
+i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: #fbfcee;
+}
+
+.card {
+  background-color: #fdfef8;
+  border-color: #e2e3d6;
+}
+
+/*# sourceMappingURL=team.css.map */

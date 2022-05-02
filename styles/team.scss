@@ -1,0 +1,36 @@
+@import'global';
+
+body{
+  background-color:$clr-white;
+}
+h1,h2,h4,h5,h6 {
+  font-family: "League Spartan SemiBold", sans-serif;
+  color: $clr-primary;
+}
+main{
+  margin: 2rem;
+}
+h6{
+  font-style: italic;
+}
+.card{;
+}
+.card-footer{
+  background-color: $clr-black;
+  text-align: center;
+  border-color: $clr-black;
+}
+q{
+  color: $clr-primary;
+  font-style: italic;
+}
+i{
+  font-size: 1.3rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  color: $clr-white;
+}
+.card{
+  background-color: #fdfef8;
+  border-color: #e2e3d6;
+}
