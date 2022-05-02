@@ -90,6 +90,11 @@ li {
   .h4__yearlysub, .p__yearlysub {
     margin-left: 0.2rem;
   }
+
+  .Header__Img {
+    height: 20rem;
+    background-size: 50rem;
+  }
 }
 @media only screen and (min-width: 768px) {
   .card__one {
@@ -133,6 +138,14 @@ li {
 main {
   background: #fbfcee;
 }
+main .Header__Img {
+  height: 20rem;
+  background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 15.26.46.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90rem;
+}
 
 h1 {
   font-family: "LeagueSpartan", "Arial";
@@ -158,6 +171,7 @@ h1 .package__span {
   width: 100%;
   border-radius: 20px;
   border: 1px solid #03a0b5;
+  box-shadow: 2.5px 5px 10px #03a0b5;
 }
 .box__cards .card__one .card__container {
   position: relative;
@@ -268,7 +282,7 @@ h1 .package__span {
   margin-top: 5rem;
   margin-bottom: 2.5rem;
   text-decoration: underline 4px #02f2be;
-  color: white;
+  color: #fbfcee;
 }
 .the_faq_section .question__container {
   max-width: 800px;
@@ -285,7 +299,7 @@ h1 .package__span {
   border-bottom: 1px solid #02f2be;
   outline: none;
   font-size: 22px;
-  color: white;
+  color: #fbfcee;
   font-weight: 700;
   cursor: pointer;
 }
