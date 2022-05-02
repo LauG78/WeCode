@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "team.scss"
-    ],
-    "names": [],
-    "file": "team.css"
-}
+{"version":3,"sourceRoot":"","sources":["_variables.scss","_global.scss","team.scss"],"names":[],"mappings":"AAsBI;AACJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;AAGJ;EACI;EACA;;ACrCJ;AACA;AACI;EACA;AACA;EACA;AACA;EACA;;;AAGJ;EACI,aDJW;;;ACMf;AACI;EACA;EACA;EACA;EACA;;;AAGJ;AACI;EACA;;;AAEJ;AACI;EACA;;;AAEJ;AAAA;AAEI;EACA;;;ACjCJ;EACE,kBFCc;;;AEChB;EACE;EACA,OFFe;;;AEIjB;EACE;;;AAEF;EACE;;;AAIF;EACE,kBFfc;EEgBd;EACA,cFjBc;;;AEmBhB;EACE,OFlBe;EEmBf;;;AAEF;EACE;EACA;EACA;EACA,OF1Bc;;;AE4BhB;EACE;EACA","file":"team.css"}
