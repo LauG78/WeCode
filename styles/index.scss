@@ -23,7 +23,6 @@
 //END OF JS STYLES
 body {
     overflow-x: hidden;
-
     background-color: $clr-white;
     header {
         width: 100vw;
@@ -32,21 +31,14 @@ body {
         overflow-x: hidden;
         opacity: 1;
         transition: opacity 500ms ease-in-out;
-        position: fixed;
         z-index: 200;
         overflow-y: hidden;
         text-align: center;
-        display: none;
-
-
         .home__intro__container {
-        
-
             .home__carousel {
                 width: 100vw;
                 height: 100vh;
                 position: relative;
-
                 .home__carousel__content {
                     z-index: 55;
                     position: absolute;
@@ -64,7 +56,6 @@ body {
                     font-family: $ff-Nunito;
                     border-radius: 2rem;
                     padding: 1rem;
-
                     .before__brand,
                     .after__brand,
                     .credit__text {
@@ -75,7 +66,6 @@ body {
                         border-radius: 3px;
                         font-size: 1rem;
                     }
-
                     .brand__name {
                         margin: .5rem;
                         font-family: $ff-Roboto_Condensed;
@@ -86,26 +76,21 @@ body {
                         color: $clr-primary;
                         border-radius: 25px;
                         font-size: 8rem;
-
                         .brand__name__span {
                             color: $clr-black;
                         }
                     }
-
                     .credit__text {
                         margin-top: .2rem;
                         font-size: .8rem;
                         background-color: $clr-black;
                         color: $clr-primary;
                         line-height: .5;
-
                         .highlight {
                             color: $clr-highlight;
                         }
                     }
-
                     .welcome__button {
-
                         margin: 1rem;
                         border: solid $clr-highlight;
                         font-family: $ff-Roboto_Condensed;
@@ -121,22 +106,16 @@ body {
                         cursor: pointer;
                         transition: background-color .3s ease-in-out;
                         transition: border 3s ease-in-out;
-
                         span {
                             transition: color .8s ease-in-out;
                             animation: welcomeBtn 10s infinite ease-in-out;
                         }
-
-
-
                         background-color: rgba(0, 20, 18, .7);
-
                         &:hover,
                         :focus {
                             color: $clr-black;
                             background-color: rgba(2, 242, 190, .7);
                             border: none;
-
                             span {
                                 animation: unset;
                             }
@@ -144,7 +123,6 @@ body {
                     }
                 }
             }
-
             .home__carousel__button__container__prev,
             .home__carousel__button__container__next {
                 z-index: 60;
@@ -156,13 +134,11 @@ body {
                 border-radius: 1rem;
                 border: none;
                 padding: 0rem .5rem;
-
                 &:hover,
-                &focus {
+                &:focus {
                     background-color: rgba(3, 160, 181, .3);
                     border-radius: 1rem;
                 }
-
                 .home__carousel__button {
                     opacity: 1;
                     margin: .25rem;
@@ -173,24 +149,19 @@ body {
                     font-size: 4rem;
                     border-radius: 1rem;
                     cursor: pointer;
-
                     &:hover,
                     &:focus {
                         //CLR HIGHLIGHT IN RGBA
                         color: rgba(251, 252, 238, 1);
-
                     }
                 }
             }
-
             .home__carousel__button__container__prev {
                 left: 2rem;
             }
-
             .home__carousel__button__container__next {
                 right: 2rem;
             }
-
             .home__carousel__slideshow {
                 .home__carousel__slide {
                     position: absolute;
@@ -198,13 +169,11 @@ body {
                     opacity: 0;
                     transition: 500ms opacity ease-in-out;
                     transition-delay: 500ms;
-
                     &.home__carousel__active__slide {
                         z-index: 51;
                         opacity: 1;
                         transition-delay: 0ms;
                     }
-
                     img {
                         display: block;
                         width: 100vw;
@@ -213,7 +182,6 @@ body {
                         object-position: center;
                     }
                 }
-
             }
         }
     }
@@ -277,19 +245,15 @@ body {
         header {
             width: 100vw;
             overflow: hidden;
-
             .home__intro__container {
                 width: 100vw;
-
                 .home__carousel__content {
                     width: 80%;
                     height: 60vh;
-
                     .brand__name {
                         padding: .25rem .5rem;
                         white-space: nowrap;
                     }
-
                     .welcome__button {
                         transform: translateY(50%);
                     }
@@ -302,16 +266,13 @@ body {
     body {
         header {
             .home__intro__container {
-
                 .home__carousel {
                     .home__carousel__content {
                         top: 25%;
-
                         .brand__name {
                             font-size: 5rem;
                         }
                     }
-
                     .home__carousel__button__container__prev,
                     .home__carousel__button__container__next {
                         margin-top: auto;
@@ -322,13 +283,11 @@ body {
                         background-color: rgba(3, 160, 181, .3);
                         border: solid rgba(0, 20, 18, .25);
                         ;
-
                         .home__carousel__button {
                             color: rgba(251, 252, 238, .7);
                             width: 100%;
                             white-space: nowrap;
                             margin: 0%;
-
                         }
                     }
                 }
@@ -375,21 +334,15 @@ body {
     15% {
         color: $clr-primary;
     }
-
     30% {
         color: $clr-white;
     }
-
     50% {
-
         opacity: .8;
-
     }
-
     65% {
         color: $clr-primary;
     }
-
     80% {
         color: $clr-highlight;
     }
