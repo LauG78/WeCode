@@ -18,7 +18,7 @@
 }
 
 .remove__z-index {
-    z-index: 0;
+    z-index: unset;
 }
 
 //END OF JS STYLES
@@ -38,10 +38,11 @@ body {
         z-index: 200;
         overflow-y: hidden;
         text-align: center;
+        display: none;
 
 
         .home__intro__container {
-
+        
 
             .home__carousel {
                 width: 100vw;
@@ -225,6 +226,7 @@ body {
         .parallax__wrapper {
             margin-top: auto;
             width: 100vw;
+
             .section__content{
                 padding: 0 1rem;
                 display: flex;
@@ -236,16 +238,30 @@ body {
                  padding-top: 1rem;
                  padding-bottom: .5rem;
                  text-align: center;
+
                 }
-                .section__list__item__content{
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 0 1rem;
-                    img {
-                        max-height:10rem;
+                .section__list{
+                    border: solid .1rem $clr-primary;
+                    border-radius: .5rem;
+                    margin: 1rem 0rem;
+                    .section__list__item{
+                        padding: 1rem;
+
+                        .section__list__item__content{
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            padding: 0 1rem;
+
+                            img {
+                                max-height:10rem;
+                                height: 8rem;
+                                margin: .5rem 0;
+                            }
+                        }
                     }
                 }
+                
             }
             .light__section {
                 color: $clr-black;
