@@ -120,7 +120,6 @@ body header {
   z-index: 200;
   overflow-y: hidden;
   text-align: center;
-  display: none;
 }
 
 body header .home__intro__container .home__carousel {
