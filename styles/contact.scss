@@ -28,7 +28,6 @@ h1{
 }
 main {
     text-align: center;
-    background-color: $clr-white;
     }
     .pone{
         padding-bottom: 1rem;
@@ -43,7 +42,7 @@ main {
     }
     .ptwo{
         .cname, .cemail {
-            color: $clr-primary;
+            color: $clr-black;
             font-size: 1.5rem;
             font-family: $ff-League_Spartan;
             padding: 1rem;
@@ -63,7 +62,7 @@ main {
             margin: 0rem;
         }
         .mes {
-            color: $clr-primary;
+            color: $clr-black;
             font-family: $ff-League_Spartan;
             font-size: 1.5rem;
             padding-top: 1rem;

@@ -115,7 +115,6 @@ h1 {
 
 main {
   text-align: center;
-  background-color: #fbfcee;
 }
 
 .pone {
@@ -133,7 +132,7 @@ main {
 }
 
 .ptwo .cname, .ptwo .cemail {
-  color: #03a0b5;
+  color: #001412;
   font-size: 1.5rem;
   font-family: "LeagueSpartan", "Arial";
   padding: 1rem;
@@ -156,7 +155,7 @@ main {
 }
 
 .ptwo .mes {
-  color: #03a0b5;
+  color: #001412;
   font-family: "LeagueSpartan", "Arial";
   font-size: 1.5rem;
   padding-top: 1rem;
