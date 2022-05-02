@@ -70,22 +70,27 @@ h6 {
   font-style: italic;
 }
 
-.card {
-  border-color: #001412;
-}
-
 .card-footer {
   background-color: #001412;
-  align-content: center;
-}
-
-.fa-brands {
-  color: #fbfcee;
+  text-align: center;
+  border-color: #001412;
 }
 
 q {
   color: #03a0b5;
   font-style: italic;
+}
+
+i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  color: #fbfcee;
+}
+
+.card {
+  background-color: #fdfef8;
+  border-color: #e2e3d6;
 }
 
 /*# sourceMappingURL=team.css.map */

@@ -1,4 +1,5 @@
 @import'global';
+
 body{
   background-color:$clr-white;
 }
@@ -12,17 +13,24 @@ main{
 h6{
   font-style: italic;
 }
-.card{
-  border-color: $clr-black ;
+.card{;
 }
 .card-footer{
   background-color: $clr-black;
-  align-content: center;
-}
-.fa-brands{
-  color: $clr-white;
+  text-align: center;
+  border-color: $clr-black;
 }
 q{
   color: $clr-primary;
   font-style: italic;
+}
+i{
+  font-size: 1.3rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+  color: $clr-white;
+}
+.card{
+  background-color: #fdfef8;
+  border-color: #e2e3d6;
 }
