@@ -100,7 +100,7 @@ li {
 }
 
 .remove__z-index {
-  z-index: 0;
+  z-index: unset;
 }
 
 body {
@@ -120,6 +120,7 @@ body header {
   z-index: 200;
   overflow-y: hidden;
   text-align: center;
+  display: none;
 }
 
 body header .home__intro__container .home__carousel {
