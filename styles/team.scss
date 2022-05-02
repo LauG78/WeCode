@@ -2,13 +2,14 @@
 @import "variables";
 @import "mixins";
 
-body{
-  background-color: $clr-white;
+//General CSS Styling for entire page//
+
+html{
+  scroll-behavior: smooth;
 }
-.cards-team{
+body{
+  overflow-x:hidden;
   background-color: $clr-white;
-  padding: 3rem;
-  text-align: center;
 }
 h1,h2,h4,h5,h6 {
   font-family: "League Spartan SemiBold", sans-serif;
@@ -17,6 +18,16 @@ h1,h2,h4,h5,h6 {
 h6{
   font-style: italic;
 }
+q{
+  color: $clr-primary;
+  font-style: italic;
+}
+//CSS for the Team Cards//
+.cards-team{
+  background-color: $clr-white;
+  padding: 3rem;
+  text-align: center;
+}
 .card{;
 }
 .card-footer{
@@ -24,11 +35,7 @@ h6{
   text-align: center;
   border-color: $clr-black;
 }
-q{
-  color: $clr-primary;
-  font-style: italic;
-}
-i{
+.fa-brands{
   font-size: 1.3rem;
   margin-right: .5rem;
   margin-left: .5rem;
@@ -40,9 +47,11 @@ i{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-i:hover{
+.fa-brands:hover{
   color: $clr-highlight;
 }
+
+//Styling for the second part of the page, the WeCode Way//
 .wecode-way{
   background-color: $clr-black;
   padding-top: 5rem;
@@ -50,9 +59,133 @@ i:hover{
   padding-right: 3rem;
   padding-bottom: 1rem;
   text-align: center;
-  clip-path: polygon(0 25%,100% 0, 100% 100%, 0 100%);
-}
 }
 .darkmode{
   color: $clr-white;
+}
+//Line and tables containing The WeCode Way//
+.wrapper{
+  background-color: $clr-black;
+  max-width:1080px;
+  margin: 50px auto;
+  padding:0 20px;
+  position: relative;
+}
+.wrapper .center-line{
+  position: absolute;
+  height: 100%;
+  width:4px;
+  background:$clr-white ;
+  left: 50%;
+  top:20px;
+  transform: translateX(-50%);
+}
+.wrapper .row{
+  display: flex;
+  justify-content: flex-start;
+}
+.wrapper .row-1{
+  justify-content: flex-start;
+}
+.wrapper .row-2{
+  justify-content: flex-end;
+}
+.wrapper .row section{
+  background: $clr-white;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: $clr-white;
+  top: 28px;
+  transform: rotate(45deg);
+}
+.row-1 section::before{
+  right:-7px;
+}
+.row-2 section::before{
+  left:-7px;
+}
+.row section .icon,
+.center-line .scroll-icon{
+  position: absolute;
+  background: $clr-white;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: $clr-black;
+  font-size:17px;
+  box-shadow: 0 0 0 4px #ffffff, inset 0 2px rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+  bottom: 0;
+  left:50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+
+}
+.row-1 section .icon{
+  top:13px;
+  right: -60px;
+}
+.row-2 section .icon{
+  top:13px;
+  left: -60px;
+}
+.row section .details, .row section .bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row section .details .title{
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a{
+  text-decoration: none;
+  background: $clr-black;
+  color: $clr-primary;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+}
+//Responsiveness The WeCode Way//
+@media(max-width: 790px){
+  .wrapper .center-line{
+    left:40px;
+  }
+  .wrapper .row{
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section{
+    width: 100%;
+  }
+  .row-1 section ::before{
+    left: -7px;
+  }
+  .row-1 section .icon{
+    left: -60px;
+  }
+}
+@media(max-width: 440px) {
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon{
+    display: none;
+  }
+  .wrapper .row{
+    margin: 10px 0;
+  }
 }
