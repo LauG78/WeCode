@@ -20,10 +20,6 @@
             .h4__yearlysub, .p__yearlysub {
                 margin-left: .2rem;
             }
-            .Header__Img {
-                height: 20rem;
-                background-size:50rem;
-            }
 }
 @include media-medium {
     .card__one {
@@ -62,12 +58,12 @@
 main {
     background: $clr-white;
     .Header__Img {
-        height: 20rem;
+        height: 25rem;
         background-image: url(../assets/images/package-img/Schermafbeelding\ 2022-05-02\ om\ 15.26.46.png);
         background-attachment: fixed;
-        background-position: center;
         background-repeat: no-repeat;
-        background-size: 90rem;        
+        background-position: center;
+        background-size: 80rem;        
     }
 }  
 h1{
@@ -93,7 +89,7 @@ h1{
             width:100%;
             border-radius: 20px;
             border:1px solid $clr-primary;
-            box-shadow: 2.5px 5px 10px $clr-primary;
+            box-shadow: 2.5px 5px 10px $clr-black;
                 .card__container {
                     position: relative;
                     i {
