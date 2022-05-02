@@ -120,6 +120,7 @@ body header {
   z-index: 200;
   overflow-y: hidden;
   text-align: center;
+  display: none;
 }
 
 body header .home__intro__container .home__carousel {
@@ -337,7 +338,17 @@ body main .parallax__wrapper .section__content .section__title {
   text-align: center;
 }
 
-body main .parallax__wrapper .section__content .section__list__item__content {
+body main .parallax__wrapper .section__content .section__list {
+  border: solid 0.1rem #03a0b5;
+  border-radius: .5rem;
+  margin: 1rem 0rem;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item {
+  padding: 1rem;
+}
+
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,8 +360,10 @@ body main .parallax__wrapper .section__content .section__list__item__content {
   padding: 0 1rem;
 }
 
-body main .parallax__wrapper .section__content .section__list__item__content img {
+body main .parallax__wrapper .section__content .section__list .section__list__item .section__list__item__content img {
   max-height: 10rem;
+  height: 8rem;
+  margin: .5rem 0;
 }
 
 body main .parallax__wrapper .light__section {
