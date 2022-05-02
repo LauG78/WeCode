@@ -119,7 +119,6 @@ body header {
   z-index: 200;
   overflow-y: hidden;
   text-align: center;
-  display: none;
 }
 
 body header .home__intro__container .home__carousel {
@@ -250,9 +249,9 @@ body header .home__intro__container .home__carousel__button__container__next {
   padding: 0rem .5rem;
 }
 
-body header .home__intro__container .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel__button__container__prevfocus,
+body header .home__intro__container .home__carousel__button__container__prev:hover, body header .home__intro__container .home__carousel__button__container__prev:focus,
 body header .home__intro__container .home__carousel__button__container__next:hover,
-body header .home__intro__container .home__carousel__button__container__nextfocus {
+body header .home__intro__container .home__carousel__button__container__next:focus {
   background-color: rgba(3, 160, 181, 0.3);
   border-radius: 1rem;
 }
