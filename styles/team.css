@@ -1,20 +1,24 @@
 /*----ADDING FONTS----*/
 @font-face {
-  font-family: "LeagueSpartan";
+  font-family: 'LeagueSpartan';
   src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "Nunito";
+  font-family: 'Nunito';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "NunitoItalic";
+  font-family: 'NunitoItalic';
   src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
 }
+
 @font-face {
-  font-family: "RobotoCondensed";
+  font-family: 'RobotoCondensed';
   src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
 }
+
 /*----------RESETS----------*/
 * {
   /*--Remove Margin From All Elements*/
@@ -22,7 +26,8 @@
   /*--Remove Padding From All Elements*/
   padding: 0%;
   /*--Change Box sizing from content-box to Border-box on all elements-*/
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body {
@@ -31,10 +36,21 @@ html, body {
 
 body {
   /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .display__none {
+  display: none;
 }
 
 footer {
@@ -83,8 +99,8 @@ q {
 
 i {
   font-size: 1.3rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
   color: #fbfcee;
 }
 
@@ -92,5 +108,4 @@ i {
   background-color: #fdfef8;
   border-color: #e2e3d6;
 }
-
 /*# sourceMappingURL=team.css.map */

@@ -6,14 +6,14 @@
     justify-content: center;
     align-items: center;
   }
-h1{
+h1 {
     color: $clr-primary;
     font-family: $ff-Nunito;
     background-color: $clr-white;
     font-size: 1.2rem;
     text-align: center;
     text-transform: uppercase;
-
+    padding-top: 1rem;
 }
 .secondary__color {
     color: $clr-secondary;
@@ -29,19 +29,26 @@ h1{
 main {
     text-align: center;
     background-color: $clr-white;
-    }
-    .pone{
-        padding-bottom: 1rem;
+    .pone {
+        padding-top: 1rem;
+        .inq {
+            color: $clr-black;
+            font-size: 0.9rem;
+            font-family: $ff-Nunito;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
         .contact__info {
             color: $clr-secondary;
             font-size: 1.2rem;
+            padding-bottom: 1rem;
             font-family: $ff-Nunito;
             &:hover{
                 color: $clr-black;
             }
-        }    
+        }         
     }
-    .ptwo{
+    .ptwo {
         .cname, .cemail {
             color: $clr-black;
             font-size: 1.5rem;
@@ -100,7 +107,7 @@ main {
             white-space: pre-line;
             cursor: pointer;
             &:hover {
-                background-color: $clr-primary;
+                background-color: $clr-highlight;
             }
         }    
     }
@@ -147,22 +154,9 @@ main {
 .pict {
    animation: turn 7s linear infinite;  
 }
-@media only screen and (max-width: 700px) {
-.tarea {
+@media only screen and (max-width: 584px) {
+.photo {
       display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
