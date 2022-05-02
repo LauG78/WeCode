@@ -33,11 +33,14 @@ footer {
     .logo__container {
         text-align: center;
         .icons__div {
-
+            a {
+                color: $clr-white;
+            
             .i__footer {
                 font-size: 1.3rem;
                 margin:1rem;
             }
+        }
         }
         .wecodeLogo {
             width:4rem;

@@ -1,0 +1,431 @@
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: 'LeagueSpartan';
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoItalic';
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+
+/*----------RESETS----------*/
+* {
+  /*--Remove Margin From All Elements*/
+  margin: 0%;
+  /*--Remove Padding From All Elements*/
+  padding: 0%;
+  /*--Change Box sizing from content-box to Border-box on all elements-*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito", "Georgia";
+}
+
+body {
+  /*--BODY WILL ALWAYS fill whole screen content will start at the top--*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+nav .display__none {
+  display: none;
+}
+
+footer {
+  /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
+  margin-top: auto;
+}
+
+a {
+  /*--Remove underlining from all links-*/
+  text-decoration: none;
+}
+
+ul,
+li {
+  /*--Remove list decorations -bullets---*/
+  list-style-type: none;
+}
+
+/*---GET RID OF BOOTSTRAP 5 properties interfering with custom navbar--*/
+nav {
+  line-height: 1.1;
+}
+
+nav ul {
+  margin-bottom: unset;
+}
+
+a:hover {
+  text-decoration: unset;
+}
+
+/*---END OF BOOTSTRAP RESET BLOCK--*/
+.global__nav {
+  z-index: 101;
+  min-height: 5vh;
+  height: 8vh;
+  max-height: 10vh;
+  padding: 0 1rem;
+  min-width: 100vw;
+  max-width: 100vw;
+  background-color: #001412;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+}
+
+.brand__logo {
+  z-index: 102;
+  max-height: 10vh;
+  min-height: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+  padding: .5rem;
+}
+
+.global__nav__list {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  background-color: #001412;
+  opacity: .9;
+  top: -100vh;
+  -webkit-transition: top .8s ease-in-out;
+  transition: top .8s ease-in-out;
+}
+
+.global__nav__list .global__nav__item {
+  font-family: "RobotoCondensed", "Cursive";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.global__nav__list .global__nav__item .global__nav__link {
+  display: block;
+  padding: 1rem;
+  color: #fbfcee;
+  position: relative;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateX(0);
+}
+
+.global__nav__list .global__nav__item .global__nav__link.current__page {
+  color: #03a0b5;
+}
+
+.global__nav__list .global__nav__item .global__nav__link.current__page::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#001412), color-stop(#00a896), to(#001412));
+  background: linear-gradient(to right, #001412, #00a896, #001412);
+  position: absolute;
+  bottom: .75rem;
+  left: 25%;
+  width: 50%;
+  height: .125rem;
+  border-radius: 10%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.global__nav__list .global__nav__item .global__nav__link::after {
+  content: "";
+  background: -webkit-gradient(linear, left top, right top, from(#001412), color-stop(#00a896), to(#001412));
+  background: linear-gradient(to right, #001412, #00a896, #001412);
+  position: absolute;
+  bottom: .75rem;
+  left: 25%;
+  width: 50%;
+  height: .1rem;
+  border-radius: 10%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.global__nav__list .global__nav__item .global__nav__link:hover {
+  color: #02f2be;
+  cursor: pointer;
+}
+
+.global__nav__list .global__nav__item .global__nav__link:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.burger__container {
+  z-index: 102;
+  display: block;
+  height: 8vh;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 1rem;
+  top: .25vh;
+}
+
+.burger__container .burger__slice {
+  z-index: 101;
+  min-height: .2rem;
+  min-width: 2rem;
+  border-radius: .25rem;
+  background-color: #03a0b5;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.burger__container .burger__slice::before, .burger__container .burger__slice::after {
+  content: "";
+  position: absolute;
+  min-height: .2rem;
+  min-width: 2rem;
+  border-radius: .25rem;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.burger__container .burger__slice::before {
+  background-color: #00a896;
+  -webkit-transform: translateY(-0.6rem);
+          transform: translateY(-0.6rem);
+}
+
+.burger__container .burger__slice::after {
+  background-color: #03a0b5;
+  -webkit-transform: translateY(0.6rem);
+          transform: translateY(0.6rem);
+}
+
+.global__nav__list.active {
+  top: 0;
+}
+
+.burger__container.active .burger__slice {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background: transparent;
+}
+
+.burger__container.active .burger__slice::before {
+  -webkit-transform: rotate(135deg) scale(0.6);
+          transform: rotate(135deg) scale(0.6);
+  background-color: #02f2be;
+}
+
+.burger__container.active .burger__slice::after {
+  -webkit-transform: rotate(45deg) scale(0.6);
+          transform: rotate(45deg) scale(0.6);
+  background-color: #00a896;
+}
+
+@media only screen and (min-width: 768px) {
+  .burger__container {
+    all: unset;
+    display: none;
+  }
+  .brand__logo {
+    min-height: 5vh;
+    max-height: 8vh;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .global__nav {
+    padding: .5rem 1rem;
+  }
+  .global__nav__list {
+    position: unset;
+    height: unset;
+    min-height: unset;
+    width: unset;
+    min-width: unset;
+    top: unset;
+    left: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 1rem;
+  }
+  .global__nav__list .global__nav__item {
+    font-size: 1.2rem;
+  }
+  .global__nav__list .global__nav__item .global__nav__link {
+    padding: 0 1rem;
+    position: relative;
+  }
+  .global__nav__list .global__nav__item .global__nav__link:hover {
+    -webkit-animation: theme__hover 5s infinite;
+            animation: theme__hover 5s infinite;
+  }
+  .global__nav__list .global__nav__item .global__nav__link.current__page {
+    -webkit-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
+    color: #fbfcee;
+  }
+  .global__nav__list .global__nav__item .global__nav__link.current__page::after {
+    bottom: -.1rem;
+  }
+  .global__nav__list .global__nav__item .global__nav__link::after {
+    bottom: -.1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .global__nav__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@-webkit-keyframes theme__hover {
+  0% {
+    color: #02f2be;
+  }
+  15% {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  30% {
+    color: #03a0b5;
+  }
+  45% {
+    color: #02f2be;
+  }
+  60% {
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
+  75% {
+    color: #00a896;
+  }
+  90% {
+    color: #02f2be;
+  }
+  100% {
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
+}
+
+@keyframes theme__hover {
+  0% {
+    color: #02f2be;
+  }
+  15% {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  30% {
+    color: #03a0b5;
+  }
+  45% {
+    color: #02f2be;
+  }
+  60% {
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
+  75% {
+    color: #00a896;
+  }
+  90% {
+    color: #02f2be;
+  }
+  100% {
+    -webkit-transform: translateY(0.1rem);
+            transform: translateY(0.1rem);
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

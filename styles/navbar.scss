@@ -2,8 +2,21 @@
 @import 'variables';
 @import "global";
 @import 'mixins';
+/*---GET RID OF BOOTSTRAP 5 properties interfering with custom navbar--*/
+nav{
+    line-height: 1.1;
+}
+nav ul{
+    margin-bottom: unset;
+}
+a:hover{
+    text-decoration: unset;
+}
+/*---END OF BOOTSTRAP RESET BLOCK--*/
 .global__nav {
     z-index: 101;
+    min-height: 5vh;
+    height: 8vh;
     max-height: 10vh;
     padding: 0 1rem;
     min-width: 100vw;
@@ -25,7 +38,7 @@
 }
 .global__nav__list {
     z-index: 100;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -52,8 +65,11 @@
             color: $clr-white;
             position: relative;
             transition: color 1s ease-in-out;
+            //Webkit code to prevent screenflickerbug on webkit browsers
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateX(0);
             &.current__page {
-
+                color: $clr-primary;
                 &::after {
                     content: "";
                     background: linear-gradient(to right, $clr-black, $clr-secondary, $clr-black);
@@ -93,10 +109,12 @@
     display: block;
     height: 8vh;
     width: 3rem;
-    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    right: 1rem;
+    top: .25vh;
     & .burger__slice {
         z-index: 101;
         min-height: .2rem;
@@ -178,6 +196,7 @@
                 }
                 &.current__page {
                     transform: translateY(-.1rem);
+                    color: $clr-white;
                     &::after {
                         bottom: -.1rem;
                     }
