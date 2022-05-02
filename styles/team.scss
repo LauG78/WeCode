@@ -1,14 +1,18 @@
 @import'global';
+@import "variables";
+@import "mixins";
 
 body{
-  background-color:$clr-white;
+  background-color: $clr-white;
+}
+.cards-team{
+  background-color: $clr-white;
+  padding: 3rem;
+  text-align: center;
 }
 h1,h2,h4,h5,h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: $clr-primary;
-}
-main{
-  margin: 2rem;
 }
 h6{
   font-style: italic;
@@ -33,4 +37,22 @@ i{
 .card{
   background-color: #fdfef8;
   border-color: #e2e3d6;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+i:hover{
+  color: $clr-highlight;
+}
+.wecode-way{
+  background-color: $clr-black;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  clip-path: polygon(0 25%,100% 0, 100% 100%, 0 100%);
+}
+}
+.darkmode{
+  color: $clr-white;
 }

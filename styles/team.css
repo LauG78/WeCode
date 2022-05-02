@@ -37,6 +37,10 @@ body {
   justify-content: flex-start;
 }
 
+nav .display__none {
+  display: none;
+}
+
 footer {
   /*---MAKE SURE FOOTER GETS PUSHED TO TOP--*/
   margin-top: auto;
@@ -53,17 +57,36 @@ li {
   list-style-type: none;
 }
 
+/*----ADDING FONTS----*/
+@font-face {
+  font-family: "LeagueSpartan";
+  src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "NunitoItalic";
+  src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
 body {
   background-color: #fbfcee;
+}
+
+.cards-team {
+  background-color: #fbfcee;
+  padding: 3rem;
+  text-align: center;
 }
 
 h1, h2, h4, h5, h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: #03a0b5;
-}
-
-main {
-  margin: 2rem;
 }
 
 h6 {
@@ -91,6 +114,36 @@ i {
 .card {
   background-color: #fdfef8;
   border-color: #e2e3d6;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+i:hover {
+  color: #02f2be;
+}
+
+.wecode-way {
+  background-color: #001412;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+
+.visitbecode {
+  background-color: #fbfcee;
+  padding-top: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+
+.darkmode {
+  color: #fbfcee;
 }
 
 /*# sourceMappingURL=team.css.map */
