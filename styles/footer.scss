@@ -59,7 +59,7 @@ footer {
         
             &::after {
                 content: attr(data-text);
-                font-size: .8;
+                font-size: .8rem;
                 margin:0 1rem ;
                 font-family: nunito;
             }
