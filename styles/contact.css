@@ -118,9 +118,13 @@ main {
   background-color: #fbfcee;
 }
 
+.pone {
+  padding-bottom: 1rem;
+}
+
 .pone .contact__info {
   color: #00a896;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-family: "Nunito", "Georgia";
 }
 
@@ -176,6 +180,10 @@ main {
   font-family: "NunitoItalic", "Georgia Italic";
   margin-left: auto;
   margin-right: auto;
+}
+
+.ptwo .button {
+  padding-bottom: 1rem;
 }
 
 .ptwo .button input[type=submit] {

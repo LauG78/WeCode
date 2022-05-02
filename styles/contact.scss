@@ -31,9 +31,10 @@ main {
     background-color: $clr-white;
     }
     .pone{
+        padding-bottom: 1rem;
         .contact__info {
             color: $clr-secondary;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             font-family: $ff-Nunito;
             &:hover{
                 color: $clr-black;
@@ -85,6 +86,7 @@ main {
             }
         }
         .button {
+            padding-bottom: 1rem;
             input[type=submit]{
             color: $clr-black;
             background-color: $clr-secondary;
