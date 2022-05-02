@@ -2,7 +2,7 @@
 @import 'global';
 @import 'mixins';
 
-/*--RESETS--*/
+// /*--RESETS--*/
 //clr-black rgba(0, 20, 18, 1)
 //clr-white rgba(251, 252, 238, 1)
 //clr-primary rgba(3, 160, 181, 1)
@@ -20,13 +20,11 @@
 .remove__z-index {
     z-index: unset;
 }
-
 //END OF JS STYLES
 body {
     overflow-x: hidden;
-    background-color: $clr-white;
-    
 
+    background-color: $clr-white;
     header {
         width: 100vw;
         height: 100vh;
@@ -219,14 +217,10 @@ body {
             }
         }
     }
-
     main {
-
-
         .parallax__wrapper {
             margin-top: auto;
             width: 100vw;
-
             .section__content{
                 padding: 0 1rem;
                 display: flex;
@@ -238,7 +232,6 @@ body {
                  padding-top: 1rem;
                  padding-bottom: .5rem;
                  text-align: center;
-
                 }
                 .section__list{
                     border: solid .1rem $clr-primary;
@@ -246,40 +239,39 @@ body {
                     margin: 1rem 0rem;
                     .section__list__item{
                         padding: 1rem;
-
                         .section__list__item__content{
                             display: flex;
                             flex-direction: column;
                             text-align: center;
                             padding: 0 1rem;
-
                             img {
                                 max-height:10rem;
                                 height: 8rem;
                                 margin: .5rem 0;
                             }
+                            a{
+                                color: $clr-black;
+                                cursor: pointer;
+                                &:hover{
+                                    color:$clr-primary
+                                }
+                            }
                         }
                     }
-                }
-                
+                }     
             }
             .light__section {
-                color: $clr-black;
-
-                
+                color: $clr-black; 
             }
-
             .dark__section {
                 background-color: $clr-black;
-                color: $clr-white;
-
-                
+                color: $clr-white; 
             }
         }
     }
 }
-
-/*---MEDIA QUERIES--*/
+//MEDIA QUERIES
+// Big To small
 @include max-media-large {
     body {
         header {
@@ -306,7 +298,6 @@ body {
         }
     }
 }
-
 @include max-media-medium {
     body {
         header {
@@ -345,7 +336,41 @@ body {
         }
     }
 }
-
+// Small to big 
+@include media-medium {
+    main{
+        .parallax__wrapper {
+            .section__content {
+                .section__list {
+                    text-align: center;
+                 .section__list__item{
+                    position: relative;
+                     max-width: 40%;
+                     margin: 1rem;
+                     display: inline-flex;
+                 }   
+                }
+            }
+        }
+    }
+}
+@include media-extra-large {
+    main{
+        .parallax__wrapper {
+            .section__content {
+                .section__list {
+                    text-align: center;
+                 .section__list__item{
+                    position: relative;
+                     max-width: 20%;
+                     display: inline-flex;
+                 }   
+                }
+            }
+        }
+    }
+}
+// Custom Animations
 @keyframes welcomeBtn {
     15% {
         color: $clr-primary;
