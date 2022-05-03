@@ -21,26 +21,26 @@
   - [x] Packages page, turn "Costum" into "Custom"
   - [x] Packages page, turn lorem ipsum into text
   - [x] Packages page, not "costumer", but "customer"
-  - [ ] Home page - Why Wecode?: Not "wonderfull", but "wonderful"
-  - [ ] Home page - What we do: not "wether" but "whether"
-  - [ ] Home page - In Short: not "beautifull" but "beautiful"
-  - [ ] Home page - In Short: not "therefor", but "therefore" and add a space after the comma
-  - [ ] Home page - In Short: not "rightfull", but "rightful" (carefully is written correctly here)
+  - [x] Home page - Why Wecode?: Not "wonderfull", but "wonderful"
+  - [x] Home page - What we do: not "wether" but "whether"
+  - [x] Home page - In Short: not "beautifull" but "beautiful"
+  - [x] Home page - In Short: not "therefor", but "therefore" and add a space after the comma
+  - [x] Home page - In Short: not "rightfull", but "rightful" (carefully is written correctly here)
 - [ ] No grammar errors
   - [ ] Team page: "very dear to our hearts' needs to be worded better
   - [ ] Team page: "be handling with perfection by him.-> will be handled
-  - [ ] Home page - 'What is WeCode section': "...thanks to the lovely people at Be</Code>" sentence needs to end on a period "."
+  - [x] Home page - 'What is WeCode section': "...thanks to the lovely people at Be</Code>" sentence needs to end on a period "."
   - [ ] Home page: Sometimes no spaces after a comma ",".
-  - [ ] Home page - Why Wecode?: "...your visitor's screen size', needs to end on a period "."
-  - [ ] Home page - Why Wecode?: "We are proud of what we achieved, you can be proud of working with us! ", get rid of the comma and add an "and" instead
-  - [ ] Home page - Why Wecode?: "We'll make sure your website is one you are able to proudly present your website to anyone you meet."
-    - [ ] Replace that sentence with "We'll make sure your website is one you can proudly present to anyone you meet"
-  - [ ] Home page - What we do: "visitor's attention, So do we!", no capital letter after a comma, turn "So", into "so"
-  - [ ] Home page - What we do: turn "we pay much attention" to "we pay a lot of attention"
-  - [ ] Home page - What we do: "your visitor's are emerged into" turn that "visitor's" into "visitors"
-  - [ ] Home page - What we do: "...cinema to browse your site" end it on a period "."
-  - [ ] Home page - In short: "a website we both love" needs to end on a period "."
-  - [ ] Home page - Show me more!: "check out our..." needs to start with a capital letter
+  - [x] Home page - Why Wecode?: "...your visitor's screen size', needs to end on a period "."
+  - [x] Home page - Why Wecode?: "We are proud of what we achieved, you can be proud of working with us! ", get rid of the comma and add an "and" instead
+  - [x] Home page - Why Wecode?: "We'll make sure your website is one you are able to proudly present your website to anyone you meet."
+    - [x] Replace that sentence with "We'll make sure your website is one you can proudly present to anyone you meet"
+  - [x] Home page - What we do: "visitor's attention, So do we!", no capital letter after a comma, turn "So", into "so"
+  - [x] Home page - What we do: turn "we pay much attention" to "we pay a lot of attention"
+  - [x] Home page - What we do: "your visitor's are emerged into" turn that "visitor's" into "visitors"
+  - [x] Home page - What we do: "...cinema to browse your site" end it on a period "."
+  - [x] Home page - In short: "a website we both love" needs to end on a period "."
+  - [x] Home page - Show me more!: "check out our..." needs to start with a capital letter
 - [x] The website is deployed somewhere
 - [x] Everything is relevant (no image of a barber on the website of a baker)
 
