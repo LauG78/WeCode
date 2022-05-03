@@ -83,13 +83,19 @@ body {
   background-color: #fbfcee;
 }
 
-h1, h2, h4, h5, h6 {
+h1, h2, h4, h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: #03a0b5;
 }
 
 h6 {
   font-style: italic;
+}
+
+h5 {
+  color: #001412;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 q {
@@ -228,29 +234,8 @@ q {
   left: -60px;
 }
 
-.row section .details, .row section .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.row section .details .title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
 .row section p {
   margin: 10px 0 17px 0;
-}
-
-.row section .bottom a {
-  text-decoration: none;
-  background: #001412;
-  color: #03a0b5;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: 400;
 }
 
 @media (max-width: 790px) {

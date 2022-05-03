@@ -3,7 +3,6 @@
 @import "mixins";
 
 //General CSS Styling for entire page//
-
 html{
   scroll-behavior: smooth;
 }
@@ -11,12 +10,17 @@ body{
   overflow-x:hidden;
   background-color: $clr-white;
 }
-h1,h2,h4,h5,h6 {
+h1,h2,h4,h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: $clr-primary;
 }
 h6{
   font-style: italic;
+}
+h5{
+  color: $clr-black;
+  font-size: 22px;
+  font-weight: 600;
 }
 q{
   color: $clr-primary;
@@ -27,8 +31,6 @@ q{
   background-color: $clr-white;
   padding: 3rem;
   text-align: center;
-}
-.card{;
 }
 .card-footer{
   background-color: $clr-black;
@@ -140,26 +142,8 @@ q{
   top:13px;
   left: -60px;
 }
-.row section .details, .row section .bottom{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.row section .details .title{
-  font-size: 22px;
-  font-weight: 600;
-}
 .row section p{
   margin: 10px 0 17px 0;
-}
-.row section .bottom a{
-  text-decoration: none;
-  background: $clr-black;
-  color: $clr-primary;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-size: 17px;
-  font-weight: 400;
 }
 //Responsiveness The WeCode Way//
 @media(max-width: 790px){
