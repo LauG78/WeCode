@@ -110,13 +110,16 @@ main {
                 .card__info {
                     padding: 3rem 1rem;
                     h2 {
-                        
                         padding-top: 1rem;
                         font-size:3rem;
                         color: $clr-primary;
                         font-family: $ff-League_Spartan;
                         margin: 1rem 0 2rem 0;
                         text-align: center;
+                    }
+                    .Cards__Prices {
+                        Font-size:1.5rem;
+                        text-decoration: underline 5px $clr-highlight;
                     }
                     .h3__grow {
                         color: rgb(21, 166, 21);
@@ -203,7 +206,7 @@ main {
 .the_faq_section{
     padding: 2rem;
     background:$clr-black;
-    clip-path: polygon(0 25%,100% 0,100% 100%, 0 100%);
+    clip-path: polygon(0 10%,100% 0,100% 100%, 0 100%);
 .faq__title{
     text-align: center;
     font-size: 3rem;

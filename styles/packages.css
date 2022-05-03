@@ -196,6 +196,10 @@ main .Header__Img__Container .Header__Img {
   margin: 1rem 0 2rem 0;
   text-align: center;
 }
+.box__cards .card__one .card__info .Cards__Prices {
+  Font-size: 1.5rem;
+  text-decoration: underline 5px #02f2be;
+}
 .box__cards .card__one .card__info .h3__grow {
   color: rgb(21, 166, 21);
 }
@@ -274,7 +278,7 @@ main .Header__Img__Container .Header__Img {
 .the_faq_section {
   padding: 2rem;
   background: #001412;
-  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 .the_faq_section .faq__title {
   text-align: center;
