@@ -23,20 +23,26 @@
     /*----ADDING FONTS----*/
 @font-face {
     font-family: 'LeagueSpartan';
-    src: url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+    src: local('Pacifico Regular'),local('Pacifico-Regular'),url(../assets/fonts/GoogleFonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf);
+    font-display: swap;
+
 }
 
 @font-face {
     font-family: 'Nunito';
-    src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+    src: local('Pacifico Regular'),local('Pacifico-Regular'),url(../assets/fonts/GoogleFonts/Nunito/Nunito-VariableFont_wght.ttf);
+    font-display: swap;
+
 }
 
 @font-face {
     font-family: 'NunitoItalic';
-    src: url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+    src: local('Pacifico Regular'),local('Pacifico-Regular'),url(../assets/fonts/GoogleFonts/Nunito/Nunito-Italic-VariableFont_wght.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'RobotoCondensed';
-    src: url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+    src: local('Pacifico Regular'),local('Pacifico-Regular'),url(../assets/fonts/GoogleFonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+    font-display: swap;
 }
