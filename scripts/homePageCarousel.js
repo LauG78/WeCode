@@ -18,22 +18,37 @@ function scrollTillNavOnTop() {
         top: navPosition,
         behavior: 'smooth'
     })
-    headerUI.innerHTML='';
+
 }
-window.addEventListener("scroll",function(){
-    /*--Take the header and move it with the page when scrolled--*/
+/*---SCROLL LISTENER TO TURN CAROUSEL INTO PARALLAX--*/
+window.addEventListener("scroll", function () {
+    /*---Check distance scrolled--*/
     let distance = this.window.scrollY;
-    console.log(distance)
-    /*--Prevent scrolling up top, add reverse--*/
-    headerContainer.style.transform = `translateY(${distance * 1}px)`;
-    checkNavPosition();
-    /*---RETURN THE CONTENT--*/
-    if(navStickyOnTop){
-        headerUI.innerHTML='';
-    }else{
-        headerUI.innerHTML='';
+    /*---Move header up--*/
+    if (headerContainer.getBoundingClientRect().top <= 1) {
+        headerContainer.style.transform = `translateY(${distance * 1}px)`;
+    }/*---Else move header down--*/
+     else {
+        headerContainer.style.transform = `translateY(${distance / 1}px)`;
+    }
+    /*---Calculate client window height--*/
+    let height = Math.max(this.document.documentElement.clientHeight, this.window.innerHeight || 0)
+    /*---If scrolled distance is more than window height/2 turn carousel into absolute and hide header--*/
+    if (distance > height/2) {
+        hideHeaderUI();
+    } else {
+        showHeaderUI();
     }
 })
+function hideHeaderUI() {
+    headerUI.style.opacity = '0'
+}
+function showHeaderUI() {
+    headerUI.style.opacity = '1'
+}
+
+
+
 
 
 
