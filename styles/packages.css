@@ -151,14 +151,9 @@ main .Header__Img__Container .Header__Img {
   background-position: Center 15rem;
 }
 
-h1 {
-  font-family: "LeagueSpartan", "Arial";
-  text-align: center;
-  margin: 7rem;
-  font-size: 3rem;
-}
-h1 .package__span {
-  text-decoration: underline #02f2be;
+.h1___Packages {
+  font-size: 0.5rem;
+  color: #fbfcee;
 }
 
 .box__cards {

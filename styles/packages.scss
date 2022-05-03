@@ -73,22 +73,18 @@ main {
         background-position: Center 15rem;
        }
     }
-}  
-h1{
-        font-family:$ff-League_Spartan;
-        text-align:center;
-        margin:7rem;
-        font-size: 3rem;
-        .package__span {
-            text-decoration: underline $clr-highlight;
-            
-        }
+
+    }
+    .h1___Packages {
+        font-size: .5rem;
+        color: $clr-white;
     }
     .box__cards {
         display:flex;
         justify-content: center;
         flex-flow: wrap;
         padding: 2rem;
+
         .card__links {
             margin: 1rem;
             color: $clr-black;
