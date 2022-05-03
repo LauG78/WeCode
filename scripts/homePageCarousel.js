@@ -2,6 +2,7 @@ const carBtnPrev = document.querySelector('.home__carousel__button__container__p
 const carBtnNext = document.querySelector('.home__carousel__button__container__next');
 const carBtnWelcome = document.querySelector('.welcome__button')
 const headerContainer = document.getElementById('introCarousel')
+const headerUI = document.getElementById('introCarouselUI')
 let navHeight = globalNav.offsetHeight;
 carBtnNext.addEventListener('click', nextSlide);
 carBtnPrev.addEventListener('click', prevSlide);
@@ -17,20 +18,25 @@ function scrollTillNavOnTop() {
         top: navPosition,
         behavior: 'smooth'
     })
-}/* replaced by scrollTillNavOnTop
-function hideIntro() {
-    fadeIntro()
-    setTimeout(removeIntro, 500)
+    headerUI.innerHTML='';
 }
-function fadeIntro() {
-    headerContainer.classList.add('opacity__zero')
-}
-function removeIntro() {
-    headerContainer.classList.add('remove__z-index')
-    headerContainer.classList.add('display__none')
+window.addEventListener("scroll",function(){
+    /*--Take the header and move it with the page when scrolled--*/
+    let distance = this.window.scrollY;
+    console.log(distance)
+    /*--Prevent scrolling up top, add reverse--*/
+    headerContainer.style.transform = `translateY(${distance * 1}px)`;
+    checkNavPosition();
+    /*---RETURN THE CONTENT--*/
+    if(navStickyOnTop){
+        headerUI.innerHTML='';
+    }else{
+        headerUI.innerHTML='';
+    }
+})
 
-}
-*/
+
+
 function resetAutoplay() {
     clearInterval(carAutoPlay)
     carAutoPlay = setInterval(autoplayCarSlides, 8000)
