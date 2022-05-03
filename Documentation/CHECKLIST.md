@@ -18,9 +18,9 @@
 - [x] No dead links
 - [ ] English and dutch are not mixed
 - [ ] No spelling errors
-  - [ ] Packages page, turn "Costum" into "Custom"
-  - [ ] Packages page, turn lorem ipsum into text
-  - [ ] Packages page, not "costumer", but "customer"
+  - [x] Packages page, turn "Costum" into "Custom"
+  - [x] Packages page, turn lorem ipsum into text
+  - [x] Packages page, not "costumer", but "customer"
   - [ ] Home page - Why Wecode?: Not "wonderfull", but "wonderful"
   - [ ] Home page - What we do: not "wether" but "whether"
   - [ ] Home page - In Short: not "beautifull" but "beautiful"
@@ -71,8 +71,8 @@
 
 ### A company wants to be found/SEO
 - [x] All the keywords this company wants to be found on are on the page
-- [ ] Page has an H1 tag
-  - [ ] Packages page does not have a H1
+- [x] Page has an H1 tag
+  - [x] Packages page does not have a H1
 - [ ] Page has keyword meta tags
   - [ ] All pages lack this
 - [ ] Page has a title with the keywords in
@@ -122,7 +122,7 @@
 - [x] Navigation is in a nav
 - [ ] Lists use list tags
   - [ ] I don't believe anyone has used lists
-- [ ] H tags are used to signal importance
+- [x] H tags are used to signal importance
 - [x] No div is used where another element is available
 - [x] No span is used where another element is available
 - [ ] No inline styling is put on any element

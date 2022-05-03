@@ -78,9 +78,10 @@ h1 {
   color: #03a0b5;
   font-family: "Nunito", "Georgia";
   background-color: #fbfcee;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 1rem;
 }
 
 .secondary__color {
@@ -99,33 +100,46 @@ h1 {
 
 main {
   text-align: center;
+  background-color: #fbfcee;
 }
 
-.pone {
-  padding-bottom: 1rem;
+main .pone {
+  padding-top: 1rem;
 }
-.pone .contact__info {
+
+main .pone .inq {
+  color: #001412;
+  font-size: 1.1rem;
+  font-family: "Nunito", "Georgia";
+  padding: 1rem;
+}
+
+main .pone .contact__info {
   color: #00a896;
   font-size: 1.2rem;
+  padding-bottom: 1rem;
   font-family: "Nunito", "Georgia";
 }
-.pone .contact__info:hover {
+
+main .pone .contact__info:hover {
   color: #001412;
 }
 
-.ptwo .cname, .ptwo .cemail {
+main .ptwo .cname, main .ptwo .cemail {
   color: #001412;
   font-size: 1.5rem;
   font-family: "LeagueSpartan", "Arial";
   padding: 1rem;
   margin: 0rem;
 }
-.ptwo input[type=text] {
+
+main .ptwo input[type=text] {
   background-color: #00a896;
   color: #fbfcee;
   border: 0.1rem solid #03a0b5;
   border-radius: 0.7rem;
-  box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
   font-family: "Nunito", "Georgia";
   width: 20rem;
   height: 2rem;
@@ -133,22 +147,26 @@ main {
   padding: 0.05rem;
   margin: 0rem;
 }
-.ptwo .mes {
+
+main .ptwo .mes {
   color: #001412;
   font-family: "LeagueSpartan", "Arial";
   font-size: 1.5rem;
   padding-top: 1rem;
 }
+
 .ptwo .tarea {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.ptwo .tarea textarea {
+
+main .ptwo .tarea textarea {
   background-color: #00a896;
   color: #001412;
   border: 0.1rem solid #001412;
   border-radius: 0.7rem;
-  box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+  -webkit-box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
+          box-shadow: 0.4rem 0.4rem 0.3rem 0.3rem #001412;
   height: 11rem;
   width: 20rem;
   font-size: 1.2rem;
@@ -156,10 +174,12 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
-.ptwo .button {
+
+main .ptwo .button {
   padding-bottom: 1rem;
 }
-.ptwo .button input[type=submit] {
+
+main .ptwo .button input[type=submit] {
   color: #001412;
   background-color: #00a896;
   font-family: "NunitoItalic", "Georgia Italic";
@@ -168,12 +188,14 @@ main {
   height: 2rem;
   border-radius: 0.5rem;
   border: 0.1rem solid #03a0b5;
-  box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
+  -webkit-box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
+          box-shadow: 0.12rem 0.12rem 0.12rem 0.12rem #001412;
   white-space: pre-line;
   cursor: pointer;
 }
-.ptwo .button input[type=submit]:hover {
-  background-color: #03a0b5;
+
+main .ptwo .button input[type=submit]:hover {
+  background-color: #02f2be;
 }
 
 @keyframes spin {
@@ -193,8 +215,37 @@ main {
     transform: rotateY(360deg);
   }
 }
-.photo {
-  animation: spin 7s linear infinite;
+
+main .photo {
+  -webkit-animation: spin 7s linear infinite;
+          animation: spin 7s linear infinite;
+}
+
+@-webkit-keyframes turn {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  50% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  75% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  60% {
+    -webkit-box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+            box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
+  }
 }
 
 @keyframes turn {
@@ -217,12 +268,14 @@ main {
     box-shadow: 1.5rem 0.5rem 1.5rem #00a896;
   }
 }
-.pict {
-  animation: turn 7s linear infinite;
+
+main .pict {
+  -webkit-animation: turn 7s linear infinite;
+          animation: turn 7s linear infinite;
 }
 
-@media only screen and (max-width: 700px) {
-  .tarea {
+@media only screen and (max-width: 584px) {
+  main .photo {
     display: none;
   }
 }
