@@ -83,19 +83,22 @@ body {
   background-color: #fbfcee;
 }
 
-h1, h2, h4, h6 {
+h1, h2, h3, h4, h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: #03a0b5;
 }
 
-h6 {
+h3 {
   font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-h5 {
+h4 {
   color: #001412;
   font-size: 22px;
   font-weight: 600;
+  font-family: "Nunito", sans-serif;
 }
 
 q {
@@ -105,7 +108,7 @@ q {
 
 .cards-team {
   background-color: #fbfcee;
-  padding: 3rem;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -135,10 +138,7 @@ q {
 
 .wecode-way {
   background-color: #001412;
-  padding-top: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
+  padding: 3rem;
   text-align: center;
 }
 
@@ -214,7 +214,6 @@ q {
   border-radius: 50%;
   color: #001412;
   font-size: 17px;
-  box-shadow: 0 0 0 4px #ffffff, inset 0 2px rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .center-line .scroll-icon {

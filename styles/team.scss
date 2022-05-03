@@ -10,17 +10,20 @@ body{
   overflow-x:hidden;
   background-color: $clr-white;
 }
-h1,h2,h4,h6 {
+h1,h2,h3,h4,h6 {
   font-family: "League Spartan SemiBold", sans-serif;
   color: $clr-primary;
 }
-h6{
+h3{
   font-style: italic;
+  font-size:18px;
+  font-weight: 400;
 }
-h5{
+h4{
   color: $clr-black;
   font-size: 22px;
   font-weight: 600;
+  font-family: "Nunito", sans-serif;
 }
 q{
   color: $clr-primary;
@@ -29,7 +32,7 @@ q{
 //CSS for the Team Cards//
 .cards-team{
   background-color: $clr-white;
-  padding: 3rem;
+  padding: 5rem;
   text-align: center;
 }
 .card-footer{
@@ -56,10 +59,7 @@ q{
 //Styling for the second part of the page, the WeCode Way//
 .wecode-way{
   background-color: $clr-black;
-  padding-top: 5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
+  padding: 3rem;
   text-align: center;
 }
 .darkmode{
@@ -125,7 +125,6 @@ q{
   border-radius: 50%;
   color: $clr-black;
   font-size:17px;
-  box-shadow: 0 0 0 4px #ffffff, inset 0 2px rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
 }
 .center-line .scroll-icon{
   bottom: 0;
