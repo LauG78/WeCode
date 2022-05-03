@@ -44,7 +44,7 @@ function showHeaderUI() {
 function resetAutoplay() {
     clearInterval(carAutoPlay)
     setTimeout(4000)
-    carAutoPlay.setInterval(8000)
+    carAutoPlay = setInterval(autoplayCarSlides,5000)
 }
 
 function nextSlide() {
