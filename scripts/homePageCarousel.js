@@ -12,6 +12,21 @@ var carSlides = carSlideshow.children;
 var carSlideIndex = 0;
 var carAutoPlay = setInterval(autoplayCarSlides, 5000)
 const navPosition = globalNav.getBoundingClientRect().top;
+window.addEventListener("scroll", function () {
+    let distance = this.window.scrollY;
+    if (headerContainer.getBoundingClientRect().top <= 1) {
+        headerContainer.style.transform = `translateY(${distance * 1}px)`;
+    }
+     else {
+        headerContainer.style.transform = `translateY(${distance / 1}px)`;
+    }
+    let height = Math.max(this.document.documentElement.clientHeight, this.window.innerHeight || 0)
+    if (distance > height/2) {
+        hideHeaderUI();
+    } else {
+        showHeaderUI();
+    }
+})
 function scrollTillNavOnTop() {
     console.log(navPosition)
     window.scroll({
@@ -20,41 +35,16 @@ function scrollTillNavOnTop() {
     })
 
 }
-/*---SCROLL LISTENER TO TURN CAROUSEL INTO PARALLAX--*/
-window.addEventListener("scroll", function () {
-    /*---Check distance scrolled--*/
-    let distance = this.window.scrollY;
-    /*---Move header up--*/
-    if (headerContainer.getBoundingClientRect().top <= 1) {
-        headerContainer.style.transform = `translateY(${distance * 1}px)`;
-    }/*---Else move header down--*/
-     else {
-        headerContainer.style.transform = `translateY(${distance / 1}px)`;
-    }
-    /*---Calculate client window height--*/
-    let height = Math.max(this.document.documentElement.clientHeight, this.window.innerHeight || 0)
-    /*---If scrolled distance is more than window height/2 turn carousel into absolute and hide header--*/
-    if (distance > height/2) {
-        hideHeaderUI();
-    } else {
-        showHeaderUI();
-    }
-})
 function hideHeaderUI() {
     headerUI.style.opacity = '0'
 }
 function showHeaderUI() {
     headerUI.style.opacity = '1'
 }
-
-
-
-
-
-
 function resetAutoplay() {
     clearInterval(carAutoPlay)
-    carAutoPlay = setInterval(autoplayCarSlides, 8000)
+    setTimeout(4000)
+    carAutoPlay = setInterval(autoplayCarSlides,5000)
 }
 
 function nextSlide() {
