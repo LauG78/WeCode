@@ -164,6 +164,7 @@ a:hover {
   top: -100vh;
   -webkit-transition: top .8s ease-in-out;
   transition: top .8s ease-in-out;
+  -webkit-backface-visibility: hidden;
 }
 
 .global__nav__list .global__nav__item {
