@@ -94,7 +94,7 @@ h1 {
   color: #03a0b5;
   font-family: "Nunito", "Georgia";
   background-color: #fbfcee;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   text-transform: uppercase;
   padding-top: 1rem;
@@ -125,10 +125,9 @@ main .pone {
 
 main .pone .inq {
   color: #001412;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-family: "Nunito", "Georgia";
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 main .pone .contact__info {

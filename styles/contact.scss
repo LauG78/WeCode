@@ -10,7 +10,7 @@ h1 {
     color: $clr-primary;
     font-family: $ff-Nunito;
     background-color: $clr-white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;
     padding-top: 1rem;
@@ -33,10 +33,9 @@ main {
         padding-top: 1rem;
         .inq {
             color: $clr-black;
-            font-size: 0.9rem;
+            font-size: 1.1rem;
             font-family: $ff-Nunito;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding: 1rem;
         }
         .contact__info {
             color: $clr-secondary;
@@ -77,7 +76,7 @@ main {
         }
         .tarea{
             padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-bottom: 1rem;  
             textarea {
                 background-color: $clr-secondary;
                 color: $clr-black;
