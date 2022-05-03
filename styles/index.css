@@ -124,7 +124,6 @@ body header .home__intro__container .home__carousel {
 }
 
 body header .home__intro__container .home__carousel .home__carousel__content {
-  z-index: 1;
   position: absolute;
   top: 50vh;
   height: 30vh;
@@ -150,6 +149,8 @@ body header .home__intro__container .home__carousel .home__carousel__content {
   font-family: "Nunito", "Georgia";
   border-radius: 2rem;
   padding: 1rem;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 body header .home__intro__container .home__carousel .home__carousel__content .before__brand,
@@ -279,6 +280,7 @@ body header .home__intro__container .home__carousel .home__carousel__content .ho
 
 body header .home__intro__container .home__carousel .home__carousel__slideshow .home__carousel__slide {
   position: absolute;
+  z-index: -1;
   inset: 0;
   opacity: 0;
   -webkit-transition: 500ms opacity ease-in-out;
@@ -300,6 +302,10 @@ body header .home__intro__container .home__carousel .home__carousel__slideshow .
      object-position: center;
   width: 100vw;
   height: 100vh;
+}
+
+body main {
+  z-index: 50;
 }
 
 body main .parallax__wrapper {
@@ -368,6 +374,8 @@ body main .parallax__wrapper .section__content .section__list .section__list__it
 
 body main .parallax__wrapper .light__section {
   color: #001412;
+  background-color: #fbfcee;
+  opacity: .8;
 }
 
 body main .parallax__wrapper .dark__section {

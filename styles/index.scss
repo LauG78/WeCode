@@ -32,12 +32,12 @@ body {
         transition: opacity 500ms ease-in-out;
         overflow-y: hidden;
         text-align: center;
+        
         .home__intro__container {
             .home__carousel {
                 width: 100vw;
                 height: 100vh;
                 .home__carousel__content {
-                    z-index: 1;
                     position: absolute;
                     top: 50vh;
                     height: 30vh;
@@ -53,6 +53,7 @@ body {
                     font-family: $ff-Nunito;
                     border-radius: 2rem;
                     padding: 1rem;
+                    transition: opacity 1s ease-in-out;
                     .before__brand,
                     .after__brand,
                     .credit__text {
@@ -160,6 +161,7 @@ body {
                 .home__carousel__slideshow {
                     .home__carousel__slide {
                         position: absolute;
+                        z-index: -1;
                         inset: 0;
                         opacity: 0;
                         transition: 500ms opacity ease-in-out;
@@ -181,6 +183,7 @@ body {
         }
     }
     main {
+        z-index: 50;
         .parallax__wrapper {
             margin-top: auto;
             width: 100vw;
@@ -225,6 +228,8 @@ body {
             }
             .light__section {
                 color: $clr-black; 
+                background-color: $clr-white;
+                opacity: .8;
             }
             .dark__section {
                 background-color: $clr-black;
