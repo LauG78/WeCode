@@ -1,5 +1,5 @@
 
-<img src="https://yasserb94.github.io/WeCode/" alt="WeCode Logo" width="200"/>
+<img src="/assets/images/WeCode%20logo-seethrough.svg" alt="WeCode Logo" width="200"/>
 
 <br>
 <br>
