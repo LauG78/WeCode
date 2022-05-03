@@ -108,7 +108,8 @@ q {
 
 .cards-team {
   background-color: #fbfcee;
-  padding: 5rem;
+  padding: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
